@@ -6219,7 +6219,6 @@ casting Spells.</description>
                                   <conditionGroups>
                                     <conditionGroup type="or">
                                       <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="50ec-2aab-28b0-12e1" shared="true" includeChildSelections="true" includeChildForces="true"/>
                                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e49-9b1a-ff0f-cc3c" shared="true" includeChildSelections="true" includeChildForces="true"/>
                                       </conditions>
                                     </conditionGroup>
@@ -10366,7 +10365,6 @@ casting Spells.</description>
                                       <conditionGroups>
                                         <conditionGroup type="or">
                                           <conditions>
-                                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="50ec-2aab-28b0-12e1" shared="true" includeChildSelections="true" includeChildForces="true"/>
                                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e49-9b1a-ff0f-cc3c" shared="true" includeChildSelections="true" includeChildForces="true"/>
                                           </conditions>
                                         </conditionGroup>
