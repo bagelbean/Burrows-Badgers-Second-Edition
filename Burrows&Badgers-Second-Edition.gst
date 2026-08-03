@@ -3787,7 +3787,7 @@ casting Spells.</description>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Pole-arm" hidden="false" id="0196-ddc8-6c48-cd6e" collective="true" sortIndex="3">
+                <selectionEntry type="upgrade" import="true" name="Polearm" hidden="false" id="0196-ddc8-6c48-cd6e" collective="true" sortIndex="3">
                   <infoLinks>
                     <infoLink name="Polearm" id="c924-55db-ec43-f500" hidden="false" type="profile" targetId="c442-f661-1aca-b5bb"/>
                   </infoLinks>
@@ -7981,7 +7981,7 @@ casting Spells.</description>
                         <entryLink import="true" name="Upgrades" hidden="false" id="f268-aaf3-424e-9734" type="selectionEntryGroup" targetId="9bd1-b2cf-0aea-9531"/>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Pole-arm" hidden="false" id="58a1-6555-c909-9326" collective="true" sortIndex="3">
+                    <selectionEntry type="upgrade" import="true" name="Polearm" hidden="false" id="58a1-6555-c909-9326" collective="true" sortIndex="3">
                       <infoLinks>
                         <infoLink name="Polearm" id="493d-5c75-575e-41e1" hidden="false" type="profile" targetId="c442-f661-1aca-b5bb"/>
                       </infoLinks>
