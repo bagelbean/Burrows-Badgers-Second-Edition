@@ -14352,25 +14352,6 @@ casting Spells.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b6e-e464-f972-797e"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Upgrade Ranged" hidden="false" id="d9b3-5ebb-d7a2-3533" collective="true" sortIndex="3">
-              <modifiers>
-                <modifier type="replace" value="d12" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                <modifier type="replace" value="d10" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                <modifier type="replace" value="d8" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                <modifier type="replace" value="d6" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                <modifier type="increment" value="1" field="659a-f40f-dc29-33bf" scope="root-entry" affects="profiles.Unit"/>
-              </modifiers>
-              <profiles>
-                <profile name="Ranged Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="b57b-31aa-501f-b50c">
-                  <characteristics>
-                    <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Ranged Statistic of this unit has been upgraded.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2169-1be6-fe98-65ce"/>
-              </constraints>
-            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="01b6-1cc2-091c-65bc" includeChildSelections="true" includeChildForces="true"/>
