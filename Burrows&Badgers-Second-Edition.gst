@@ -2470,9 +2470,9 @@ casting Spells.</description>
                                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ac1-f3dc-a649-3b5e"/>
                               </constraints>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Lightning" hidden="false" id="59d8-1490-435d-f58d" collective="true" sortIndex="6">
+                            <selectionEntry type="upgrade" import="true" name="Push" hidden="false" id="59d8-1490-435d-f58d" collective="true" sortIndex="6">
                               <infoLinks>
-                                <infoLink name="Lightning" id="c52e-0d4d-51b9-7d6c" hidden="false" targetId="e7d2-4c6f-4a9b-b3f5" type="profile"/>
+                                <infoLink name="Push" id="c52e-0d4d-51b9-7d6c" hidden="false" targetId="e7d2-4c6f-4a9b-b3f5" type="profile"/>
                                 <infoLink name="Weak" id="e8f0-ce48-0eee-51ef" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
                                 <infoLink name="Delicate" id="694a-d2d3-8593-9be8" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
                               </infoLinks>
@@ -2480,11 +2480,11 @@ casting Spells.</description>
                                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b96-00f3-45e4-dd09"/>
                               </constraints>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Haste" hidden="false" id="d2b1-f7aa-83c8-70fc" collective="true" sortIndex="5">
+                            <selectionEntry type="upgrade" import="true" name="Lightning" hidden="false" id="d2b1-f7aa-83c8-70fc" collective="true" sortIndex="5">
                               <infoLinks>
-                                <infoLink name="Haste" id="4b0f-7d0b-bbda-14c5" hidden="false" targetId="e8ca-5b6f-dd5a-2bab" type="profile"/>
                                 <infoLink name="Weak" id="f9d3-881f-c538-b902" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
                                 <infoLink name="Delicate" id="ac62-3e73-b4e3-eb3a" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
+                                <infoLink name="Lightning" id="0d53-0e48-83fb-c4f7" hidden="false" targetId="e7d2-4c6f-4a9b-b3f5" type="profile"/>
                               </infoLinks>
                               <constraints>
                                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80b7-ab09-d5e9-75e6"/>
@@ -17649,14 +17649,17 @@ possible.</characteristic>
     </profile>
     <profile hidden="false" id="e7d2-4c6f-4a9b-b3f5" name="Lightning" typeId="3d26-fa01-dac8-537b" typeName="Spell">
       <characteristics>
-        <characteristic name="Description" typeId="3a00-157a-a112-b946">Calling forth the potent energies of the charged clouds, the caster launches a bolt of lightning at their enemy.</characteristic>
-        <characteristic name="Difficulty" typeId="6827-4c1e-91ed-6fcc">2</characteristic>
-        <characteristic name="Range" typeId="b160-3959-b02a-6f2d">18&quot;, Shooting Spell</characteristic>
-        <characteristic name="Effect" typeId="3c7e-9119-98a7-b064">The target is blasted by a lightning bolt and takes Wounds equal to the Result of the Roll-off. These are not reduced by Armour but are reduced by Skills in the normal way.</characteristic>
-        <characteristic name="Ingredients" typeId="d202-4fda-9468-13bf">- Copper Strip: The target takes 2 extra Wounds.
-- Elf-bolt: The target takes 3 extra Wounds.</characteristic>
+        <characteristic name="Description" typeId="3a00-157a-a112-b946">Using sheer will, the caster unleashes a blast of energy, forcing an enemy away</characteristic>
+        <characteristic name="Difficulty" typeId="6827-4c1e-91ed-6fcc">4</characteristic>
+        <characteristic name="Range" typeId="b160-3959-b02a-6f2d">12&quot;, Shooting Spell</characteristic>
+        <characteristic name="Effect" typeId="3c7e-9119-98a7-b064">The target model is moved d6 inches directly away from the caster. If the model is pushed into an obstruction, such as a Terrain piece, they stop and suffer d6 wounds; these are reduced by Armour and Skills in the normal way. If the model is pushed into another model, they stop and both models suffer d6 Wounds; these are reduced by Armour and Skills in the normal way. If the model is pushed off a raised area, they will suffer falling damage in the normal way.
+
+
+If the casting model is at least 3&quot; higher up than the target model, reduce they distance they are pushed by 2&quot; and add 2 to any Wounds caused.</characteristic>
+        <characteristic name="Ingredients" typeId="d202-4fda-9468-13bf">- Dragonfly Wings: The target model is Pushed an extra 2&quot;, and any wounds caused by the spell are increased by 2.
+</characteristic>
         <characteristic name="Archetype" typeId="43c5-5138-7e39-d768">Natural</characteristic>
-        <characteristic name="Fate Point" typeId="543f-5b57-11a4-e45c">The caster may spend a Fate point to add +5 to the Cast Action Fortitude roll.</characteristic>
+        <characteristic name="Fate Point" typeId="543f-5b57-11a4-e45c">The caster may spend a Fate point to push the target model 2d6&quot; instead of d6&quot;, and increase any Wounds caused to 2d6.</characteristic>
       </characteristics>
     </profile>
     <profile hidden="false" id="f6a3-4e82-4a4c-9c3e" name="Push" typeId="3d26-fa01-dac8-537b" typeName="Spell">
