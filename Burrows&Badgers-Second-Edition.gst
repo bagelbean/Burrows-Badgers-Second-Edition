@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Westy" battleScribeVersion="2.03" id="sys-8e98-0f81-30ce-b579" library="false" name="Burrows &amp; Badgers: Second Edition" revision="3" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Westy" battleScribeVersion="2.03" id="sys-8e98-0f81-30ce-b579" library="false" name="Burrows &amp; Badgers: Second Edition" revision="4" type="gameSystem">
   <categoryEntries>
     <categoryEntry hidden="false" id="6803-87ba-83c4-bd4b" name="Small Beast (30mm Base)"/>
     <categoryEntry hidden="false" id="9ed2-8233-7200-924b" name="Medium Beast (30mm Base)"/>
@@ -5955,7 +5955,7 @@ casting Spells.</description>
                         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="8"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Healing potion" id="fd5d-c74b-e448-c5bc" hidden="false" type="profile" targetId="493f-7f3a-5647-c18e"/>
+                        <infoLink name="Healing Potion" id="fd5d-c74b-e448-c5bc" hidden="false" type="profile" targetId="493f-7f3a-5647-c18e"/>
                       </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Talisman" hidden="false" id="5c12-7c8a-c0c6-4218" sortIndex="0">
@@ -6198,7 +6198,7 @@ casting Spells.</description>
                         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Telescope" id="20d7-41cc-71cb-67cb" hidden="false" type="profile" targetId="f612-0117-52ca-45ec"/>
+                        <infoLink name="Dispel Scroll" id="16ef-9324-9c63-0e34" hidden="false" type="profile" targetId="4b3a-1beb-9e27-43f4"/>
                       </infoLinks>
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Cost (2d6+3)" hidden="false" id="52c2-6fb6-de53-603a">
@@ -10345,7 +10345,7 @@ casting Spells.</description>
                             <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
                           </costs>
                           <infoLinks>
-                            <infoLink name="Telescope" id="47b6-c102-83b6-042f" hidden="false" type="profile" targetId="f612-0117-52ca-45ec"/>
+                            <infoLink name="Dispel Scroll" id="1420-2e5b-5b5d-6a51" hidden="false" type="profile" targetId="4b3a-1beb-9e27-43f4"/>
                           </infoLinks>
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Cost (2d6+3)" hidden="false" id="f171-6167-aa17-c92e">
@@ -19071,7 +19071,7 @@ A single Magic-user may learn the Spell from the Tome; however, the Tome is dest
         <characteristic name="Type" typeId="f67c-4a22-9c29-7d45">Item</characteristic>
       </characteristics>
     </profile>
-    <profile name="Healing potion" typeId="dbe8-f061-170a-effa" typeName="Item" hidden="false" id="493f-7f3a-5647-c18e">
+    <profile name="Healing Potion" typeId="dbe8-f061-170a-effa" typeName="Item" hidden="false" id="493f-7f3a-5647-c18e">
       <characteristics>
         <characteristic name="Rarity" typeId="9486-096d-494d-29cd">Common</characteristic>
         <characteristic name="Availability" typeId="ea00-6e44-66df-77ec">-</characteristic>
