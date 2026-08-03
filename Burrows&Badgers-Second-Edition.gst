@@ -12617,7 +12617,7 @@ casting Spells.</description>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Strenght Skills" id="5e5a-5e19-6f8c-464e" hidden="false" sortIndex="4">
+                <selectionEntryGroup name="Strength Skills" id="5e5a-5e19-6f8c-464e" hidden="false" sortIndex="4">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Strong" hidden="false" id="2876-e50f-fc21-2a1e" sortIndex="1"/>
                     <selectionEntry type="upgrade" import="true" name="Tough" hidden="false" id="7cb0-670d-f3f3-93f7" sortIndex="2">
@@ -17033,7 +17033,7 @@ casting Spells.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Strenght Skills" id="4131-9b76-d724-3a4c" hidden="false" sortIndex="4">
+            <selectionEntryGroup name="Strength Skills" id="4131-9b76-d724-3a4c" hidden="false" sortIndex="4">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Strong" hidden="false" id="bea4-5ea9-b370-6a8c" sortIndex="1">
                   <constraints>
