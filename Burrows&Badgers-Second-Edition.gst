@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Westy" battleScribeVersion="2.03" id="sys-8e98-0f81-30ce-b579" library="false" name="Burrows &amp; Badgers: Second Edition" revision="2" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Westy" battleScribeVersion="2.03" id="sys-8e98-0f81-30ce-b579" library="false" name="Burrows &amp; Badgers: Second Edition" revision="3" type="gameSystem">
   <categoryEntries>
     <categoryEntry hidden="false" id="6803-87ba-83c4-bd4b" name="Small Beast (30mm Base)"/>
     <categoryEntry hidden="false" id="9ed2-8233-7200-924b" name="Medium Beast (30mm Base)"/>
@@ -1073,7 +1073,7 @@ casting Spells.</description>
             <characteristic name="Concealment" typeId="d4c0-ccdb-b645-bd70">d6</characteristic>
             <characteristic name="Awareness" typeId="e482-eed4-6daa-ca70">d6</characteristic>
             <characteristic name="Fortitude" typeId="c395-16b3-3435-da18">d6</characteristic>
-            <characteristic name="Presence" typeId="855b-25d5-4575-cabb">d6</characteristic>
+            <characteristic name="Presence" typeId="855b-25d5-4575-cabb">d8</characteristic>
             <characteristic name="Level" typeId="659a-f40f-dc29-33bf">2</characteristic>
           </characteristics>
         </profile>
