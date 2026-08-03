@@ -9793,7 +9793,7 @@ casting Spells.</description>
                     </selectionEntryGroup>
                     <selectionEntryGroup name="Items" id="225d-4155-d8f7-dab4" hidden="false" sortIndex="1" collapsible="true">
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Mages Puch" hidden="false" id="3aa2-3e71-33e4-2f55" sortIndex="0">
+                        <selectionEntry type="upgrade" import="true" name="Mage&apos;s Pouch" hidden="false" id="3aa2-3e71-33e4-2f55" sortIndex="0">
                           <selectionEntryGroups>
                             <selectionEntryGroup name="Ingredient" id="9ad2-de53-696f-c5fc" hidden="false">
                               <selectionEntries>
@@ -10035,6 +10035,16 @@ casting Spells.</description>
                                   </infoLinks>
                                   <costs>
                                     <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="3"/>
+                                  </costs>
+                                </selectionEntry>
+                                <selectionEntry type="upgrade" import="true" name="Blessed Water" hidden="false" id="9d89-b590-4dc0-8448">
+                                  <infoLinks>
+                                    <infoLink name="Blessed Water" id="fbde-ce5a-e928-20dc" hidden="false" type="profile" targetId="4343-8056-60fd-9ee5"/>
+                                  </infoLinks>
+                                  <costs>
+                                    <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="4"/>
+                                    <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+                                    <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
                                   </costs>
                                 </selectionEntry>
                               </selectionEntries>
