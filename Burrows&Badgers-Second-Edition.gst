@@ -172,7 +172,9 @@
       <alias>Fighting</alias>
     </rule>
     <rule hidden="false" id="f013" name="Zweihander">
-      <description>The model does not suffer the -2 penalty to Block rolls while using a Two-handed weapon.</description>
+      <description>This model has practiced long and hard with Two-handed Weapons and can wield them as if they were
+weightless. The model gains +1 to Strike rolls and does not suffer the -2 penalty to Block rolls, while using
+a Two-handed weapon.</description>
       <alias>Fighting</alias>
     </rule>
     <rule hidden="false" id="f014" name="Shield Bash">
