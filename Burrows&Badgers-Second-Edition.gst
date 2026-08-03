@@ -953,7 +953,7 @@ casting Spells.</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="20" field="6752-9e0b-692e-d5b9">
+        <modifier type="set" value="23" field="6752-9e0b-692e-d5b9">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1014,7 +1014,7 @@ casting Spells.</description>
         <entryLink import="true" name="Character" hidden="false" id="39c8-2da1-a9f4-907f" type="selectionEntryGroup" targetId="4240-559e-5c1d-4780"/>
       </entryLinks>
       <modifiers>
-        <modifier type="set" value="20" field="6752-9e0b-692e-d5b9">
+        <modifier type="set" value="21" field="6752-9e0b-692e-d5b9">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
