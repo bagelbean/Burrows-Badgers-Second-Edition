@@ -17444,7 +17444,7 @@ casting Spells.</description>
                   <modifiers>
                     <modifier type="add" value="5e57-4280-58a4-23d3" field="category"/>
                     <modifier type="increment" value="2" field="659a-f40f-dc29-33bf" affects="profiles.Unit" scope="root-entry"/>
-                    <modifier type="set" value="false" field="hidden">
+                    <modifier type="set" value="true" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
