@@ -14,7 +14,7 @@
         <categoryLink name="Den Upgrade" hidden="false" id="dd99-ff6f-0264-2db7" targetId="583b-2cca-fae6-9a19"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="increment" value="25" field="6752-9e0b-692e-d5b9" scope="roster" affects="recursive"/>
+        <modifier type="decrement" value="25" field="6752-9e0b-692e-d5b9" scope="roster" affects="recursive"/>
       </modifiers>
     </forceEntry>
   </forceEntries>
