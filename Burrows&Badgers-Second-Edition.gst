@@ -18109,6 +18109,10 @@ casting Spells.</description>
                       <infoLinks>
                         <infoLink name="Otherwordly" id="1b6e-d850-10c1-1d24" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
                       </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9b8-410b-6b5c-afc6-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9b8-410b-6b5c-afc6-max" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="5e72-0366-3900-53f9" sortIndex="11">
                       <infoLinks>
@@ -18129,6 +18133,10 @@ casting Spells.</description>
                       <infoLinks>
                         <infoLink name="Uncanny" id="7acf-b71a-214b-d5eb" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
                       </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b16-bb15-79ef-db55-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b16-bb15-79ef-db55-max" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Poisonous" hidden="false" id="cfc3-d865-8949-276b" sortIndex="13">
                       <infoLinks>
@@ -18138,10 +18146,6 @@ casting Spells.</description>
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <infoLinks>
-                <infoLink name="Otherwordly" id="efb2-65b7-8282-3e24" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
-                <infoLink name="Uncanny" id="f310-2838-b780-4a66" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
-              </infoLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
