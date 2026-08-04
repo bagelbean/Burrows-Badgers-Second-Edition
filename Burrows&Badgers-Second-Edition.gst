@@ -17435,9 +17435,19 @@ casting Spells.</description>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Stable Ghast" hidden="false" id="f696-7066-1891-0faa" sortIndex="1">
                   <profiles>
-                    <profile name="Stable Ghast" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="c47b-8619-c8bb-78e5">
+                    <profile name="Stable Ghast" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="c47b-8619-c8bb-78e5" noindex="false">
                       <characteristics>
                         <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This unit is a Stable Ghast.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Otherwordly" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8d19-ca71-ccbd-fb6b">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">When this model declares an Action and is within 12” of the Band’s Leader, then they perform their Action normally. When they declare an Action but are more than 12” away from the Band’s Leader, they must first roll their Fortitude on the following table. If they are more than 18” from the Leader, or if the Leader has been taken Out of Action, then they roll a d6 on this table instead. Mist Ghasts may add +1 to the roll for every other Mist Ghast model within 6”, up to a maximum of +3.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Uncanny" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8d68-bc47-e95d-f90e">
+                      <characteristics>
+                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">Uncanny models are strange and unsettling, and cause feelings of panic and horror. Any model making an Action within 6” of an Uncanny model must first make a Fortitude Roll-off. The Difficulty to be rolled against is the total number of enemy Uncanny models within 6”. If the Roll-off is a success, the model may act normally. If it is failed, the model takes a -2 penalty to all Roll-offs for the rest of the Turn.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -18140,10 +18150,6 @@ casting Spells.</description>
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <infoLinks>
-            <infoLink name="Otherwordly" id="67bd-1c6f-2d03-6b4f" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
-            <infoLink name="Uncanny" id="5dcc-3c22-2f74-5670" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
-          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
