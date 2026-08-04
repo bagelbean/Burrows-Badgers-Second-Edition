@@ -18109,10 +18109,6 @@ casting Spells.</description>
                       <infoLinks>
                         <infoLink name="Otherwordly" id="1b6e-d850-10c1-1d24" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
                       </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10f2-e658-44ee-3576"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5048-d1b0-7111-ef44"/>
-                      </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="5e72-0366-3900-53f9" sortIndex="11">
                       <infoLinks>
@@ -18133,10 +18129,6 @@ casting Spells.</description>
                       <infoLinks>
                         <infoLink name="Uncanny" id="7acf-b71a-214b-d5eb" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
                       </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fd3-4141-b5de-3ffa"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45ef-b1ab-85fc-8747"/>
-                      </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Poisonous" hidden="false" id="cfc3-d865-8949-276b" sortIndex="13">
                       <infoLinks>
@@ -18147,7 +18139,11 @@ casting Spells.</description>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Skill" id="8eba-56fd-86ae-c691" hidden="true" collapsible="true">
+            <selectionEntryGroup name="Innate Skills" id="8eba-56fd-86ae-c691" hidden="true" collapsible="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a46c-1e76-338e-5576"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cb4-c28c-7c08-d590"/>
+              </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
@@ -18168,18 +18164,28 @@ casting Spells.</description>
                         <infoLink name="Otherwordly" id="0aa1-df16-c169-0a4d" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c88-fd6f-03f1-5804"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9c8-e7cb-29f3-8866"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c88-fd6f-03f1-5804-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c88-fd6f-03f1-5804-max"/>
                       </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="c465-50ef-5960-931f" sortIndex="11">
+                      <infoLinks>
+                        <infoLink name="Unreliable" id="6605-fff5-7a02-40db" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Uncanny" hidden="false" id="158c-a054-df57-1462" sortIndex="2">
                       <infoLinks>
                         <infoLink name="Uncanny" id="15db-cd28-975c-7eab" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a17a-b948-7614-07b0"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75bf-8640-c2d4-424c"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a17a-b948-7614-07b0-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a17a-b948-7614-07b0-max"/>
                       </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Poisonous" hidden="false" id="4f25-0c10-a3c4-d1b7" sortIndex="13">
+                      <infoLinks>
+                        <infoLink name="Poisonous" id="2dbc-aa0e-2ff5-85ad" hidden="false" targetId="e9b4-4f2d-4a8b-92f1" type="rule"/>
+                      </infoLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
