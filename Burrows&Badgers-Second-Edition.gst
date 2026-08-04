@@ -17459,10 +17459,6 @@ casting Spells.</description>
                     <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
                     <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
                   </costs>
-                  <infoLinks>
-                    <infoLink name="Otherwordly" id="109f-0299-62c6-3638" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
-                    <infoLink name="Uncanny" id="6077-e30e-de4d-60e8" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
-                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -18142,6 +18138,10 @@ casting Spells.</description>
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Otherwordly" id="efb2-65b7-8282-3e24" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
+                <infoLink name="Uncanny" id="f310-2838-b780-4a66" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
+              </infoLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
