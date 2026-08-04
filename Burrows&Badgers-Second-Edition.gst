@@ -18139,37 +18139,11 @@ casting Spells.</description>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Innate Skills" id="8eba-56fd-86ae-c691" hidden="true" collapsible="true">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="f696-7066-1891-0faa" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="fab4-46d3-0d96-75e0" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Innate Skills" id="79c7-abbc-7b64-cba1" hidden="false" sortIndex="6">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Otherwordly" hidden="false" id="285e-d649-f2d7-b6e5" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Otherwordly" id="0aa1-df16-c169-0a4d" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Uncanny" hidden="false" id="158c-a054-df57-1462" sortIndex="2">
-                      <infoLinks>
-                        <infoLink name="Uncanny" id="15db-cd28-975c-7eab" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
           </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Otherwordly" id="67bd-1c6f-2d03-6b4f" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
+            <infoLink name="Uncanny" id="5dcc-3c22-2f74-5670" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
+          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
