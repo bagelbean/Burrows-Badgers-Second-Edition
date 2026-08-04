@@ -17658,7 +17658,7 @@ casting Spells.</description>
             <selectionEntryGroup name="Skill" id="262b-b94f-deae-12ba" hidden="true" collapsible="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cf8-e132-1d9e-f1d2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d945-47f2-2846-690c"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d945-47f2-2846-690c"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
