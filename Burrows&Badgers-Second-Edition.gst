@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Westy" battleScribeVersion="2.03" id="sys-8e98-0f81-30ce-b579" library="false" name="Burrows &amp; Badgers: Second Edition" revision="4" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Westy" battleScribeVersion="2.03" id="sys-8e98-0f81-30ce-b579" library="false" name="Burrows &amp; Badgers: Second Edition" revision="5" type="gameSystem">
   <categoryEntries>
     <categoryEntry hidden="false" id="6803-87ba-83c4-bd4b" name="Small Beast (30mm Base)"/>
     <categoryEntry hidden="false" id="9ed2-8233-7200-924b" name="Medium Beast (30mm Base)"/>
@@ -2475,7 +2475,7 @@ casting Spells.</description>
                             </selectionEntry>
                             <selectionEntry type="upgrade" import="true" name="Push" hidden="false" id="59d8-1490-435d-f58d" collective="true" sortIndex="6">
                               <infoLinks>
-                                <infoLink name="Push" id="c52e-0d4d-51b9-7d6c" hidden="false" targetId="e7d2-4c6f-4a9b-b3f5" type="profile"/>
+                                <infoLink name="Push" id="c52e-0d4d-51b9-7d6c" hidden="false" targetId="f6a3-4e82-4a4c-9c3e" type="profile"/>
                                 <infoLink name="Weak" id="e8f0-ce48-0eee-51ef" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
                                 <infoLink name="Delicate" id="694a-d2d3-8593-9be8" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
                               </infoLinks>
@@ -10105,7 +10105,7 @@ casting Spells.</description>
                             <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="8"/>
                           </costs>
                           <infoLinks>
-                            <infoLink name="Healing potion" id="2c19-69bc-840b-32d3" hidden="false" type="profile" targetId="493f-7f3a-5647-c18e"/>
+                            <infoLink name="Healing Potion" id="2c19-69bc-840b-32d3" hidden="false" type="profile" targetId="493f-7f3a-5647-c18e"/>
                           </infoLinks>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Talisman" hidden="false" id="f233-2da9-5726-3e22" sortIndex="0">
@@ -18384,16 +18384,13 @@ possible.</characteristic>
     <profile hidden="false" id="e7d2-4c6f-4a9b-b3f5" name="Lightning" typeId="3d26-fa01-dac8-537b" typeName="Spell">
       <characteristics>
         <characteristic name="Description" typeId="3a00-157a-a112-b946">Using sheer will, the caster unleashes a blast of energy, forcing an enemy away</characteristic>
-        <characteristic name="Difficulty" typeId="6827-4c1e-91ed-6fcc">4</characteristic>
-        <characteristic name="Range" typeId="b160-3959-b02a-6f2d">12&quot;, Shooting Spell</characteristic>
-        <characteristic name="Effect" typeId="3c7e-9119-98a7-b064">The target model is moved d6 inches directly away from the caster. If the model is pushed into an obstruction, such as a Terrain piece, they stop and suffer d6 wounds; these are reduced by Armour and Skills in the normal way. If the model is pushed into another model, they stop and both models suffer d6 Wounds; these are reduced by Armour and Skills in the normal way. If the model is pushed off a raised area, they will suffer falling damage in the normal way.
-
-
-If the casting model is at least 3&quot; higher up than the target model, reduce they distance they are pushed by 2&quot; and add 2 to any Wounds caused.</characteristic>
-        <characteristic name="Ingredients" typeId="d202-4fda-9468-13bf">- Dragonfly Wings: The target model is Pushed an extra 2&quot;, and any wounds caused by the spell are increased by 2.
-</characteristic>
+        <characteristic name="Difficulty" typeId="6827-4c1e-91ed-6fcc">2</characteristic>
+        <characteristic name="Range" typeId="b160-3959-b02a-6f2d">18&quot;, Shooting Spell</characteristic>
+        <characteristic name="Effect" typeId="3c7e-9119-98a7-b064">The target is blasted by a lightning bolt and takes Wounds equal to the Result of the Roll-off.  These are not reduced by Armour but are reduced by Skills in the normal way.</characteristic>
+        <characteristic name="Ingredients" typeId="d202-4fda-9468-13bf">- Copper Strip: The target takes 2 extra wounds.
+- Elf-bolt: The target takes 3 extra wounds.</characteristic>
         <characteristic name="Archetype" typeId="43c5-5138-7e39-d768">Natural</characteristic>
-        <characteristic name="Fate Point" typeId="543f-5b57-11a4-e45c">The caster may spend a Fate point to push the target model 2d6&quot; instead of d6&quot;, and increase any Wounds caused to 2d6.</characteristic>
+        <characteristic name="Fate Point" typeId="543f-5b57-11a4-e45c">The caster may spend a Fate point to add +5 to the Cast Action Fortitude roll.</characteristic>
       </characteristics>
     </profile>
     <profile hidden="false" id="f6a3-4e82-4a4c-9c3e" name="Push" typeId="3d26-fa01-dac8-537b" typeName="Spell">
