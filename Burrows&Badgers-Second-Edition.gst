@@ -17657,8 +17657,8 @@ casting Spells.</description>
             </selectionEntryGroup>
             <selectionEntryGroup name="Skill" id="262b-b94f-deae-12ba" hidden="true" collapsible="true">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cf8-e132-1d9e-f1d2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d945-47f2-2846-690c"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2cf8-e132-1d9e-f1d2"/>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d945-47f2-2846-690c"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -18110,8 +18110,8 @@ casting Spells.</description>
                         <infoLink name="Otherwordly" id="1b6e-d850-10c1-1d24" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9b8-410b-6b5c-afc6-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9b8-410b-6b5c-afc6-max" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10f2-e658-44ee-3576"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5048-d1b0-7111-ef44"/>
                       </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="5e72-0366-3900-53f9" sortIndex="11">
@@ -18134,8 +18134,8 @@ casting Spells.</description>
                         <infoLink name="Uncanny" id="7acf-b71a-214b-d5eb" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
                       </infoLinks>
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b16-bb15-79ef-db55-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b16-bb15-79ef-db55-max" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fd3-4141-b5de-3ffa"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45ef-b1ab-85fc-8747"/>
                       </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Poisonous" hidden="false" id="cfc3-d865-8949-276b" sortIndex="13">
