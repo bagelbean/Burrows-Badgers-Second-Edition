@@ -2410,7 +2410,7 @@ casting Spells.</description>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Character" id="4240-559e-5c1d-4780" hidden="false" collective="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Magic" id="05f1-11ff-c43f-4767" hidden="false" sortIndex="2" collapsible="true">
+        <selectionEntryGroup name="Magic" id="05f1-11ff-c43f-4767" hidden="false" sortIndex="4" collapsible="true">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Magic User" hidden="false" id="8b25-3c74-21b1-6d41">
               <constraints>
@@ -3738,7 +3738,7 @@ casting Spells.</description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="4" collapsible="true">
+        <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="5" collapsible="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapon Slots" id="a8fe-e715-a6b2-2fa5" hidden="false" collective="true" collapsible="true" sortIndex="1">
               <selectionEntries>
@@ -12816,7 +12816,7 @@ casting Spells.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Statistic Upgrades" id="2dae-1fed-54e7-cadb" hidden="true" sortIndex="2" flatten="false">
+        <selectionEntryGroup name="Statistic Upgrades" id="2dae-1fed-54e7-cadb" hidden="true" sortIndex="3" flatten="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="First Statistic Upgrade" id="7664-96b5-cd61-14a4" hidden="false" collapsible="true" collective="true" flatten="false" sortIndex="1">
               <selectionEntries>
@@ -17429,7 +17429,7 @@ casting Spells.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Stable Ghast" id="313a-ca3d-afe4-4e92" hidden="false" collapsible="true" flatten="false">
+        <selectionEntryGroup name="Stable Ghast" id="313a-ca3d-afe4-4e92" hidden="false" collapsible="true" flatten="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="Rank" id="c2a3-781a-85ad-998c" hidden="false">
               <selectionEntries>
@@ -17448,7 +17448,7 @@ casting Spells.</description>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
