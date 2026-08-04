@@ -17442,7 +17442,16 @@ casting Spells.</description>
                     </profile>
                     <profile name="Otherwordly" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8d19-ca71-ccbd-fb6b">
                       <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">When this model declares an Action and is within 12” of the Band’s Leader, then they perform their Action normally. When they declare an Action but are more than 12” away from the Band’s Leader, they must first roll their Fortitude on the following table. If they are more than 18” from the Leader, or if the Leader has been taken Out of Action, then they roll a d6 on this table instead. Mist Ghasts may add +1 to the roll for every other Mist Ghast model within 6”, up to a maximum of +3.</characteristic>
+                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">When this model declares an Action and is within 12” of the Band’s Leader, then they perform their Action normally. When they declare an Action but are more than 12” away from the Band’s Leader, they must first roll their Fortitude on the following table. If they are more than 18” from the Leader, or if the Leader has been taken Out of Action, then they roll a d6 on this table instead. Mist Ghasts may add +1 to the roll for every other Mist Ghast model within 6”, up to a maximum of +3.
+
+Stable Ghasts always add +1 to the roll.
+
+Otherworldly Table:
+1   Fade Away: The model&apos;s connection to the material world is severed.  The model goes Out of Action; however, it does not cross any additional Wound boxes off.
+2   Catatonia: The model loses control of itself.  The model gains the Condition &apos;Paralysed&apos; for the rest of the Turn.
+3   Confusion: The model wanders randomly.  Roll a d8 and move the model a number of inches equal to the dice roll in the direction that the tip of the dice points.  If, at any point, they reach Base Contact with another model or Terrain               piece, they stop.  If they reach Base Contract with an enemy model, they may make one Attack Action, then their activation ends.
+4   Unsure: The model may act normally but receives the Condition &apos;Stunned&apos; for the rest of this Turn.
+5+ No Effect: The model may act normally.</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Uncanny" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8d68-bc47-e95d-f90e">
