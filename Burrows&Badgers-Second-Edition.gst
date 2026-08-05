@@ -3737,6 +3737,16 @@ casting Spells.</description>
               </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2502-93f9-f116-c86e"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="A Stable Ghast cannot use magic." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="false" childName="Stable Ghast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="5" collapsible="true">
           <selectionEntryGroups>
@@ -17456,7 +17466,9 @@ Otherworldly Table:
                       <modifiers>
                         <modifier type="set" value="true" field="hidden">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8fa1-283a-2134-c1ea" shared="true" childName="Leader"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8fa1-283a-2134-c1ea" shared="true" childName="Leader">
+                              <comment>If the Stable Ghast is the Leader, they do not have &quot;Otherworldly&quot;</comment>
+                            </condition>
                           </conditions>
                         </modifier>
                       </modifiers>
