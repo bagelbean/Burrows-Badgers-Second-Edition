@@ -3795,6 +3795,9 @@ casting Spells.</description>
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="d780-f6dc-dc29-1ff8" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="643d-87c3-c98b-5ab5" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
+                <condition type="equalTo" value="0" field="selections" scope="5e57-4280-58a4-23d3" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
