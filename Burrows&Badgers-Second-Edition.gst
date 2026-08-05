@@ -3794,10 +3794,10 @@ casting Spells.</description>
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="f2c3-4a6b-49d2-b8ec" shared="true" includeChildSelections="true" childName="Mist Ghast (Massive)" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="d780-f6dc-dc29-1ff8" childId="f5b4-4d32-4f3d-93a2" shared="true" includeChildSelections="true" childName="Mist Ghast (Large)" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="643d-87c3-c98b-5ab5" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="true" childName="Mist Ghast (Small/ Medium)" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="5e57-4280-58a4-23d3" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="true" childName="Stable Ghast" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="d780-f6dc-dc29-1ff8" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="643d-87c3-c98b-5ab5" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="5e57-4280-58a4-23d3" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
