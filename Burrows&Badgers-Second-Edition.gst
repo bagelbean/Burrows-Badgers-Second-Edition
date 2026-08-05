@@ -17553,6 +17553,17 @@ Otherworldly Table:
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="Upgrade" id="a4ee-d4de-d276-3887" hidden="true" collapsible="true" collective="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="f696-7066-1891-0faa" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Upgrade Movement" hidden="false" id="5dbc-6404-b529-88fe" collective="true" sortIndex="1">
                   <modifiers>
@@ -17742,7 +17753,6 @@ Otherworldly Table:
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="f696-7066-1891-0faa" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="fab4-46d3-0d96-75e0" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
