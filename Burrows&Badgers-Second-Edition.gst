@@ -18229,7 +18229,7 @@ Otherworldly Table:
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="643d-87c3-c98b-5ab5" shared="true" childName="self" includeChildSelections="false" includeChildForces="false" childId="self"/>
+                <condition type="equalTo" value="1" field="selections" scope="643d-87c3-c98b-5ab5" shared="true" childName="self" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
