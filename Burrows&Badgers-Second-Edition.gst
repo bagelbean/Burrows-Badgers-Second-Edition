@@ -18229,17 +18229,17 @@ Otherworldly Table:
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="643d-87c3-c98b-5ab5" childId="self" shared="true" includeChildSelections="false" childName="self"/>
+                <condition type="instanceOf" value="1" field="selections" scope="643d-87c3-c98b-5ab5" childId="self" shared="true" includeChildSelections="true" childName="self"/>
               </conditions>
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="d780-f6dc-dc29-1ff8" childId="self" shared="true" includeChildSelections="false" childName="self"/>
+                <condition type="instanceOf" value="1" field="selections" scope="d780-f6dc-dc29-1ff8" childId="self" shared="true" includeChildSelections="true" childName="self"/>
               </conditions>
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="self" shared="true" includeChildSelections="false" childName="self"/>
+                <condition type="instanceOf" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="self" shared="true" includeChildSelections="true" childName="self"/>
               </conditions>
             </modifier>
           </modifiers>
