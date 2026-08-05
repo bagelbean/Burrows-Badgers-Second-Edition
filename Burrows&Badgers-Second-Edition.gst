@@ -3781,8 +3781,6 @@ casting Spells.</description>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" childName="Magic User"/>
                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="f5b4-4d32-4f3d-93a2" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="f2c3-4a6b-49d2-b8ec" shared="true" includeChildSelections="false" childName="Mist Ghast (Massive)"/>
               </conditions>
             </modifier>
           </modifiers>
