@@ -17453,6 +17453,13 @@ Otherworldly Table:
 4   Unsure: The model may act normally but receives the Condition &apos;Stunned&apos; for the rest of this Turn.
 5+ No Effect: The model may act normally.</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8fa1-283a-2134-c1ea" shared="true" childName="Leader"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                     <profile name="Uncanny" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8d68-bc47-e95d-f90e">
                       <characteristics>
