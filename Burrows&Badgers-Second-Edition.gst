@@ -18229,7 +18229,7 @@ Otherworldly Table:
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" shared="true" childName="Mist Ghast (Small/ Medium)" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="643d-87c3-c98b-5ab5" shared="true" childName="self" includeChildSelections="false" includeChildForces="false" childId="self"/>
               </conditions>
             </modifier>
           </modifiers>
