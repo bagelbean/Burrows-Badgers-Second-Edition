@@ -3211,11 +3211,11 @@ casting Spells.</description>
                         </modifier>
                       </modifiers>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Feate-weaving" hidden="true" id="cb1a-df23-90e8-a629">
+                    <selectionEntry type="upgrade" import="true" name="Fate-weaving" hidden="true" id="cb1a-df23-90e8-a629">
                       <profiles>
-                        <profile name="Magic User: Feate-weaving" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8289-de56-3616-171d">
+                        <profile name="Magic User: Fate-weaving" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8289-de56-3616-171d">
                           <characteristics>
-                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This character knows the magical archetype: Feate-weaving. Fate-weaving Magic is Presence-based and Cast Roll-Offs are made using the caster’s Presence Stat.</characteristic>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This character knows the magical archetype: Fate-weaving. Fate-weaving Magic is Presence-based and Cast Roll-Offs are made using the caster’s Presence Stat.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3223,7 +3223,7 @@ casting Spells.</description>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="802c-11f1-64a5-8dcc"/>
                       </constraints>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Feate-weaving Spells" id="a403-50ab-b27b-67a1" hidden="false" collective="true">
+                        <selectionEntryGroup name="Fate-weaving Spells" id="a403-50ab-b27b-67a1" hidden="false" collective="true">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Fates Twist" hidden="false" id="ffe0-f83d-7bb0-bdcd" collective="true" sortIndex="1">
                               <infoLinks>
@@ -3316,66 +3316,66 @@ casting Spells.</description>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0983-c9a0-4eeb-6081"/>
                       </constraints>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Illusionism Spells" id="c682-c963-9a8a-f655" hidden="false" collective="true">
+                        <selectionEntryGroup name="Illusionism Spells" id="a11a-ab49-0edb-0cee" hidden="false" collective="true">
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Lure of Gold" hidden="false" id="9560-4730-2715-e1e6" collective="true" sortIndex="1">
+                            <selectionEntry type="upgrade" import="true" name="Lure of Gold" hidden="false" id="e1f0-b801-e5dc-a3bf" collective="true" sortIndex="1">
                               <infoLinks>
-                                <infoLink name="Lure of Gold" id="e479-a6cb-d52c-9ca9" hidden="false" targetId="a5e2-4b7d-4d3a-b8f4" type="profile"/>
-                                <infoLink name="Weak" id="9924-5fe3-05c9-dd15" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                <infoLink name="Delicate" id="0ce4-3c76-e596-8d34" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
+                                <infoLink name="Lure of Gold" id="43ce-713f-cc36-df44" hidden="false" targetId="a5e2-4b7d-4d3a-b8f4" type="profile"/>
+                                <infoLink name="Weak" id="59d5-bb91-5aca-e59b" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
+                                <infoLink name="Delicate" id="537c-7e51-7c73-ad10" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
                               </infoLinks>
                               <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="094f-9800-3354-dfc4"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9536-2ca7-64e5-37d4"/>
                               </constraints>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Swarms" hidden="false" id="1b9e-8fe8-a93d-2fb0" collective="true" sortIndex="2">
+                            <selectionEntry type="upgrade" import="true" name="Swarms" hidden="false" id="8944-9bbb-02e3-2392" collective="true" sortIndex="2">
                               <infoLinks>
-                                <infoLink name="Swarms" id="9943-842b-03f4-3d05" hidden="false" targetId="b7e5-4a9f-4e3d-b7d1" type="profile"/>
-                                <infoLink name="Weak" id="13a0-5500-8cb7-9676" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                <infoLink name="Delicate" id="daf6-3a27-7902-9a75" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
+                                <infoLink name="Swarms" id="9607-eafe-eafd-3e9f" hidden="false" targetId="b7e5-4a9f-4e3d-b7d1" type="profile"/>
+                                <infoLink name="Weak" id="9c83-826f-55e2-3918" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
+                                <infoLink name="Delicate" id="446a-7cbb-334e-580d" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
                               </infoLinks>
                               <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4113-da41-a42c-b48e"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1190-c805-4a25-04f4"/>
                               </constraints>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Terrify" hidden="false" id="eecd-8961-f65f-cfb7" collective="true" sortIndex="3">
+                            <selectionEntry type="upgrade" import="true" name="Terrify" hidden="false" id="0135-cab2-ab06-30bc" collective="true" sortIndex="3">
                               <infoLinks>
-                                <infoLink name="Terrify" id="6cd4-3c08-ffac-539c" hidden="false" targetId="c9e4-4b8f-4f6b-b9a2" type="profile"/>
-                                <infoLink name="Weak" id="94fb-1702-a405-c160" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                <infoLink name="Delicate" id="e0da-70f5-c8b0-94bb" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
+                                <infoLink name="Terrify" id="ff92-fe4f-5d5a-d430" hidden="false" targetId="c9e4-4b8f-4f6b-b9a2" type="profile"/>
+                                <infoLink name="Weak" id="574e-7c26-6ff4-997f" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
+                                <infoLink name="Delicate" id="517e-5b70-5158-3bd5" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
                               </infoLinks>
                               <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08e8-005c-e935-becf"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4534-4f54-26fd-63cf"/>
                               </constraints>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Mortal Wound" hidden="false" id="8408-1a2a-1aba-7278" collective="true" sortIndex="4">
+                            <selectionEntry type="upgrade" import="true" name="Mortal Wound" hidden="false" id="4091-9eff-67b8-b02a" collective="true" sortIndex="4">
                               <infoLinks>
-                                <infoLink name="Delicate" id="7b05-34a0-5d0a-96f9" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
-                                <infoLink name="Weak" id="d127-95d9-6701-5eba" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                <infoLink name="Mortal Wound" id="24fc-6540-8f23-3434" hidden="false" targetId="d7e4-4b9f-4c3a-b8f2" type="profile"/>
+                                <infoLink name="Delicate" id="a4bd-974e-c3c4-d0ea" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
+                                <infoLink name="Weak" id="c8ff-b79b-982b-850f" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
+                                <infoLink name="Mortal Wound" id="88a6-5878-832b-35db" hidden="false" targetId="d7e4-4b9f-4c3a-b8f2" type="profile"/>
                               </infoLinks>
                               <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdc9-5ed8-270e-1cb1"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9e9-dd71-0c13-2967"/>
                               </constraints>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Duplicate" hidden="false" id="01b6-bf75-66a8-583c" collective="true" sortIndex="5">
+                            <selectionEntry type="upgrade" import="true" name="Duplicate" hidden="false" id="cbef-f03e-20b0-67b2" collective="true" sortIndex="5">
                               <infoLinks>
-                                <infoLink name="Duplicate" id="ecb3-afb8-f056-4c60" hidden="false" targetId="b8f5-4a3d-4e1a-b9d6" type="profile"/>
-                                <infoLink name="Weak" id="e7e9-5fa1-66ad-cc70" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                <infoLink name="Delicate" id="7556-5437-d13a-9186" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
+                                <infoLink name="Duplicate" id="ab75-3ab9-23ab-fc23" hidden="false" targetId="b8f5-4a3d-4e1a-b9d6" type="profile"/>
+                                <infoLink name="Weak" id="ebc6-4ac4-0018-9eac" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
+                                <infoLink name="Delicate" id="62ff-b7cf-e896-002a" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
                               </infoLinks>
                               <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b07-50a7-180d-0e96"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d90-2356-c9e9-a8df"/>
                               </constraints>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Friend or Foe" hidden="false" id="eb96-102e-038a-ec62" collective="true" sortIndex="6">
+                            <selectionEntry type="upgrade" import="true" name="Friend or Foe" hidden="false" id="fc8c-7322-dc63-dd45" collective="true" sortIndex="6">
                               <infoLinks>
-                                <infoLink name="Delicate" id="5d40-c37e-d6aa-6c4f" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
-                                <infoLink name="Weak" id="8a80-8cff-e59a-2f69" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                <infoLink name="Friend or Foe" id="4b42-69eb-9d9b-ac8d" hidden="false" targetId="c9e6-4f7b-4b8f-b8a3" type="profile"/>
+                                <infoLink name="Delicate" id="c224-ff7d-414e-8da8" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
+                                <infoLink name="Weak" id="ccc8-6087-e278-03e4" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
+                                <infoLink name="Friend or Foe" id="218a-49b8-d2e2-4b1a" hidden="false" targetId="c9e6-4f7b-4b8f-b8a3" type="profile"/>
                               </infoLinks>
                               <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac16-3a69-59f0-75f8"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c1a-3af9-3fd2-0e07"/>
                               </constraints>
                             </selectionEntry>
                           </selectionEntries>
@@ -3396,98 +3396,7 @@ casting Spells.</description>
                         </modifier>
                       </modifiers>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Illusionism" hidden="true" id="4545-1d15-5e31-35da">
-                          <profiles>
-                            <profile name="Magic User: Illusionism" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="ac88-77f9-8bda-d3a5">
-                              <characteristics>
-                                <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This character knows the magical archetype: Illusionism. Illusionist Magic is Presence-based and Cast Roll-Offs are made using the caster’s Presence Stat.</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8282-0940-ceab-e30d"/>
-                          </constraints>
-                          <selectionEntryGroups>
-                            <selectionEntryGroup name="Illusionism Spells" id="4004-f0ec-e838-39f0" hidden="false" collective="true">
-                              <selectionEntries>
-                                <selectionEntry type="upgrade" import="true" name="Lure of Gold" hidden="false" id="aadf-d930-17db-2958" collective="true" sortIndex="1">
-                                  <infoLinks>
-                                    <infoLink name="Lure of Gold" id="81ce-59fa-4238-da5d" hidden="false" targetId="a5e2-4b7d-4d3a-b8f4" type="profile"/>
-                                    <infoLink name="Weak" id="c894-5a52-f429-89ce" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                    <infoLink name="Delicate" id="12aa-9738-a0cb-b4d7" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
-                                  </infoLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80b3-4627-6a47-a006"/>
-                                  </constraints>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="Swarms" hidden="false" id="5807-22a3-e9ed-8088" collective="true" sortIndex="2">
-                                  <infoLinks>
-                                    <infoLink name="Swarms" id="e58a-ad33-ac8a-56dd" hidden="false" targetId="b7e5-4a9f-4e3d-b7d1" type="profile"/>
-                                    <infoLink name="Weak" id="640f-1600-05e8-0b0f" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                    <infoLink name="Delicate" id="0481-44ca-c1c6-33f1" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
-                                  </infoLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29fb-3fbd-eff9-9cbe"/>
-                                  </constraints>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="Terrify" hidden="false" id="d3f1-2403-d8e8-91c3" collective="true" sortIndex="3">
-                                  <infoLinks>
-                                    <infoLink name="Terrify" id="1d02-237c-4d09-44d3" hidden="false" targetId="c9e4-4b8f-4f6b-b9a2" type="profile"/>
-                                    <infoLink name="Weak" id="18f9-11f2-510b-bd54" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                    <infoLink name="Delicate" id="44db-da04-f669-898f" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
-                                  </infoLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9042-9111-630c-75f9"/>
-                                  </constraints>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="Mortal Wound" hidden="false" id="0133-ed28-e3e8-e741" collective="true" sortIndex="4">
-                                  <infoLinks>
-                                    <infoLink name="Delicate" id="39bf-c425-7b55-6521" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
-                                    <infoLink name="Weak" id="e03d-4be9-0172-3bda" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                    <infoLink name="Mortal Wound" id="4dd3-76e4-dbbe-6124" hidden="false" targetId="d7e4-4b9f-4c3a-b8f2" type="profile"/>
-                                  </infoLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a66a-2679-a38e-be40"/>
-                                  </constraints>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="Duplicate" hidden="false" id="7316-2d5a-a5d3-48c5" collective="true" sortIndex="5">
-                                  <infoLinks>
-                                    <infoLink name="Duplicate" id="86e6-3a86-f54b-77e2" hidden="false" targetId="b8f5-4a3d-4e1a-b9d6" type="profile"/>
-                                    <infoLink name="Weak" id="5e40-daab-f877-0e36" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                    <infoLink name="Delicate" id="4047-2cef-09d9-802a" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
-                                  </infoLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af99-ff27-ae7a-a128"/>
-                                  </constraints>
-                                </selectionEntry>
-                                <selectionEntry type="upgrade" import="true" name="Friend or Foe" hidden="false" id="abae-79a9-d3fc-2566" collective="true" sortIndex="6">
-                                  <infoLinks>
-                                    <infoLink name="Delicate" id="187b-29f7-35d9-245b" hidden="false" targetId="1587-89e8-db20-dd5e" type="profile"/>
-                                    <infoLink name="Weak" id="bfc0-80f2-1595-df6d" hidden="false" targetId="1287-15af-a0b2-cc20" type="profile"/>
-                                    <infoLink name="Friend or Foe" id="2c15-b8a8-3028-296b" hidden="false" targetId="c9e6-4f7b-4b8f-b8a3" type="profile"/>
-                                  </infoLinks>
-                                  <constraints>
-                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd1d-00e4-994d-c1e8"/>
-                                  </constraints>
-                                </selectionEntry>
-                              </selectionEntries>
-                            </selectionEntryGroup>
-                          </selectionEntryGroups>
-                          <modifiers>
-                            <modifier type="set" value="false" field="hidden">
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="cee3-9887-9ffb-1cae" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="50ec-2aab-28b0-12e1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="6a58-ff86-c0ab-c418" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="10da-69cb-5d7f-adb3" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </modifier>
-                          </modifiers>
-                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Illusionism" hidden="true" id="4545-1d15-5e31-35da"/>
                       </selectionEntries>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Elementalism" hidden="true" id="804d-a452-0fb6-721d">
