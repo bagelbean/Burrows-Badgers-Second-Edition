@@ -3703,7 +3703,7 @@ casting Spells.</description>
             </modifier>
             <modifier type="set" value="false" field="hidden" affects="self.entries">
               <conditionGroups>
-                <conditionGroup type="not">
+                <conditionGroup type="equal">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mist Ghast (Small/ Medium)"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="f5b4-4d32-4f3d-93a2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mist Ghast (Large)"/>
