@@ -18232,6 +18232,7 @@ Otherworldly Table:
                 <condition type="instanceOf" value="1" field="selections" scope="643d-87c3-c98b-5ab5" childId="self" shared="true" includeChildSelections="true" childName="self"/>
                 <condition type="instanceOf" value="1" field="selections" scope="d780-f6dc-dc29-1ff8" childId="self" shared="true" includeChildSelections="true" childName="self"/>
                 <condition type="instanceOf" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="self" shared="true" includeChildSelections="true" childName="self"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or"/>
