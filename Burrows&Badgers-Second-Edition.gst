@@ -18226,9 +18226,6 @@ Otherworldly Table:
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden" scope="643d-87c3-c98b-5ab5"/>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
