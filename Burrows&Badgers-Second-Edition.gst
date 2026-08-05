@@ -3737,9 +3737,6 @@ casting Spells.</description>
               </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2502-93f9-f116-c86e"/>
-          </constraints>
           <modifiers>
             <modifier type="add" value="A Stable Ghast cannot use magic." field="error">
               <conditions>
