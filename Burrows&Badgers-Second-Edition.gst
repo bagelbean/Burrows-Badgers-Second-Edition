@@ -3792,9 +3792,6 @@ casting Spells.</description>
                 <condition type="atLeast" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="true" field="hidden" affects="683d-6982-d6c8-8367"/>
-            <modifier type="set" value="true" field="hidden" affects="f5b4-4d32-4f3d-93a2"/>
-            <modifier type="set" value="true" field="hidden" affects="f2c3-4a6b-49d2-b8ec"/>
           </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="5" collapsible="true">
@@ -11883,6 +11880,17 @@ casting Spells.</description>
                           <infoLinks>
                             <infoLink name="Broadhead arrows" id="5470-8256-1cab-def4" hidden="false" type="profile" targetId="8a82-636c-7a09-539e"/>
                           </infoLinks>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Piece (1 Penny each)" hidden="false" id="3273-dd7d-7195-f6dd">
+                              <modifiers>
+                                <modifier type="increment" value="1" field="6752-9e0b-692e-d5b9" scope="parent">
+                                  <repeats>
+                                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="3273-dd7d-7195-f6dd" shared="true" roundUp="false"/>
+                                  </repeats>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                          </selectionEntries>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Led slingshot" hidden="false" id="4878-0862-c2f8-ad3e">
                           <costs>
@@ -11893,6 +11901,17 @@ casting Spells.</description>
                           <infoLinks>
                             <infoLink name="Lead Slingshot" id="41e5-f1f4-b545-9e4a" hidden="false" type="profile" targetId="fa65-ac91-d63c-f338"/>
                           </infoLinks>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Piece (1 Penny each)" hidden="false" id="0d48-df34-54d6-e856">
+                              <modifiers>
+                                <modifier type="increment" value="1" field="6752-9e0b-692e-d5b9" scope="parent">
+                                  <repeats>
+                                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="0d48-df34-54d6-e856" shared="true" roundUp="false"/>
+                                  </repeats>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                          </selectionEntries>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Superior Black Powder" hidden="false" id="e523-5fcd-3036-ef7b">
                           <costs>
@@ -11903,6 +11922,17 @@ casting Spells.</description>
                           <infoLinks>
                             <infoLink name="Superior Black Powder" id="e953-155a-08a0-e77c" hidden="false" type="profile" targetId="395c-bf2d-2986-3c1f"/>
                           </infoLinks>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Piece (1 Penny each)" hidden="false" id="7c89-acf1-6480-777c">
+                              <modifiers>
+                                <modifier type="increment" value="1" field="6752-9e0b-692e-d5b9" scope="parent">
+                                  <repeats>
+                                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="7c89-acf1-6480-777c" shared="true" roundUp="false"/>
+                                  </repeats>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                          </selectionEntries>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
