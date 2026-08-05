@@ -3776,10 +3776,18 @@ casting Spells.</description>
                 <condition type="atLeast" value="1" field="selections" scope="5e57-4280-58a4-23d3" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="add" value="A Mist Ghast cannot use magic." field="error">
+            <modifier type="add" value="A Mist Ghast (Small/Medium) cannot use magic." field="error">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false" childId="8b25-3c74-21b1-6d41"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="A Mist Ghast (Large) cannot use magic." field="error">
+              <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="d780-f6dc-dc29-1ff8" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="A Mist Ghast (Massive) cannot use magic." field="error">
+              <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
