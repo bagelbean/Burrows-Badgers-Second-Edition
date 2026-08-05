@@ -3741,6 +3741,7 @@ casting Spells.</description>
             <modifier type="add" value="A Stable Ghast cannot use magic." field="error">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="false" childName="Stable Ghast"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" childName="Magic User"/>
               </conditions>
             </modifier>
           </modifiers>
