@@ -3770,6 +3770,10 @@ casting Spells.</description>
               </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="683d-6982-d6c8-8367" shared="true" id="40c4-248f-9aaf-698c-min" includeChildForces="true"/>
+            <constraint type="max" value="0" field="selections" scope="683d-6982-d6c8-8367" shared="true" id="40c4-248f-9aaf-698c-max" includeChildForces="true"/>
+          </constraints>
           <modifiers>
             <modifier type="add" value="A Stable Ghast cannot use magic." field="error">
               <conditions>
@@ -3790,14 +3794,6 @@ casting Spells.</description>
             <modifier type="add" value="A Mist Ghast (Massive) cannot use magic." field="error">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="d780-f6dc-dc29-1ff8" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="643d-87c3-c98b-5ab5" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="5e57-4280-58a4-23d3" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
