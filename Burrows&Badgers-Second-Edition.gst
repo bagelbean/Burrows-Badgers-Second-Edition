@@ -3705,10 +3705,10 @@ casting Spells.</description>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="true" includeChildForces="false" childName="Mist Ghast (Small/ Medium)"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f5b4-4d32-4f3d-93a2" shared="true" includeChildSelections="true" includeChildForces="false" childName="Mist Ghast (Large)"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="true" includeChildForces="false" childName="Mist Ghast (Massive)"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="true" includeChildForces="false" childName="Stable Ghast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model-or-unit-self" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="true" includeChildForces="false" childName="Mist Ghast (Small/ Medium)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model-or-unit-self" childId="f5b4-4d32-4f3d-93a2" shared="true" includeChildSelections="true" includeChildForces="false" childName="Mist Ghast (Large)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model-or-unit-self" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="true" includeChildForces="false" childName="Mist Ghast (Massive)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model-or-unit-self" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="true" includeChildForces="false" childName="Stable Ghast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
