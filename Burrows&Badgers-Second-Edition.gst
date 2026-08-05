@@ -3701,7 +3701,7 @@ casting Spells.</description>
                 <condition type="atLeast" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="false" field="hidden" affects="self.entries">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
