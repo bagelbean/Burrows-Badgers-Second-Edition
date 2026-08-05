@@ -3701,6 +3701,18 @@ casting Spells.</description>
                 <condition type="atLeast" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mist Ghast (Small/ Medium)"/>
+                    <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="f5b4-4d32-4f3d-93a2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mist Ghast (Large)"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mist Ghast (Massive)"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="true" includeChildForces="true" childName="Stable Ghast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="5" collapsible="true">
