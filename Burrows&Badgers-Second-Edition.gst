@@ -3794,8 +3794,7 @@ casting Spells.</description>
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
-                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="f5b4-4d32-4f3d-93a2" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
               </conditions>
             </modifier>
           </modifiers>
