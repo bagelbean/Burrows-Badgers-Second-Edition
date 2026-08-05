@@ -3792,11 +3792,9 @@ casting Spells.</description>
                 <condition type="atLeast" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
-              </conditions>
-            </modifier>
+            <modifier type="set" value="true" field="hidden" scope="parent" affects="683d-6982-d6c8-8367"/>
+            <modifier type="set" value="true" field="hidden" scope="parent" affects="f5b4-4d32-4f3d-93a2"/>
+            <modifier type="set" value="true" field="hidden" scope="parent" affects="f2c3-4a6b-49d2-b8ec"/>
           </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="5" collapsible="true">
