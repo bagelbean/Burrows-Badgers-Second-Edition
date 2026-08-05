@@ -3779,7 +3779,7 @@ casting Spells.</description>
             </modifier>
             <modifier type="add" value="A Mist Ghast cannot use magic." field="error">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="true" childName="Mist Ghast (Small/ Medium)" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="643d-87c3-c98b-5ab5" childId="self" shared="true" includeChildSelections="true" childName="self" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" childName="Magic User"/>
               </conditions>
             </modifier>
