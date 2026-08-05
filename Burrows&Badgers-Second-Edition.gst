@@ -18229,13 +18229,19 @@ Otherworldly Table:
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="643d-87c3-c98b-5ab5" childId="self" shared="true" includeChildSelections="true" childName="self"/>
-                <condition type="instanceOf" value="1" field="selections" scope="d780-f6dc-dc29-1ff8" childId="self" shared="true" includeChildSelections="true" childName="self"/>
-                <condition type="instanceOf" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="self" shared="true" includeChildSelections="true" childName="self"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="f2c3-4a6b-49d2-b8ec" shared="true" childName="Mist Ghast (Massive)"/>
               </conditions>
               <conditionGroups>
-                <conditionGroup type="or"/>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d780-f6dc-dc29-1ff8" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
+                  </conditions>
+                </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
