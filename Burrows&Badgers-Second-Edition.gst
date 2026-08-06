@@ -18182,6 +18182,15 @@ Otherworldly Table:
           </constraints>
           <modifiers>
             <modifier type="add" value="5e57-4280-58a4-23d3" field="category"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="fb97-bb56-dcee-7a58" shared="true" childName="Mist Ghast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
