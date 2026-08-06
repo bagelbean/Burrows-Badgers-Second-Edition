@@ -17495,13 +17495,6 @@ Otherworldly Table:
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="self" shared="true" id="65ef-ede9-9f09-4128"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="0" field="65ef-ede9-9f09-4128">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Upgrade" id="a4ee-d4de-d276-3887" hidden="true" collapsible="true" collective="true">
               <modifiers>
@@ -18177,6 +18170,13 @@ Otherworldly Table:
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5721-c0cb-2787-9c0c" shared="true" childName="Mist Ghast (Massive)"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
