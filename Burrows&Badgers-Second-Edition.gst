@@ -17479,6 +17479,13 @@ Otherworldly Table:
                           <conditions>
                             <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                       <conditions>
@@ -18171,39 +18178,6 @@ Otherworldly Table:
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Mist Ghast" id="3585-35b3-84b5-4348" hidden="true" sortIndex="24">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Mist Ghast" hidden="false" id="0ed5-dae5-3c7a-f951"/>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="7ce4-d406-bc85-1503"/>
-            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c6b0-dc0f-0bcb-a964"/>
-          </constraints>
-          <modifiers>
-            <modifier type="add" value="5e57-4280-58a4-23d3" field="category"/>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="fb97-bb56-dcee-7a58" shared="true" childName="Mist Ghast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
