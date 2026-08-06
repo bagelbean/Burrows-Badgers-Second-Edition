@@ -13,6 +13,7 @@
     <categoryEntry name="Den Upgrade" id="583b-2cca-fae6-9a19" hidden="false"/>
     <categoryEntry name="Allegiance" id="1bc5-0b8a-1258-293f" hidden="false"/>
     <categoryEntry name="Stable Ghast" id="5e57-4280-58a4-23d3" hidden="false"/>
+    <categoryEntry name="Living Band Member" id="6dc4-7e57-577f-3a06" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny"/>
@@ -18226,6 +18227,52 @@ Otherworldly Table:
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="false" childName="Mist Ghast (Massive)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d780-f6dc-dc29-1ff8" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Living Band Member" id="b52d-819b-74e2-b18c" hidden="false" collapsible="true" flatten="false" sortIndex="24">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Rank" id="cb86-f45e-53b0-fd0f" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Living Band Member" hidden="false" id="38de-025d-5088-aa5e" sortIndex="1">
+                  <modifiers>
+                    <modifier type="add" value="6dc4-7e57-577f-3a06" field="category"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
+                    <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+                    <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a0c5-bee9-91ab-51bc"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
