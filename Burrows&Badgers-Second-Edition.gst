@@ -3729,7 +3729,7 @@ casting Spells.</description>
                     <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="8"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c96-c68e-36dd-0d15"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5c96-c68e-36dd-0d15"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Upgrades" hidden="false" id="4cd6-9a2b-0bd3-8d0a" type="selectionEntryGroup" targetId="9bd1-b2cf-0aea-9531"/>
@@ -4681,13 +4681,6 @@ casting Spells.</description>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8eb3-3930-a089-457a"/>
               </constraints>
-              <modifiers>
-                <modifier type="add" value="An armless creature cannot use weapons." field="error">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="c86c-9582-1501-7393" shared="true" includeChildSelections="true" childName="Armless" includeChildForces="false" percentValue="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Armor Slots" id="8881-5efb-6745-81cb" hidden="false" collective="true" collapsible="true" sortIndex="2">
               <selectionEntries>
