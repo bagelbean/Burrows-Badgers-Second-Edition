@@ -3729,7 +3729,7 @@ casting Spells.</description>
                     <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="8"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5c96-c68e-36dd-0d15"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c96-c68e-36dd-0d15"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Upgrades" hidden="false" id="4cd6-9a2b-0bd3-8d0a" type="selectionEntryGroup" targetId="9bd1-b2cf-0aea-9531"/>
