@@ -1419,7 +1419,7 @@ casting Spells.</description>
       <modifiers>
         <modifier type="set" value="22" field="6752-9e0b-692e-d5b9">
           <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="false" childName="Magic User"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="true" childName="Stable Ghast"/>
           </conditions>
         </modifier>
       </modifiers>
