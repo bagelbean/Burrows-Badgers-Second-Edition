@@ -635,6 +635,7 @@ casting Spells.</description>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="26"/>
         <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
         <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="1a7e-cff9-b40b-59a3" name="Small Beast (30mm Base)" primary="true" targetId="6803-87ba-83c4-bd4b"/>
@@ -668,6 +669,9 @@ casting Spells.</description>
       </categoryLinks>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="24"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Character" hidden="false" id="08c6-8f5c-ac63-0f62" type="selectionEntryGroup" targetId="4240-559e-5c1d-4780"/>
@@ -676,6 +680,9 @@ casting Spells.</description>
     <selectionEntry hidden="false" id="acf5-0573-d49f-e9a3" import="true" name="Noctule Bat" type="model">
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="28"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <profiles>
         <profile hidden="false" id="b56e-4244-7114-7ea3" name="Noctule Bat" typeId="6a97-197c-e03d-8adc" typeName="Unit">
@@ -731,6 +738,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="29"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="2195-bfe8-5c17-3469" name="Small Beast (30mm Base)" primary="true" targetId="6803-87ba-83c4-bd4b"/>
@@ -761,6 +771,9 @@ casting Spells.</description>
       </infoLinks>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="26"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="05af-f765-629c-3743" name="Small Beast (30mm Base)" primary="true" targetId="6803-87ba-83c4-bd4b"/>
@@ -788,6 +801,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="52"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <infoLinks>
         <infoLink hidden="false" id="3334-ad4a-7a87-0e8f" name="Fighting Mount" targetId="02f4-b317-c0af-0391" type="rule"/>
@@ -803,6 +819,9 @@ casting Spells.</description>
     <selectionEntry hidden="false" id="683d-6982-d6c8-8367" import="true" name="Mist Ghast (Small/ Medium)" type="model">
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="37"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <infoLinks>
         <infoLink hidden="false" id="1913-54d9-4ec5-62b0" name="Otherwordly" targetId="eb29-6a42-8676-1ed1" type="rule"/>
@@ -846,6 +865,9 @@ casting Spells.</description>
     <selectionEntry hidden="false" id="f11b-f5a3-8f1d-49fb" import="true" name="Tracker Grub" type="model">
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="27"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="0.5"/>
       </costs>
       <profiles>
         <profile hidden="false" id="5641-4b19-fdbe-276b" name="Tracker Grub" typeId="6a97-197c-e03d-8adc" typeName="Unit">
@@ -1027,6 +1049,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="25"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="0.5"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="4d06-8b8f-2f6b-90f1" name="Small Beast (30mm Base)" primary="true" targetId="6803-87ba-83c4-bd4b"/>
@@ -1106,6 +1131,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="31"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="cf63-07f9-48c5-bbf3" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1136,6 +1164,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="42"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="d0ef-b8a3-4a74-bf3e" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1166,6 +1197,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="29"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="32bd-5987-24a8-0fe1" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1202,6 +1236,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="36"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="88af-e83e-0d6f-36d3" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1232,6 +1269,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="31"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="575b-3e31-766a-b38f" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1259,6 +1299,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="49"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="1391-f5c3-7d57-cb0d" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1289,6 +1332,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="34"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="2b57-8aa0-bace-04be" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1316,6 +1362,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="28"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="9d1f-3e2b-4a8d-9cc8" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1343,6 +1392,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="48"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="ed75-864e-0348-eada" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1383,6 +1435,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="28"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="893d-eedd-d6c2-5656" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1450,6 +1505,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="25"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="6df5-6828-db73-c60f" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1477,6 +1535,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="36"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="7c1b-4c4b-4e72-80a7" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1507,6 +1568,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="33"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="fec7-c054-2bf3-dad4" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1537,6 +1601,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="43"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="3261-84e1-d4a3-af3e" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1574,6 +1641,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="31"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="fc9e-8d74-bc32-c5bf" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1608,6 +1678,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="27"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="f9c3-4f2b-4e23-8bb5" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1635,6 +1708,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="36"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="fc13-24e8-974f-0580" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1666,6 +1742,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="38"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="e92c-50d4-7155-e6f9" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1704,6 +1783,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="26"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="5a9a-7ee7-73d9-e40f" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
@@ -1738,6 +1820,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="50"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="f2f8-986d-729c-10f2" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -1773,6 +1858,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="64"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="4be9-c72b-57ab-b487" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -1814,6 +1902,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="39"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="e143-f767-eb46-9cb7" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -1848,6 +1939,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="42"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="fadb-becf-d00e-7806" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -1882,6 +1976,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="49"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="ff20-ced0-2696-90d9" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -1917,6 +2014,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="37"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="5e2d-c3df-f290-ce05" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -1947,6 +2047,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="53"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="09f2-d378-269d-a914" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -1984,6 +2087,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="43"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="b57f-aa72-2c5d-c8e5" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -2023,6 +2129,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="40"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="5944-3e06-b8c0-96c2" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -2061,6 +2170,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="61"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="623f-d501-9913-c24d" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -2105,6 +2217,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="40"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="2415-ceb9-3074-9eb3" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -2139,6 +2254,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="51"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="3fc1-3757-64d9-b7e5" name="Large Beast (40mm Base)" primary="true" targetId="97ca-8945-7b55-dd53"/>
@@ -2187,6 +2305,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="67"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="b7c1-4a4f-4e1d-9ec7" name="Massive Beast (50mm base)" primary="true" targetId="07b2-c48b-e2e1-2c84"/>
@@ -2227,6 +2348,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="61"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="6657-8589-606b-841f" name="Massive Beast (50mm base)" primary="true" targetId="07b2-c48b-e2e1-2c84"/>
@@ -2267,6 +2391,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="42"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="1433-51bd-8476-ca85" name="Massive Beast (50mm base)" primary="true" targetId="07b2-c48b-e2e1-2c84"/>
@@ -2297,6 +2424,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="65"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="d8d5-a912-603b-f548" name="Massive Beast (50mm base)" primary="true" targetId="07b2-c48b-e2e1-2c84"/>
@@ -2334,6 +2464,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="59"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="ea05-053f-ad38-6cef" name="Massive Beast (50mm base)" primary="true" targetId="07b2-c48b-e2e1-2c84"/>
@@ -2374,6 +2507,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="72"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="02d4-0b18-0a6f-72be" name="Massive Beast (50mm base)" primary="true" targetId="07b2-c48b-e2e1-2c84"/>
