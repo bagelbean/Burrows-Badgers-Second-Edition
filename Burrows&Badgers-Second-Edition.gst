@@ -12036,11 +12036,7 @@ casting Spells.</description>
                             <infoLink name="Mortal Poison" id="ba83-43af-129b-82d3" hidden="false" type="profile" targetId="a3cb-652e-28b9-1143"/>
                           </infoLinks>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="a554-7927-4286-8891" sortIndex="2">
-                              <infoLinks>
-                                <infoLink name="Mortal Poison" id="03a0-2e7f-37c9-d04c" hidden="false" type="profile" targetId="a3cb-652e-28b9-1143"/>
-                              </infoLinks>
-                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="a554-7927-4286-8891" sortIndex="2"/>
                             <selectionEntry type="upgrade" import="true" name="Cost (1d6+3 Each)" hidden="false" id="0f8d-4d04-65f3-6af1" sortIndex="1">
                               <modifiers>
                                 <modifier type="increment" value="1" field="6752-9e0b-692e-d5b9" scope="parent">
@@ -12137,11 +12133,7 @@ casting Spells.</description>
                                 </modifier>
                               </modifiers>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="7437-9af1-df2f-c43b">
-                              <infoLinks>
-                                <infoLink name="Paralysing Poison" id="1486-29a1-be02-8980" hidden="false" type="profile" targetId="1f83-cde8-164c-9259"/>
-                              </infoLinks>
-                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="7437-9af1-df2f-c43b"/>
                           </selectionEntries>
                           <modifiers>
                             <modifier type="set" value="false" field="hidden">
@@ -12178,6 +12170,9 @@ casting Spells.</description>
                           <categoryLinks>
                             <categoryLink name="Rare" hidden="false" id="326d-bd5c-ad8c-a103" targetId="6daf-83fe-ef42-17d8" primary="false"/>
                           </categoryLinks>
+                          <infoLinks>
+                            <infoLink name="Paralysing Poison" id="2a01-9ff3-94d0-8b4e" hidden="false" type="profile" targetId="1f83-cde8-164c-9259"/>
+                          </infoLinks>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Pain Poison" hidden="true" id="2f74-f0e7-6e27-38d6">
                           <costs>
@@ -12214,11 +12209,7 @@ casting Spells.</description>
                                 </modifier>
                               </modifiers>
                             </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="70ca-db79-e240-21b6">
-                              <infoLinks>
-                                <infoLink name="Mortal Poison" id="9423-3811-47ab-3b8b" hidden="false" type="profile" targetId="a3cb-652e-28b9-1143"/>
-                              </infoLinks>
-                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="70ca-db79-e240-21b6"/>
                           </selectionEntries>
                           <modifiers>
                             <modifier type="set" value="false" field="hidden">
@@ -20612,7 +20603,7 @@ Action if they have suffered more Wounds than they have on their Roster Sheet. 
       <characteristics>
         <characteristic name="Rarity" typeId="9486-096d-494d-29cd">Rare</characteristic>
         <characteristic name="Availability" typeId="ea00-6e44-66df-77ec">7</characteristic>
-        <characteristic name="Rules" typeId="965b-1eff-1569-fb74">If a weapon coated with Pain Poison causes any Wounds, the target model gains the Condition ‘Stunned’ until the end of the Turn.</characteristic>
+        <characteristic name="Rules" typeId="965b-1eff-1569-fb74">If a model takes any Wounds from a weapon coated with Mortal Poison, they immediately take 6 additional Wounds, which are not reduced by Armour or Tough skills.</characteristic>
         <characteristic name="Keywords" typeId="d060-38f7-c160-776c">-</characteristic>
         <characteristic name="Type" typeId="f67c-4a22-9c29-7d45">Poison</characteristic>
       </characteristics>
