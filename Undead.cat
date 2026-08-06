@@ -26,8 +26,8 @@
         <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
       </costs>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4289-3534-0c26-f709"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5a0-7594-856f-5e74"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4289-3534-0c26-f709-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4289-3534-0c26-f709-max"/>
       </constraints>
       <infoLinks>
         <infoLink name="Allegiance: Undead" id="6e95-e27e-80db-7934" hidden="false" type="profile" targetId="0d28-6e28-6f79-9999"/>
