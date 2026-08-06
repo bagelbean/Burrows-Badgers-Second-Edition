@@ -16,7 +16,7 @@
     <categoryEntry name="Living Band Member" id="6dc4-7e57-577f-3a06" hidden="false"/>
   </categoryEntries>
   <costTypes>
-    <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny" hidden="true"/>
+    <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny" hidden="false"/>
     <costType name="Labor" id="a8b9-14eb-c576-28d4" defaultCostLimit="0" hidden="true"/>
     <costType name="Material" id="ce21-5b5b-f092-7301" defaultCostLimit="0" hidden="true"/>
     <costType name="Warband Size" id="7090-79d8-6242-e546" defaultCostLimit="10"/>
@@ -3725,6 +3725,12 @@ casting Spells.</description>
               </conditionGroups>
             </modifier>
             <modifier type="add" value="An Unreliable &quot;Living Band Member&quot; cannot use magic." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" includeChildSelections="true" childName="Living Band Member" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" includeChildSelections="true" childName="Living Band Member" includeChildForces="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="true"/>
