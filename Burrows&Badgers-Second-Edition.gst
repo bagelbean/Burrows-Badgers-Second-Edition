@@ -7865,11 +7865,7 @@ casting Spells.</description>
                         <infoLink name="Mortal Poison" id="4720-571a-ea94-2684" hidden="false" type="profile" targetId="a3cb-652e-28b9-1143"/>
                       </infoLinks>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="75ac-8904-1152-3b93" sortIndex="2">
-                          <infoLinks>
-                            <infoLink name="Mortal Poison" id="1446-bc24-a924-1d39" hidden="false" type="profile" targetId="a3cb-652e-28b9-1143"/>
-                          </infoLinks>
-                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="75ac-8904-1152-3b93" sortIndex="2"/>
                         <selectionEntry type="upgrade" import="true" name="Cost (1d6+3 Each)" hidden="false" id="e13c-10ac-1166-0f50" sortIndex="1">
                           <modifiers>
                             <modifier type="increment" value="1" field="6752-9e0b-692e-d5b9" scope="parent">
@@ -7966,11 +7962,7 @@ casting Spells.</description>
                             </modifier>
                           </modifiers>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="e58f-c18d-fb76-32bf">
-                          <infoLinks>
-                            <infoLink name="Paralysing Poison" id="7253-c16c-5b77-13d1" hidden="false" type="profile" targetId="1f83-cde8-164c-9259"/>
-                          </infoLinks>
-                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="e58f-c18d-fb76-32bf"/>
                       </selectionEntries>
                       <modifiers>
                         <modifier type="set" value="false" field="hidden">
@@ -8046,11 +8038,7 @@ casting Spells.</description>
                             </modifier>
                           </modifiers>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="c574-af29-87c3-95e1">
-                          <infoLinks>
-                            <infoLink name="Pain Poison" id="8b5d-4795-ea0a-c201" hidden="false" type="profile" targetId="a302-0d06-f313-c4a2"/>
-                          </infoLinks>
-                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="c574-af29-87c3-95e1"/>
                       </selectionEntries>
                       <modifiers>
                         <modifier type="set" value="false" field="hidden">
