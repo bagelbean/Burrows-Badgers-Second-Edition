@@ -18286,9 +18286,13 @@ Otherworldly Table:
                     <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
                     <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
                   </costs>
-                  <infoLinks>
-                    <infoLink name="Unreliable" id="e79a-9748-ca06-15a1" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
-                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="48ad-6bb2-f2d6-c155">
+                      <infoLinks>
+                        <infoLink name="Unreliable" id="9c4d-42c7-becc-89bc" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
