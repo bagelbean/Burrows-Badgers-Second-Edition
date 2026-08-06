@@ -946,6 +946,8 @@ casting Spells.</description>
             <modifier type="set" value="1" field="annotation"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Armless" id="2c28-6752-6bab-8e50" hidden="false" targetId="ea4e-f80f-1392-23b9" type="rule"/>
+        <infoLink name="Unarmed Fighter" id="8929-6d3c-de00-9a25" hidden="false" targetId="9918-7b1a-1886-7701" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Character" hidden="false" id="617e-5fa1-80bf-6088" type="selectionEntryGroup" targetId="4240-559e-5c1d-4780"/>
