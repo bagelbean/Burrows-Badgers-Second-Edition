@@ -18036,7 +18036,15 @@ Otherworldly Table:
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Strength Skills" id="6f59-c640-8c12-445a" hidden="false" sortIndex="4">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Strong" hidden="false" id="abad-038d-50c8-d9d1" sortIndex="1"/>
+                    <selectionEntry type="upgrade" import="true" name="Strong" hidden="false" id="abad-038d-50c8-d9d1" sortIndex="1">
+                      <infoLinks>
+                        <infoLink name="Strong" id="0775-670b-114f-4e9c" hidden="false" type="profile" targetId="615c-4533-9772-a971">
+                          <modifiers>
+                            <modifier type="set" value="1" field="annotation"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Tough" hidden="false" id="3c54-43f5-c265-725f" sortIndex="2">
                       <infoLinks>
                         <infoLink name="Tough" id="9ae5-8ae9-8c60-3381" hidden="false" type="profile" targetId="b1e9-4c53-152e-51f8">
