@@ -18710,11 +18710,6 @@ Important: Advance features are a work in progress!" field="info"/>
                         <repeat value="1" repeats="1" field="selections" scope="parent" childId="c5de-ee61-009b-a8be" shared="true" roundUp="false" percentValue="false"/>
                       </repeats>
                     </modifier>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="4d9e-ecbf-0fbc-4623" shared="true"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" value="12" field="defaultAmount">
                       <conditionGroups>
                         <conditionGroup type="or">
