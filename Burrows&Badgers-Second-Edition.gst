@@ -13,6 +13,7 @@
     <categoryEntry name="Den Upgrade" id="583b-2cca-fae6-9a19" hidden="false"/>
     <categoryEntry name="Allegiance" id="1bc5-0b8a-1258-293f" hidden="false"/>
     <categoryEntry name="Stable Ghast" id="5e57-4280-58a4-23d3" hidden="false"/>
+    <categoryEntry name="Mist Ghast" id="fb97-bb56-dcee-7a58" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny"/>
@@ -18170,16 +18171,28 @@ Otherworldly Table:
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Mist Ghast" id="3585-35b3-84b5-4348" hidden="true" sortIndex="24">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mist Ghast" hidden="false" id="0ed5-dae5-3c7a-f951"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="7ce4-d406-bc85-1503"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c6b0-dc0f-0bcb-a964"/>
+          </constraints>
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="add" value="5e57-4280-58a4-23d3" field="category"/>
+            <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="true" childName="Mist Ghast (Small/ Medium)"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d28-6e28-6f79-9999" shared="true" childName="0d28-6e28-6f79-9999" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
