@@ -18782,7 +18782,7 @@ Important: Advance features are a work in progress!" field="info"/>
                         </conditionGroup>
                       </conditionGroups>
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry-self" childId="cee3-9887-9ffb-1cae" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
