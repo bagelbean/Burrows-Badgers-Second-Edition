@@ -18713,13 +18713,15 @@ Important: Advance features are a work in progress!" field="info"/>
                     <modifier type="set" value="12" field="defaultAmount">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="root-entry-self" childId="cee3-9887-9ffb-1cae" shared="true"/>
-                          </conditions>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="3f8a-5bc3-894d-b885" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="atLeast" value="1" field="selections" scope="root-entry-self" childId="cee3-9887-9ffb-1cae" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="a7fe-119d-b9b3-abe1" shared="true" includeChildSelections="true" includeChildForces="false"/>
                                 <condition type="atLeast" value="1" field="selections" scope="root-entry-self" childId="cee3-9887-9ffb-1cae" shared="true"/>
                               </conditions>
