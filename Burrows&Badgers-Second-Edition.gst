@@ -1416,13 +1416,6 @@ casting Spells.</description>
       <entryLinks>
         <entryLink import="true" name="Character" hidden="false" id="61a3-19ef-d24e-127e" type="selectionEntryGroup" targetId="4240-559e-5c1d-4780"/>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="22" field="6752-9e0b-692e-d5b9">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="true" childName="Stable Ghast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry hidden="false" id="df21-4bb0-4b9a-8a42" import="true" name="Marmot" type="model">
       <profiles>
