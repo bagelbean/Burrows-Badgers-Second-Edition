@@ -12610,9 +12610,9 @@ casting Spells.</description>
                         <infoLink name="Spell Breaker" id="df9e-3a40-b2c6-9afd" hidden="false" targetId="d8a5-2900-6279-337c" type="rule"/>
                       </infoLinks>
                       <modifiers>
-                        <modifier type="add" value="Spell Breaker requires Resist Magic." field="error">
+                        <modifier type="add" value="Spell Breaker requires Resist Magic." field="error" scope="parent" affects="self.entries">
                           <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="1c4c-8243-a4c0-f933" shared="true" childName="Resist Magic" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="root-entry-self" childId="1c4c-8243-a4c0-f933" shared="true" childName="Resist Magic" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
