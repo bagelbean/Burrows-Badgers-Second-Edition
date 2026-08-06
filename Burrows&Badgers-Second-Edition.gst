@@ -17493,6 +17493,9 @@ casting Spells.</description>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="false" childName="Mist Ghast (Massive)"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d780-f6dc-dc29-1ff8" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cb27-1721-a3f8-536d" shared="true" includeChildSelections="false" childName="Attack Grub"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f8d2-927f-f404-b05d" shared="true" includeChildSelections="false" childName="Damping Grub"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="59c5-08f3-a790-f926" shared="true" includeChildSelections="false" childName="Tracker Grub"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
