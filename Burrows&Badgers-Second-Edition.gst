@@ -18777,11 +18777,13 @@ Important: Advance features are a work in progress!" field="info"/>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e49-9b1a-ff0f-cc3c" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </selectionEntry>
