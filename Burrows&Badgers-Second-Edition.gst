@@ -1411,6 +1411,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="43"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="5b74-9f70-28e2-4459" name="Medium Beast (30mm Base)" primary="true" targetId="9ed2-8233-7200-924b"/>
