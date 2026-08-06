@@ -12612,7 +12612,7 @@ casting Spells.</description>
                       <modifiers>
                         <modifier type="add" value="Spell Breaker requires Resist Magic." field="error">
                           <conditions>
-                            <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="1c4c-8243-a4c0-f933" shared="true" childName="Resist Magic" includeChildSelections="true"/>
+                            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="1c4c-8243-a4c0-f933" shared="true" childName="Resist Magic" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
