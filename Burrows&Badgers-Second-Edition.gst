@@ -372,7 +372,9 @@ The model gains Tough (3) against any Shoot Actions.</description>
 Some beasts just seem blessed with good fortune; this model is one of them. The model can replace any of their Roll-off Totals (i.e. the Stat dice roll +/- any modifiers that apply) with a 13.</description>
     </rule>
     <rule hidden="false" id="d8a5-2900-6279-337c" name="Spell Breaker">
-      <description>Once per Turn, this model may attempt to stop a Spell that has been successfully cast within 12”; make a Fortitude Roll-off versus the caster’s Fortitude. If the model wins the Roll-off, the Spell fails.</description>
+      <description>Requirements: Must have Resist Magic
+
+Once per Turn, this model may attempt to stop a Spell that has been successfully cast within 12”; make a Fortitude Roll-off versus the caster’s Fortitude. If the model wins the Roll-off, the Spell fails.</description>
       <alias>Cunning</alias>
     </rule>
     <rule hidden="false" id="f9da-bf41-b3a8-62d4" name="Spell Eater">
@@ -3689,12 +3691,6 @@ casting Spells.</description>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
-            <modifier type="add" value="A Stable Ghast cannot use magic." field="error">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false" percentValue="false"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e57-4280-58a4-23d3" shared="true" includeChildSelections="true" childName="Stable Ghast" includeChildForces="false" percentValue="false"/>
-              </conditions>
-            </modifier>
             <modifier type="add" value="A Mist Ghast (Small/Medium) cannot use magic." field="error">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false" childId="8b25-3c74-21b1-6d41"/>
@@ -12613,6 +12609,13 @@ casting Spells.</description>
                       <infoLinks>
                         <infoLink name="Spell Breaker" id="df9e-3a40-b2c6-9afd" hidden="false" targetId="d8a5-2900-6279-337c" type="rule"/>
                       </infoLinks>
+                      <modifiers>
+                        <modifier type="add" value="Spell Breaker requires Resist Magic." field="error">
+                          <conditions>
+                            <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="1c4c-8243-a4c0-f933" shared="true" childName="Resist Magic"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Spell Eater" hidden="false" id="db0d-61e8-7f58-14ca" sortIndex="16">
                       <infoLinks>
