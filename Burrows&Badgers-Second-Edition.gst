@@ -1419,8 +1419,7 @@ casting Spells.</description>
       <modifiers>
         <modifier type="set" value="22" field="6752-9e0b-692e-d5b9">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="any" shared="true" includeChildSelections="true" childName="Allegiance: Undead" includeChildForces="true"/>
-            <condition type="atLeast" value="0" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" childName="Magic User"/>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="false" childName="Magic User"/>
           </conditions>
         </modifier>
       </modifiers>
