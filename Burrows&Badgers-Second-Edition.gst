@@ -18300,6 +18300,216 @@ Otherworldly Table:
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="-21" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="53c1-dfdc-6a57-3b8d" shared="true" childName="Squirrel" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="368e-85c2-147d-7546" shared="true" childName="Mole" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-18" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fc58-9c2b-34d3-a113" shared="true" childName="Weasel / Stoat" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-15" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0997-2f40-2b33-3bf8" shared="true" childName="Black Rat" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-24" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cad6-e8bd-646a-875e" shared="true" childName="Ferret / Polecat" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-17" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1cf5-c763-5490-acb3" shared="true" childName="Cat" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9081-c88b-d515-02f2" shared="true" childName="Rabbit" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-24" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e029-e00a-88d6-6a7c" shared="true" childName="Toad" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5460-b7be-cf48-43b2" shared="true" childName="Frog" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-21" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7c90-1641-f79f-14ac" shared="true" childName="Adder" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-12" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7f80-67db-9f4a-b4d1" shared="true" childName="Marmot" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-18" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e322-7ef7-6efe-e6f9" shared="true" childName="Water Vole" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-16" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7572-c873-7a93-67cf" shared="true" childName="Bird (Medium)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-21" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fa8d-b220-6116-331a" shared="true" childName="Raptor (Medium)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-15" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d574-fc9f-bde6-78a0" shared="true" childName="Hound (Medium)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df4f-e6d7-b93d-3913" shared="true" childName="Green Lizard (Rare)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-18" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fa90-8b3a-1819-8604" shared="true" childName="Siamese Cat (Rare)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-19" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3e89-3771-9c91-7a55" shared="true" childName="Tortoise (Rare)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7831-ba16-c923-7b14" shared="true" childName="Platypus (Rare)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-25" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2cc9-bf8f-2d71-6ba6" shared="true" childName="Hare" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-32" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cd51-a18f-8a80-1c09" shared="true" childName="Wildcat" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-19" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ebf5-4c7f-1d74-556a" shared="true" childName="Great Brown Rat" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-21" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="64d0-e74c-3d29-c1ce" shared="true" childName="Fox" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-24" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a61-bb1d-c39e-f4ca" shared="true" childName="Otter" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-18" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cd39-f2d9-283d-d761" shared="true" childName="Bird (Large)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-26" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dc96-66c0-5d97-3f27" shared="true" childName="Raptor (Large)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-21" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f11e-a006-8a3a-342a" shared="true" childName="Hound (Large)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-20" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3708-a1ab-583d-fb5a" shared="true" childName="Raccoon (Rare)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-30" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e75d-9efb-3796-579b" shared="true" childName="Armadillo (Rare)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-20" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3765-72a4-10cd-a790" shared="true" childName="Fennec Fox (Rare)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-33" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ef4a-f16d-ea88-9ac6" shared="true" childName="Badger" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-30" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c4fe-3441-19cc-5ca9" shared="true" childName="Beaver" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-21" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="eac8-b006-461d-9062" shared="true" childName="Bird (Massive)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-32" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e09a-3d68-01f2-dcf2" shared="true" childName="Raptor (Massive)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-29" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="47bb-f4dc-f55f-8a31" shared="true" childName="Hound (Massive)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <costs>
                 <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
