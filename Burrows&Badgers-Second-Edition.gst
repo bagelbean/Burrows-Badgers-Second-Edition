@@ -3722,7 +3722,6 @@ casting Spells.</description>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="add" value="An Unreliable &quot;Living Band Member&quot; cannot use magic." field="error" scope="6dc4-7e57-577f-3a06" affects="8b25-3c74-21b1-6d41"/>
           </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="4" collapsible="true">
