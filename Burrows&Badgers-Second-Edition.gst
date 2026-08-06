@@ -18262,15 +18262,21 @@ Otherworldly Table:
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" value="-21" field="6752-9e0b-692e-d5b9">
+                    <modifier type="set" value="-12" field="6752-9e0b-692e-d5b9">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7c90-1641-f79f-14ac" shared="true" childName="Adder" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ba01-54f1-cdd3-3e21" shared="true" childName="Mouse/ Dormouse" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" value="-16" field="6752-9e0b-692e-d5b9">
+                    <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7572-c873-7a93-67cf" shared="true" childName="Bird (Medium)" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3566-5cba-617e-0e99" shared="true" childName="Shrew" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="acff-95a7-68a2-5965" shared="true" childName="Bird (Small)" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
