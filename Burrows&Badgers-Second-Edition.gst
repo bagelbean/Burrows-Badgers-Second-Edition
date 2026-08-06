@@ -14,15 +14,6 @@
     <categoryEntry name="Allegiance" id="1bc5-0b8a-1258-293f" hidden="false"/>
     <categoryEntry name="Stable Ghast" id="5e57-4280-58a4-23d3" hidden="false"/>
     <categoryEntry name="Living Band Member" id="6dc4-7e57-577f-3a06" hidden="false"/>
-    <categoryEntry name="Penny Bonus Test" id="3e67-081b-2d53-cfa2" hidden="false">
-      <modifiers>
-        <modifier type="cumulative-add" value="25" field="6752-9e0b-692e-d5b9">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
   </categoryEntries>
   <costTypes>
     <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny" hidden="false"/>
