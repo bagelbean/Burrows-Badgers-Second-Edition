@@ -18291,6 +18291,10 @@ Otherworldly Table:
                       <infoLinks>
                         <infoLink name="Unreliable" id="9c4d-42c7-becc-89bc" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
                       </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8db8-fe90-c61b-6ba9-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8db8-fe90-c61b-6ba9-max" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
