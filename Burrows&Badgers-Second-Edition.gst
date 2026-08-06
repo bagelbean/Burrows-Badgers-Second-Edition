@@ -3727,6 +3727,7 @@ casting Spells.</description>
             <modifier type="add" value="An Unreliable &quot;Living Band Member&quot; cannot use magic." field="error">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" includeChildSelections="true" childName="Living Band Member" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
