@@ -8007,6 +8007,9 @@ casting Spells.</description>
                       <categoryLinks>
                         <categoryLink name="Rare" hidden="false" id="9d57-cf51-c0ef-5cb4" targetId="6daf-83fe-ef42-17d8" primary="false"/>
                       </categoryLinks>
+                      <infoLinks>
+                        <infoLink name="Paralysing Poison" id="ea85-abcd-342f-36e9" hidden="false" type="profile" targetId="1f83-cde8-164c-9259"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Pain Poison" hidden="true" id="4634-2335-e00a-1c8b">
                       <costs>
@@ -8045,7 +8048,7 @@ casting Spells.</description>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Piece" hidden="false" id="c574-af29-87c3-95e1">
                           <infoLinks>
-                            <infoLink name="Mortal Poison" id="e958-61f3-bcda-16c4" hidden="false" type="profile" targetId="a3cb-652e-28b9-1143"/>
+                            <infoLink name="Pain Poison" id="8b5d-4795-ea0a-c201" hidden="false" type="profile" targetId="a302-0d06-f313-c4a2"/>
                           </infoLinks>
                         </selectionEntry>
                       </selectionEntries>
@@ -20621,7 +20624,7 @@ Action if they have suffered more Wounds than they have on their Roster Sheet. 
       <characteristics>
         <characteristic name="Rarity" typeId="9486-096d-494d-29cd">Rare</characteristic>
         <characteristic name="Availability" typeId="ea00-6e44-66df-77ec">7</characteristic>
-        <characteristic name="Rules" typeId="965b-1eff-1569-fb74">If a model takes any Wounds from a weapon coated with Mortal Poison, they immediately take 6 additional Wounds, which are not reduced by Armour or Tough skills.</characteristic>
+        <characteristic name="Rules" typeId="965b-1eff-1569-fb74">If a weapon coated with Pain Poison causes any Wounds, the target model gains the Condition ‘Stunned’ until the end of the Turn.</characteristic>
         <characteristic name="Keywords" typeId="d060-38f7-c160-776c">-</characteristic>
         <characteristic name="Type" typeId="f67c-4a22-9c29-7d45">Poison</characteristic>
       </characteristics>
