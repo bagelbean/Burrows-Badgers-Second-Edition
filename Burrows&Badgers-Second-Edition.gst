@@ -18813,7 +18813,7 @@ Important: Advance features are a work in progress!" field="info"/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
