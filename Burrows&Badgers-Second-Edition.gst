@@ -3701,17 +3701,6 @@ casting Spells.</description>
                 <condition type="atLeast" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="false" field="hidden" affects="self.entries">
-              <conditionGroups>
-                <conditionGroup type="equal">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mist Ghast (Small/ Medium)"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f5b4-4d32-4f3d-93a2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mist Ghast (Large)"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f2c3-4a6b-49d2-b8ec" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mist Ghast (Massive)" sortIndex="1"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
           </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="5" collapsible="true">
@@ -4692,6 +4681,13 @@ casting Spells.</description>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8eb3-3930-a089-457a"/>
               </constraints>
+              <modifiers>
+                <modifier type="add" value="Armless creatures cannot use weapons." field="error">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c86c-9582-1501-7393" shared="true" childName="Armless"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Armor Slots" id="8881-5efb-6745-81cb" hidden="false" collective="true" collapsible="true" sortIndex="2">
               <selectionEntries>
