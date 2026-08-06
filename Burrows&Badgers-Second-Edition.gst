@@ -1414,6 +1414,7 @@ casting Spells.</description>
         <infoLink hidden="false" id="918c-db56-63d4-a1f0" name="Poisonous" targetId="e9b4-4f2d-4a8b-92f1" type="rule"/>
         <infoLink hidden="false" id="9d6b-3ca7-3401-5ef4" name="Unarmed Fighter" targetId="9918-7b1a-1886-7701" type="rule"/>
         <infoLink hidden="false" id="2436-b96e-6825-a467" name="Natural Hunter" targetId="5cae-3547-fc1c-3db4" type="rule"/>
+        <infoLink name="Armless" id="decd-887f-2346-16e5" hidden="false" targetId="ea4e-f80f-1392-23b9" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Character" hidden="false" id="61a3-19ef-d24e-127e" type="selectionEntryGroup" targetId="4240-559e-5c1d-4780"/>
