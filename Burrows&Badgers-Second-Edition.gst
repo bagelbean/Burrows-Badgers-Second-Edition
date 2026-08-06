@@ -941,6 +941,9 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="28"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="0.5"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="d7e4-ff54-4e3a-946a" name="Small Beast (30mm Base)" primary="true" targetId="6803-87ba-83c4-bd4b"/>
