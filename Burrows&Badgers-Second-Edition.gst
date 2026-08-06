@@ -16,7 +16,7 @@
     <categoryEntry name="Living Band Member" id="6dc4-7e57-577f-3a06" hidden="false"/>
   </categoryEntries>
   <costTypes>
-    <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny"/>
+    <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny" hidden="true"/>
     <costType name="Labor" id="a8b9-14eb-c576-28d4" defaultCostLimit="0" hidden="true"/>
     <costType name="Material" id="ce21-5b5b-f092-7301" defaultCostLimit="0" hidden="true"/>
     <costType name="Warband Size" id="7090-79d8-6242-e546" defaultCostLimit="10"/>
