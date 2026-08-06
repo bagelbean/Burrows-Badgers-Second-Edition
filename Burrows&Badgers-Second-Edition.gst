@@ -19,7 +19,11 @@
     <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny" hidden="false"/>
     <costType name="Labor" id="a8b9-14eb-c576-28d4" defaultCostLimit="0" hidden="true"/>
     <costType name="Material" id="ce21-5b5b-f092-7301" defaultCostLimit="0" hidden="true"/>
-    <costType name="Warband Size" id="7090-79d8-6242-e546" defaultCostLimit="10"/>
+    <costType name="Warband Size" id="7090-79d8-6242-e546" defaultCostLimit="10">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden"/>
+      </modifiers>
+    </costType>
   </costTypes>
   <publications>
     <publication hidden="false" id="2ab7-799f-9ff5-3e49" name="Burrows &amp; Badgers: Second Edition" publicationDate="29 May 2025" publisherUrl="https://www.ospreypublishing.com/uk/burrows--badgers-second-edition-9781472864673/" shortName="Burrows &amp; Badgers: Second Edition"/>
