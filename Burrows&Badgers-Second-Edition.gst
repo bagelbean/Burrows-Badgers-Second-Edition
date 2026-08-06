@@ -18286,6 +18286,24 @@ Otherworldly Table:
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f81e-c45f-c997-b629" shared="true" childName="Great Crested Newt" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="-26" field="6752-9e0b-692e-d5b9">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a2f5-31b0-4910-604b" shared="true" childName="Shrew Knight Errant" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="-15" field="6752-9e0b-692e-d5b9">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3fe3-abbc-72c6-4c45" shared="true" childName="Hedgehog" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
