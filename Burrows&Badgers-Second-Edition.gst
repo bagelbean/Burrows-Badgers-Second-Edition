@@ -18781,12 +18781,12 @@ Important: Advance features are a work in progress!" field="info"/>
                     </modifier>
                     <modifier type="set" value="10" field="defaultAmount">
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
                             <condition type="equalTo" value="1" field="selections" scope="root-entry-self" childId="cee3-9887-9ffb-1cae" shared="true" includeChildSelections="false"/>
                           </conditions>
                           <conditionGroups>
-                            <conditionGroup type="or">
+                            <conditionGroup type="and">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e49-9b1a-ff0f-cc3c" shared="true" includeChildSelections="true" includeChildForces="false"/>
                               </conditions>
