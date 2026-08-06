@@ -18723,6 +18723,11 @@ Important: Advance features are a work in progress!" field="info"/>
                         <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="93be-d3bd-af49-882e" shared="true" childName="Mastersmithed"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </selectionEntry>
               </selectionEntries>
