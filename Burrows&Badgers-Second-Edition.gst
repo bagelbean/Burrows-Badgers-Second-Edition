@@ -12609,13 +12609,6 @@ casting Spells.</description>
                       <infoLinks>
                         <infoLink name="Spell Breaker" id="df9e-3a40-b2c6-9afd" hidden="false" targetId="d8a5-2900-6279-337c" type="rule"/>
                       </infoLinks>
-                      <modifiers>
-                        <modifier type="add" value="Spell Breaker requires Resist Magic." field="error" scope="parent" affects="self.entries">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="root-entry-self" childId="1c4c-8243-a4c0-f933" shared="true" childName="Resist Magic" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Spell Eater" hidden="false" id="db0d-61e8-7f58-14ca" sortIndex="16">
                       <infoLinks>
@@ -17491,751 +17484,91 @@ casting Spells.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Stable Ghast" id="313a-ca3d-afe4-4e92" hidden="false" collapsible="true" flatten="false" sortIndex="24">
+        <selectionEntryGroup name="Stable Ghasts &amp; Living Band Members" id="313a-ca3d-afe4-4e92" hidden="false" collapsible="true" flatten="false" sortIndex="24">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Rank" id="c2a3-781a-85ad-998c" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Stable Ghast" hidden="false" id="f696-7066-1891-0faa" sortIndex="1">
-                  <profiles>
-                    <profile name="Stable Ghast" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="c47b-8619-c8bb-78e5" noindex="false">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This unit is a Stable Ghast.</characteristic>
-                      </characteristics>
-                    </profile>
-                    <profile name="Otherwordly" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8d19-ca71-ccbd-fb6b">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">When this model declares an Action and is within 12” of the Band’s Leader, then they perform their Action normally. When they declare an Action but are more than 12” away from the Band’s Leader, they must first roll their Fortitude on the following table. If they are more than 18” from the Leader, or if the Leader has been taken Out of Action, then they roll a d6 on this table instead. Mist Ghasts may add +1 to the roll for every other Mist Ghast model within 6”, up to a maximum of +3.
-
-Stable Ghasts always add +1 to the roll.
-
-Otherworldly Table:
-1   Fade Away: The model&apos;s connection to the material world is severed.  The model goes Out of Action; however, it does not cross any additional Wound boxes off.
-2   Catatonia: The model loses control of itself.  The model gains the Condition &apos;Paralysed&apos; for the rest of the Turn.
-3   Confusion: The model wanders randomly.  Roll a d8 and move the model a number of inches equal to the dice roll in the direction that the tip of the dice points.  If, at any point, they reach Base Contact with another model or Terrain               piece, they stop.  If they reach Base Contract with an enemy model, they may make one Attack Action, then their activation ends.
-4   Unsure: The model may act normally but receives the Condition &apos;Stunned&apos; for the rest of this Turn.
-5+ No Effect: The model may act normally.</characteristic>
-                      </characteristics>
+            <selectionEntryGroup name="Living Band Member" id="df84-0a95-6734-087c" hidden="false" collapsible="true" flatten="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Rank" id="055f-0dca-037d-2fda" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Living Band Member" hidden="false" id="ec6d-6a5e-a3c4-073d" sortIndex="1">
                       <modifiers>
+                        <modifier type="add" value="6dc4-7e57-577f-3a06" field="category"/>
                         <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8fa1-283a-2134-c1ea" shared="true" childName="Leader">
-                              <comment>If the Stable Ghast is the Leader, they do not have &quot;Otherworldly&quot;</comment>
-                            </condition>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-12" field="6752-9e0b-692e-d5b9">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ba01-54f1-cdd3-3e21" shared="true" childName="Mouse/ Dormouse" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3566-5cba-617e-0e99" shared="true" childName="Shrew" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="acff-95a7-68a2-5965" shared="true" childName="Bird (Small)" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5749-7a35-f450-95cd" shared="true" childName="Noctule Bat" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f81e-c45f-c997-b629" shared="true" childName="Great Crested Newt" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-26" field="6752-9e0b-692e-d5b9">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a2f5-31b0-4910-604b" shared="true" childName="Shrew Knight Errant" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="-15" field="6752-9e0b-692e-d5b9">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3fe3-abbc-72c6-4c45" shared="true" childName="Hedgehog" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
-                    </profile>
-                    <profile name="Uncanny" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8d68-bc47-e95d-f90e">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">Uncanny models are strange and unsettling, and cause feelings of panic and horror. Any model making an Action within 6” of an Uncanny model must first make a Fortitude Roll-off. The Difficulty to be rolled against is the total number of enemy Uncanny models within 6”. If the Roll-off is a success, the model may act normally. If it is failed, the model takes a -2 penalty to all Roll-offs for the rest of the Turn.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <modifiers>
-                    <modifier type="add" value="5e57-4280-58a4-23d3" field="category"/>
-                    <modifier type="increment" value="2" field="659a-f40f-dc29-33bf" affects="profiles.Unit" scope="root-entry"/>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="15"/>
-                    <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
-                    <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="65ef-ede9-9f09-4128"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Upgrade" id="a4ee-d4de-d276-3887" hidden="true" collapsible="true" collective="true">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="f696-7066-1891-0faa" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Movement" hidden="false" id="5dbc-6404-b529-88fe" collective="true" sortIndex="1">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Movement Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="ea70-d0bc-67ca-f9fd">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Movement Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9daa-4e5c-3287-e7f6"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Nimbleness" hidden="false" id="4ec5-ea42-c2bf-17a2" collective="true" sortIndex="5">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Nimbleness Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="be81-8428-5c63-f773">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Nimbleness Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b6d-4a66-5dcd-cab3"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Block" hidden="false" id="fb5c-bbf2-9b8e-c813" collective="true" sortIndex="3">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Block Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="5aad-2486-aa7c-51ca">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Block Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c94-cb19-4596-2caa"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Ranged" hidden="false" id="94ad-5926-0d8e-4b1c" collective="true" sortIndex="4">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Ranged Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="6d08-83d1-67a4-87cd">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Ranged Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e851-0b2d-c25a-a3f1"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Concealment" hidden="false" id="d183-90f9-498e-56ce" collective="true" sortIndex="6">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Concealment Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="9855-7d2d-dcda-b961">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Concealment Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ce3-9ef0-4624-6078"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Strike" hidden="false" id="ac38-864c-5a91-3433" collective="true" sortIndex="2">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Strike Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="f696-33d1-e2c7-0f01">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Strike Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76f5-36b0-632d-2e77"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Awareness" hidden="false" id="d129-0a87-79b6-3c05" collective="true" sortIndex="7">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Awareness Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="3560-2ba2-2599-54b4">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Awareness Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f6-bc86-73b5-83f1"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Fortitude" hidden="false" id="f6d3-a18a-ded2-aaa6" collective="true" sortIndex="7">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Fortitude Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="cfcc-211d-a859-b494">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Fortitude Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb0-ec7e-fc6a-1be9"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Upgrade Presence" hidden="false" id="c20d-77a7-114f-8deb" collective="true" sortIndex="8">
-                  <modifiers>
-                    <modifier type="replace" value="d20" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d12" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d10" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d8" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                    <modifier type="replace" value="d6" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Presence Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="4270-2ad0-08f1-dead">
-                      <characteristics>
-                        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Presence Statistic of this unit has been upgraded.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c08-a4e6-2774-6149"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97bf-b08a-7d5d-24e9"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0798-f7f2-3a1b-cb82"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Skill" id="262b-b94f-deae-12ba" hidden="true" collapsible="true">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cf8-e132-1d9e-f1d2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d945-47f2-2846-690c"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="f696-7066-1891-0faa" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Fighting Skills" id="3395-967c-d221-e9af" hidden="false" sortIndex="1">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Killing Blow" hidden="false" id="cb18-00e0-7733-2d2a" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Killing Blow" id="6713-e7ea-2a8e-c716" hidden="false" targetId="f001" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Melee Master" hidden="false" id="df17-7c3b-e1b8-a33d" sortIndex="2">
-                      <infoLinks>
-                        <infoLink name="Melee Master" id="02d4-4a00-dd82-3c3d" hidden="false" targetId="f002" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Parry" hidden="false" id="3ac5-e6e7-fd2a-4fe0" sortIndex="3">
-                      <infoLinks>
-                        <infoLink name="Parry" id="01ad-8a71-c292-42a7" hidden="false" targetId="f003" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Born in Harness" hidden="false" id="e2ff-fb02-58bb-51cc" sortIndex="4">
-                      <infoLinks>
-                        <infoLink name="Born in Harness" id="b04a-698f-3371-494f" hidden="false" targetId="f004" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Furious Charge" hidden="false" id="1971-a853-1f1a-39c5" sortIndex="5">
-                      <infoLinks>
-                        <infoLink name="Furious Charge" id="e7f3-d361-0c7d-316d" hidden="false" targetId="f005" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Witch Slayer" hidden="false" id="855a-a55e-de74-d7e5" sortIndex="6">
-                      <infoLinks>
-                        <infoLink name="Witch Slayer" id="e41a-a380-f60c-19ec" hidden="false" targetId="f006" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Close Quarters" hidden="false" id="7ed6-ef6d-eb64-4ed2" sortIndex="7">
-                      <infoLinks>
-                        <infoLink name="Close Quarters" id="d7c6-b4d9-ac19-1f85" hidden="false" targetId="f007" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Weaponskill" hidden="false" id="2242-fe72-4a79-144b" sortIndex="8">
-                      <infoLinks>
-                        <infoLink name="Weapon skill" id="15aa-a972-131e-a867" hidden="false" targetId="f008" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Shield Master" hidden="false" id="89ec-356f-7e36-a0b7" sortIndex="9">
-                      <infoLinks>
-                        <infoLink name="Shield Master" id="1ae1-a432-07a7-f2a0" hidden="false" targetId="f009" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Lance Strike" hidden="false" id="c6c3-b38d-caa7-7387" sortIndex="10">
-                      <infoLinks>
-                        <infoLink name="Lance Strike" id="ae59-3729-8402-f778" hidden="false" targetId="f010" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Feint" hidden="false" id="373b-c35f-cc93-c07f" sortIndex="11">
-                      <infoLinks>
-                        <infoLink name="Feint" id="6b9a-dceb-ee54-e911" hidden="false" targetId="f011" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Dual-Wielder" hidden="false" id="d8f2-2120-6af4-d4ce" sortIndex="12">
-                      <infoLinks>
-                        <infoLink name="Dual-Wielder" id="c31d-487e-c4ef-4fd6" hidden="false" targetId="f012" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Zweihander" hidden="false" id="4a2c-0e86-cab3-246c" sortIndex="13">
-                      <infoLinks>
-                        <infoLink name="Zweihander" id="9fe5-4a88-b28c-8d7b" hidden="false" targetId="f013" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Shield Bash" hidden="false" id="dd9e-745e-b40d-17da" sortIndex="14">
-                      <infoLinks>
-                        <infoLink name="Shield Bash" id="16d2-3902-00bc-254f" hidden="false" targetId="f014" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Focused Strike" hidden="false" id="d73c-d404-dc2e-5620" sortIndex="15">
-                      <infoLinks>
-                        <infoLink name="Focused Strike" id="d6db-c747-547b-8485" hidden="false" targetId="f015" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="All-out Attack" hidden="false" id="aaa6-22cd-54d4-0e05" sortIndex="16">
-                      <infoLinks>
-                        <infoLink name="All-out Attack" id="a273-9794-6b89-fd9c" hidden="false" targetId="f016" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Unarmed Fighter" hidden="false" id="0823-2c3e-d3eb-9a0e" sortIndex="17">
-                      <infoLinks>
-                        <infoLink name="Unarmed Fighter" id="6d2f-de55-e59e-4f29" hidden="false" targetId="9918-7b1a-1886-7701" type="rule"/>
-                      </infoLinks>
+                      <costs>
+                        <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
+                        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+                        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+                      </costs>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="3bfb-e48e-7bb5-7820">
+                          <infoLinks>
+                            <infoLink name="Unreliable" id="0607-cd7b-16bc-3b0b" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b12f-cda3-5f61-24c9-min" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12f-cda3-5f61-24c9-max" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
                     </selectionEntry>
                   </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Shooting Skills" id="6ae5-9223-5c14-32d5" hidden="false" sortIndex="2">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Expert Shot" hidden="false" id="993b-353f-1b5d-6652" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Expert Shot" id="d89e-f21e-5ffa-ecb9" hidden="false" targetId="a88c-4033-5756-4c15" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Fast Shot" hidden="false" id="1bb3-8f3c-460a-05f5" sortIndex="2">
-                      <infoLinks>
-                        <infoLink name="Fast Shot" id="4318-9720-1e4e-a1e9" hidden="false" targetId="708b-f72d-03a1-fd88" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Lethal Volley" hidden="false" id="da64-f074-e55e-7044" sortIndex="3">
-                      <infoLinks>
-                        <infoLink name="Lethal Volley" id="cda5-d2c0-6297-2cc5" hidden="false" targetId="1f17-a483-b1c7-e736" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Eagle Eyes" hidden="false" id="739d-edb1-c5d4-e676" sortIndex="4">
-                      <infoLinks>
-                        <infoLink name="Eagle Eyes" id="d80d-ece8-d1cf-4620" hidden="false" targetId="3a47-1f29-161d-496a" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Targeteer" hidden="false" id="14ed-1c58-8e15-9340" sortIndex="5">
-                      <infoLinks>
-                        <infoLink name="Targeteer" id="f052-bd6d-7642-4f22" hidden="false" targetId="3896-3009-6981-b68b" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Rock Steady" hidden="false" id="3984-cc09-1cd4-1d54" sortIndex="6">
-                      <infoLinks>
-                        <infoLink name="Rock Steady" id="26f5-096a-caf1-96cf" hidden="false" targetId="f102-ed66-6bd9-9246" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Wounding Shot" hidden="false" id="ae81-2ca3-a519-eb61" sortIndex="7">
-                      <infoLinks>
-                        <infoLink name="Wounding Shot" id="442d-a8ec-8c55-c0e2" hidden="false" targetId="7089-5048-a8a9-7eb4" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Crippling Shot" hidden="false" id="ab62-34ea-0ca6-cfb5" sortIndex="8">
-                      <infoLinks>
-                        <infoLink name="Crippling Shot" id="28d2-c0fc-c5f4-6109" hidden="false" targetId="b841-e9c2-1c6c-9331" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Kill Shot" hidden="false" id="677a-437c-7707-b8ae" sortIndex="9">
-                      <infoLinks>
-                        <infoLink name="Kill Shot" id="1c41-fdcd-8b3d-0c76" hidden="false" targetId="8fac-c2f6-be9f-818d" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Spot the weak point" hidden="false" id="6542-4985-4bc2-166a" sortIndex="10">
-                      <infoLinks>
-                        <infoLink name="Spot the weak point" id="78c3-81bc-676a-3ed8" hidden="false" targetId="5434-64e8-0b03-ec7e" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Pistolier" hidden="false" id="eb96-0549-ef2e-3cf7" sortIndex="11">
-                      <infoLinks>
-                        <infoLink name="Pistolier" id="a7b1-184e-41a6-038e" hidden="false" targetId="d394-b02d-d2fa-4526" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Cunning Skills" id="231e-a1e8-5f27-76c1" hidden="false" sortIndex="3">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Apothecary" hidden="false" id="ddf1-21ae-123a-7287" sortIndex="4">
-                      <infoLinks>
-                        <infoLink name="Apothecary" id="0e95-41c8-3feb-6bf4" hidden="false" targetId="aa5b-f9c7-7ae3-31bb" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Bloodhound" hidden="false" id="d177-2fe0-1e1c-071c" sortIndex="3">
-                      <infoLinks>
-                        <infoLink name="Bloodhound" id="fd91-a455-53fd-1ad5" hidden="false" targetId="54cb-f660-1c7f-53c1" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Hedge Magic" hidden="false" id="ba85-2a2a-7b14-3c6a" sortIndex="5">
-                      <infoLinks>
-                        <infoLink name="Hedge Magic" id="fbf9-b67e-e7f3-418e" hidden="false" targetId="80a9-d54b-a7ac-5b24" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Fearless" hidden="false" id="0d7b-9d01-655a-db7e" sortIndex="2">
-                      <infoLinks>
-                        <infoLink name="Fearless" id="4c1b-bc1b-0581-0466" hidden="false" targetId="5be5-279f-2c7b-e0c7" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Ambusher" hidden="false" id="5f8b-e432-0831-63ab" sortIndex="6">
-                      <infoLinks>
-                        <infoLink name="Ambusher" id="6669-52a4-dfb6-36c5" hidden="false" targetId="e4ad-facf-dde9-da03" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Adept Ambusher" hidden="false" id="568d-9bda-82f9-a692" sortIndex="7">
-                      <infoLinks>
-                        <infoLink name="Adept Ambusher" id="2db6-6172-7251-04db" hidden="false" targetId="dba1-67bc-834c-fee1" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Deadly Ambusher" hidden="false" id="2e3b-1ede-39f8-cc89" sortIndex="8">
-                      <infoLinks>
-                        <infoLink name="Deadly Ambusher" id="0b22-9a68-ea66-6d3f" hidden="false" targetId="cf81-1186-7173-6887" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Opportunist" hidden="false" id="3d25-79ac-67cf-8f16" sortIndex="9">
-                      <infoLinks>
-                        <infoLink name="Opportunist" id="46af-903f-6d34-ce2b" hidden="false" targetId="4801-ece2-7b94-eb1b" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="The Lady&apos;s Favour" hidden="false" id="edcf-feb8-3980-58a7" sortIndex="10">
-                      <infoLinks>
-                        <infoLink name="The Lady&apos;s Favour" id="ca94-0372-5b54-0804" hidden="false" targetId="b262-b75e-75ae-d21e" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Critter Boss" hidden="false" id="5389-efd1-1e82-f07a" sortIndex="11">
-                      <infoLinks>
-                        <infoLink name="Critter Boss" id="f7be-6987-c0b3-ac27" hidden="false" targetId="0655-df80-54e8-a4b4" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Witch Smeller" hidden="false" id="a369-0550-14b3-18a0" sortIndex="12">
-                      <infoLinks>
-                        <infoLink name="Witch Smeller" id="7219-5d05-9483-6f2e" hidden="false" targetId="ed63-daa0-2ea0-7c4b" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Lucky" hidden="false" id="2d98-5ab9-860e-44ed" sortIndex="13">
-                      <infoLinks>
-                        <infoLink name="Lucky" id="bb73-c928-24b8-3079" hidden="false" targetId="ffc4-8272-8bbc-f92c" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Resist Magic" hidden="false" id="c66a-c134-d242-53a9" sortIndex="14">
-                      <infoLinks>
-                        <infoLink name="Resist Magic" id="3fe5-ffc7-e4e6-60ea" hidden="false" targetId="4d7a-0245-ed1b-761b" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Spell Breaker" hidden="false" id="0c3c-8873-ed3f-e0f8" sortIndex="15">
-                      <infoLinks>
-                        <infoLink name="Spell Breaker" id="a885-5019-fad6-c7e9" hidden="false" targetId="d8a5-2900-6279-337c" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Spell Eater" hidden="false" id="b05e-a07c-7165-bf23" sortIndex="16">
-                      <infoLinks>
-                        <infoLink name="Spell Eater" id="1891-15c7-9096-9e1f" hidden="false" targetId="f9da-bf41-b3a8-62d4" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Battlemage" hidden="false" id="d18a-4e86-f434-d8c2" sortIndex="17">
-                      <infoLinks>
-                        <infoLink name="Battlemage" id="a83e-6b0c-0e67-0a35" hidden="false" targetId="7dd9-fe26-1652-02c7" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Healing Aura" hidden="false" id="d4fb-11d3-46c8-09a5" sortIndex="18">
-                      <infoLinks>
-                        <infoLink name="Healing Aura" id="bba1-498e-ae2a-a997" hidden="false" targetId="6a89-9387-8ce4-4439" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Far Reacher" hidden="false" id="6ea0-2989-d5b3-dab5" sortIndex="19">
-                      <infoLinks>
-                        <infoLink name="Far Reacher" id="0e5b-3f53-0dce-119f" hidden="false" targetId="65fb-e6b9-d598-38e3" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Aether Sight" hidden="false" id="021d-5730-a020-2d29" sortIndex="20">
-                      <infoLinks>
-                        <infoLink name="Aether Sight" id="c2a3-706e-fd2c-74fd" hidden="false" targetId="57c4-b137-abcc-da67" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Herbal Brewer" hidden="false" id="02d4-5c6b-7975-ce18" sortIndex="21">
-                      <infoLinks>
-                        <infoLink name="Herbal Brewer" id="9cdb-0cb9-9ac0-35af" hidden="false" targetId="9903-ecf8-caea-dd3b" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Brew Master" hidden="false" id="4d80-7a6e-2767-605a" sortIndex="22">
-                      <infoLinks>
-                        <infoLink name="Brew Master" id="fd8c-47fb-e75c-7909" hidden="false" targetId="f7fa-bddd-1c27-43b7" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Taunt" hidden="false" id="521d-c33f-00f6-4f1b" sortIndex="23">
-                      <infoLinks>
-                        <infoLink name="Taunt" id="057f-2c34-dd0b-12bf" hidden="false" targetId="b7f1-4c22-4a93-b39a" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Beguile" hidden="false" id="3df7-9399-1a80-4155" sortIndex="24">
-                      <infoLinks>
-                        <infoLink name="Beguile" id="7264-2f97-44d6-c86c" hidden="false" targetId="c2e3-4c45-4f81-a9cd" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Gifted" hidden="false" id="0f77-5567-8dc0-0eed" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Gifted" id="6b13-71ef-a108-f833" hidden="false" targetId="7c08-0206-fa8d-132e" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Strength Skills" id="6f59-c640-8c12-445a" hidden="false" sortIndex="4">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Strong" hidden="false" id="abad-038d-50c8-d9d1" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Strong" id="0775-670b-114f-4e9c" hidden="false" type="profile" targetId="615c-4533-9772-a971">
-                          <modifiers>
-                            <modifier type="set" value="1" field="annotation"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Tough" hidden="false" id="3c54-43f5-c265-725f" sortIndex="2">
-                      <infoLinks>
-                        <infoLink name="Tough" id="9ae5-8ae9-8c60-3381" hidden="false" type="profile" targetId="b1e9-4c53-152e-51f8">
-                          <modifiers>
-                            <modifier type="set" value="1" field="annotation"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Weak" hidden="false" id="d076-3c9d-2856-5c2d" sortIndex="3">
-                      <infoLinks>
-                        <infoLink name="Weak (X)" id="af4b-c3b0-0d18-66d2" hidden="false" targetId="a4d1-4fb7-4a5b-b7e3" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Delicate" hidden="false" id="cffa-8a41-6ce1-24b0" sortIndex="4">
-                      <infoLinks>
-                        <infoLink name="Delicate (X)" id="a514-84ab-71dd-d243" hidden="false" targetId="8d6f-c28f-25a2-9ed5" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Born Survivor" hidden="false" id="6e1b-d7b1-34c7-47e3" sortIndex="5">
-                      <infoLinks>
-                        <infoLink name="Born Survivor" id="a5a8-e188-f6ed-1d8c" hidden="false" targetId="d1e6-45f2-4b9f-91d7" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Beast of Burden" hidden="false" id="bbd5-e166-fef5-e66c" sortIndex="6">
-                      <infoLinks>
-                        <infoLink name="Beast of Burden" id="3462-3474-3bcc-26e8" hidden="false" targetId="f3b1-4c72-4c4d-a8c3" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Fearsome" hidden="false" id="b46e-f1bf-9f5d-9c19" sortIndex="7">
-                      <infoLinks>
-                        <infoLink name="Fearsome" id="61a3-b266-642a-a411" hidden="false" targetId="e8a4-4a51-4d93-9a8d" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Berserker" hidden="false" id="cc2c-19b1-cd2c-8d03" sortIndex="8">
-                      <infoLinks>
-                        <infoLink name="Berserker" id="1c49-1e5d-c461-d4e5" hidden="false" targetId="a2d3-4f76-4b9e-bc31" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Enduring" hidden="false" id="952a-e3fb-95b7-b2b3" sortIndex="9">
-                      <infoLinks>
-                        <infoLink name="Enduring" id="17f2-4496-2ab5-9f41" hidden="false" targetId="d4c6-4a8b-4f87-92e3" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Stunning Blow" hidden="false" id="bbc4-e7df-5222-3b10" sortIndex="10">
-                      <infoLinks>
-                        <infoLink name="Stunning Blow" id="4f33-65a7-459d-2c7e" hidden="false" targetId="f1a7-4c62-4c18-9f45" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Knockout Blow" hidden="false" id="0af2-60e2-55a9-a44d" sortIndex="11">
-                      <infoLinks>
-                        <infoLink name="Knockout Blow" id="aa0e-d1d7-86f3-cb2e" hidden="false" targetId="a6c2-4f8e-4b6c-9d53" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Paladin" hidden="false" id="a253-8130-be82-0230" sortIndex="12">
-                      <infoLinks>
-                        <infoLink name="Paladin" id="7c52-b01f-7560-6ada" hidden="false" targetId="b7d4-4c1f-4cb7-a78a" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Pushback" hidden="false" id="af7f-e200-0e73-9bab" sortIndex="13">
-                      <infoLinks>
-                        <infoLink name="Pushback" id="eb68-187d-ddcf-e19f" hidden="false" targetId="c8e1-4a9c-4b3a-9fd8" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Martial Code" hidden="false" id="6088-0bff-a209-75f2" sortIndex="14">
-                      <infoLinks>
-                        <infoLink name="Martial Code" id="6848-4923-4ccb-cc41" hidden="false" targetId="e3b2-4d8a-4c91-a5de" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Movement Skills" id="661c-ed52-534e-fd8f" hidden="false" sortIndex="5">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Dodge" hidden="false" id="900f-134e-3537-f0d4" sortIndex="7">
-                      <infoLinks>
-                        <infoLink name="Dodge" id="4902-f82b-265c-e0f4" hidden="false" targetId="f5c1-4d93-4a1e-a89c" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Light Feet" hidden="false" id="3348-5fd7-6426-25c8" sortIndex="8">
-                      <infoLinks>
-                        <infoLink name="Light Feet" id="d43d-7c63-c632-a894" hidden="false" targetId="b8d2-4e5a-4f7e-9d41" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Burst of Speed" hidden="false" id="c870-c7e4-3e50-e1c3" sortIndex="9">
-                      <infoLinks>
-                        <infoLink name="Burst of Speed" id="70c1-2bfc-fd82-2fec" hidden="false" targetId="a9f4-4b2b-4f8d-8c3a" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Strider" hidden="false" id="40ed-8987-8b2b-f22e" sortIndex="10">
-                      <infoLinks>
-                        <infoLink name="Strider" id="f4cd-0430-86b3-c8d1" hidden="false" targetId="c1d3-4f9b-4e0e-a1b2" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Freeze" hidden="false" id="e756-578b-e280-a628" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Freeze" id="ca57-8a18-b068-28ce" hidden="false" targetId="e4a1-4d2b-4c87-bf92" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Climber" hidden="false" id="20a7-6a0c-4d59-c3c1" sortIndex="2">
-                      <infoLinks>
-                        <infoLink name="Climber" id="3abe-3ad1-2301-1d2a" hidden="false" targetId="ddc0-d1a5-16dc-1e41" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Leaper" hidden="false" id="562b-4b83-46b9-6693" sortIndex="3">
-                      <infoLinks>
-                        <infoLink name="Leaper" id="2cd3-0bec-3029-bb20" hidden="false" targetId="c5f8-4a21-4b2d-85f3" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Slippery" hidden="false" id="aa0b-8999-1e8f-0da3" sortIndex="4">
-                      <infoLinks>
-                        <infoLink name="Slippery" id="dd53-bdca-cbb8-d659" hidden="false" targetId="d6e9-4f3b-4f83-a5d1" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Swim" hidden="false" id="f962-6746-ada9-4669" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Swim" id="7462-b54b-51c9-aed5" hidden="false" targetId="8606-d670-14f9-bff9" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Innate Skills" id="5839-d3f0-57b8-323c" hidden="false" sortIndex="6">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Natural Hunter" hidden="false" id="e116-c135-9be4-fe5b" sortIndex="6">
-                      <infoLinks>
-                        <infoLink name="Natural Hunter" id="4854-7629-185c-6a1d" hidden="false" targetId="5cae-3547-fc1c-3db4" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Flight" hidden="false" id="926d-4a34-ea8d-f7f4" sortIndex="4">
-                      <infoLinks>
-                        <infoLink name="Flight" id="b616-daf4-fa8a-e742" hidden="false" targetId="de1b-bb5f-29b0-ba39" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Tunneller" hidden="false" id="f232-a82e-484d-fc5f" sortIndex="5">
-                      <infoLinks>
-                        <infoLink name="Tunneller" id="005a-b1dc-fd4f-2d1a" hidden="false" targetId="f2a4-4e3d-4a8e-8f91" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Slow" hidden="false" id="fe83-47f4-7f13-4cb9" sortIndex="9">
-                      <infoLinks>
-                        <infoLink name="Slow" id="f75f-d695-1b43-9a9a" hidden="false" targetId="a7d3-4f6c-4b3f-8e2a" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Spines" hidden="false" id="bb40-3560-d2c4-c693" sortIndex="10">
-                      <infoLinks>
-                        <infoLink name="Spines" id="f9af-085d-9dd5-cc67" hidden="false" targetId="3055-f3a6-6324-b43b" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Short-Sighted" hidden="false" id="fa12-c0df-0980-9a1b" sortIndex="8">
-                      <infoLinks>
-                        <infoLink name="Short-Sighted" id="abea-5240-6bc6-baef" hidden="false" targetId="c6f1-4b3a-4d4c-a9d3" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Fighting Mount" hidden="false" id="c8d3-400f-b823-85c7" sortIndex="3">
-                      <infoLinks>
-                        <infoLink name="Fighting Mount" id="5d83-d81d-3b10-1020" hidden="false" targetId="02f4-b317-c0af-0391" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Otherwordly" hidden="false" id="7d7c-8bc0-875a-399d" sortIndex="7">
-                      <infoLinks>
-                        <infoLink name="Otherwordly" id="1b6e-d850-10c1-1d24" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="5e72-0366-3900-53f9" sortIndex="11">
-                      <infoLinks>
-                        <infoLink name="Unreliable" id="c7a4-1569-9f6a-f88f" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Armless" hidden="false" id="49a5-db63-daeb-eb75" sortIndex="1">
-                      <infoLinks>
-                        <infoLink name="Armless" id="df1c-d4b0-66e5-2fc5" hidden="false" targetId="ea4e-f80f-1392-23b9" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Darksense" hidden="false" id="16d3-5e75-f110-6da9" sortIndex="2">
-                      <infoLinks>
-                        <infoLink name="Darksense" id="cdfc-9298-e33d-0483" hidden="false" targetId="3c47-c406-7b16-7d68" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Uncanny" hidden="false" id="ca92-77e6-1dd3-8d0c" sortIndex="12">
-                      <infoLinks>
-                        <infoLink name="Uncanny" id="7acf-b71a-214b-d5eb" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Poisonous" hidden="false" id="cfc3-d865-8949-276b" sortIndex="13">
-                      <infoLinks>
-                        <infoLink name="Poisonous" id="4b75-83b9-cfdc-7c1b" hidden="false" targetId="e9b4-4f2d-4a8b-92f1" type="rule"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="cbc6-8408-f3d7-59ee"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
@@ -18253,105 +17586,758 @@ Otherworldly Table:
               </conditionGroups>
             </modifier>
           </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Living Band Member" id="b52d-819b-74e2-b18c" hidden="false" collapsible="true" flatten="false" sortIndex="25">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Rank" id="cb86-f45e-53b0-fd0f" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Living Band Member" hidden="false" id="38de-025d-5088-aa5e" sortIndex="1">
-                  <modifiers>
-                    <modifier type="add" value="6dc4-7e57-577f-3a06" field="category"/>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Stable Ghast" hidden="false" id="829b-0d09-1c8d-c964">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Rank" id="30d7-9b65-27de-df95" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Stable Ghast" hidden="false" id="e0a7-a12e-d225-1671" sortIndex="1">
+                      <profiles>
+                        <profile name="Stable Ghast" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="1824-f981-bded-5c4a" noindex="false">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This unit is a Stable Ghast.</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Otherwordly" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="1fd0-286e-dcbb-09ea">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">When this model declares an Action and is within 12” of the Band’s Leader, then they perform their Action normally. When they declare an Action but are more than 12” away from the Band’s Leader, they must first roll their Fortitude on the following table. If they are more than 18” from the Leader, or if the Leader has been taken Out of Action, then they roll a d6 on this table instead. Mist Ghasts may add +1 to the roll for every other Mist Ghast model within 6”, up to a maximum of +3.
+
+Stable Ghasts always add +1 to the roll.
+
+Otherworldly Table:
+1   Fade Away: The model&apos;s connection to the material world is severed.  The model goes Out of Action; however, it does not cross any additional Wound boxes off.
+2   Catatonia: The model loses control of itself.  The model gains the Condition &apos;Paralysed&apos; for the rest of the Turn.
+3   Confusion: The model wanders randomly.  Roll a d8 and move the model a number of inches equal to the dice roll in the direction that the tip of the dice points.  If, at any point, they reach Base Contact with another model or Terrain               piece, they stop.  If they reach Base Contract with an enemy model, they may make one Attack Action, then their activation ends.
+4   Unsure: The model may act normally but receives the Condition &apos;Stunned&apos; for the rest of this Turn.
+5+ No Effect: The model may act normally.</characteristic>
+                          </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8fa1-283a-2134-c1ea" shared="true" childName="Leader">
+                                  <comment>If the Stable Ghast is the Leader, they do not have &quot;Otherworldly&quot;</comment>
+                                </condition>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </profile>
+                        <profile name="Uncanny" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="89e2-6a19-0092-6a68">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">Uncanny models are strange and unsettling, and cause feelings of panic and horror. Any model making an Action within 6” of an Uncanny model must first make a Fortitude Roll-off. The Difficulty to be rolled against is the total number of enemy Uncanny models within 6”. If the Roll-off is a success, the model may act normally. If it is failed, the model takes a -2 penalty to all Roll-offs for the rest of the Turn.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="add" value="5e57-4280-58a4-23d3" field="category"/>
+                        <modifier type="increment" value="2" field="659a-f40f-dc29-33bf" affects="profiles.Unit" scope="root-entry"/>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                           <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="15"/>
+                        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+                        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="833b-6cb9-7d67-c65d"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Skill" id="262b-b94f-deae-12ba" hidden="true" collapsible="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cf8-e132-1d9e-f1d2"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d945-47f2-2846-690c"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="f696-7066-1891-0faa" shared="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="-12" field="6752-9e0b-692e-d5b9">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ba01-54f1-cdd3-3e21" shared="true" childName="Mouse/ Dormouse" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3566-5cba-617e-0e99" shared="true" childName="Shrew" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="acff-95a7-68a2-5965" shared="true" childName="Bird (Small)" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5749-7a35-f450-95cd" shared="true" childName="Noctule Bat" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f81e-c45f-c997-b629" shared="true" childName="Great Crested Newt" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="-26" field="6752-9e0b-692e-d5b9">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a2f5-31b0-4910-604b" shared="true" childName="Shrew Knight Errant" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="-15" field="6752-9e0b-692e-d5b9">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3fe3-abbc-72c6-4c45" shared="true" childName="Hedgehog" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                      </conditions>
                     </modifier>
                   </modifiers>
-                  <costs>
-                    <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
-                    <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
-                    <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
-                  </costs>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Fighting Skills" id="3395-967c-d221-e9af" hidden="false" sortIndex="1">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Killing Blow" hidden="false" id="cb18-00e0-7733-2d2a" sortIndex="1">
+                          <infoLinks>
+                            <infoLink name="Killing Blow" id="6713-e7ea-2a8e-c716" hidden="false" targetId="f001" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Melee Master" hidden="false" id="df17-7c3b-e1b8-a33d" sortIndex="2">
+                          <infoLinks>
+                            <infoLink name="Melee Master" id="02d4-4a00-dd82-3c3d" hidden="false" targetId="f002" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Parry" hidden="false" id="3ac5-e6e7-fd2a-4fe0" sortIndex="3">
+                          <infoLinks>
+                            <infoLink name="Parry" id="01ad-8a71-c292-42a7" hidden="false" targetId="f003" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Born in Harness" hidden="false" id="e2ff-fb02-58bb-51cc" sortIndex="4">
+                          <infoLinks>
+                            <infoLink name="Born in Harness" id="b04a-698f-3371-494f" hidden="false" targetId="f004" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Furious Charge" hidden="false" id="1971-a853-1f1a-39c5" sortIndex="5">
+                          <infoLinks>
+                            <infoLink name="Furious Charge" id="e7f3-d361-0c7d-316d" hidden="false" targetId="f005" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Witch Slayer" hidden="false" id="855a-a55e-de74-d7e5" sortIndex="6">
+                          <infoLinks>
+                            <infoLink name="Witch Slayer" id="e41a-a380-f60c-19ec" hidden="false" targetId="f006" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Close Quarters" hidden="false" id="7ed6-ef6d-eb64-4ed2" sortIndex="7">
+                          <infoLinks>
+                            <infoLink name="Close Quarters" id="d7c6-b4d9-ac19-1f85" hidden="false" targetId="f007" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Weaponskill" hidden="false" id="2242-fe72-4a79-144b" sortIndex="8">
+                          <infoLinks>
+                            <infoLink name="Weapon skill" id="15aa-a972-131e-a867" hidden="false" targetId="f008" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Shield Master" hidden="false" id="89ec-356f-7e36-a0b7" sortIndex="9">
+                          <infoLinks>
+                            <infoLink name="Shield Master" id="1ae1-a432-07a7-f2a0" hidden="false" targetId="f009" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lance Strike" hidden="false" id="c6c3-b38d-caa7-7387" sortIndex="10">
+                          <infoLinks>
+                            <infoLink name="Lance Strike" id="ae59-3729-8402-f778" hidden="false" targetId="f010" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Feint" hidden="false" id="373b-c35f-cc93-c07f" sortIndex="11">
+                          <infoLinks>
+                            <infoLink name="Feint" id="6b9a-dceb-ee54-e911" hidden="false" targetId="f011" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Dual-Wielder" hidden="false" id="d8f2-2120-6af4-d4ce" sortIndex="12">
+                          <infoLinks>
+                            <infoLink name="Dual-Wielder" id="c31d-487e-c4ef-4fd6" hidden="false" targetId="f012" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Zweihander" hidden="false" id="4a2c-0e86-cab3-246c" sortIndex="13">
+                          <infoLinks>
+                            <infoLink name="Zweihander" id="9fe5-4a88-b28c-8d7b" hidden="false" targetId="f013" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Shield Bash" hidden="false" id="dd9e-745e-b40d-17da" sortIndex="14">
+                          <infoLinks>
+                            <infoLink name="Shield Bash" id="16d2-3902-00bc-254f" hidden="false" targetId="f014" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Focused Strike" hidden="false" id="d73c-d404-dc2e-5620" sortIndex="15">
+                          <infoLinks>
+                            <infoLink name="Focused Strike" id="d6db-c747-547b-8485" hidden="false" targetId="f015" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="All-out Attack" hidden="false" id="aaa6-22cd-54d4-0e05" sortIndex="16">
+                          <infoLinks>
+                            <infoLink name="All-out Attack" id="a273-9794-6b89-fd9c" hidden="false" targetId="f016" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Unarmed Fighter" hidden="false" id="0823-2c3e-d3eb-9a0e" sortIndex="17">
+                          <infoLinks>
+                            <infoLink name="Unarmed Fighter" id="6d2f-de55-e59e-4f29" hidden="false" targetId="9918-7b1a-1886-7701" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Shooting Skills" id="6ae5-9223-5c14-32d5" hidden="false" sortIndex="2">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Expert Shot" hidden="false" id="993b-353f-1b5d-6652" sortIndex="1">
+                          <infoLinks>
+                            <infoLink name="Expert Shot" id="d89e-f21e-5ffa-ecb9" hidden="false" targetId="a88c-4033-5756-4c15" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Fast Shot" hidden="false" id="1bb3-8f3c-460a-05f5" sortIndex="2">
+                          <infoLinks>
+                            <infoLink name="Fast Shot" id="4318-9720-1e4e-a1e9" hidden="false" targetId="708b-f72d-03a1-fd88" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lethal Volley" hidden="false" id="da64-f074-e55e-7044" sortIndex="3">
+                          <infoLinks>
+                            <infoLink name="Lethal Volley" id="cda5-d2c0-6297-2cc5" hidden="false" targetId="1f17-a483-b1c7-e736" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Eagle Eyes" hidden="false" id="739d-edb1-c5d4-e676" sortIndex="4">
+                          <infoLinks>
+                            <infoLink name="Eagle Eyes" id="d80d-ece8-d1cf-4620" hidden="false" targetId="3a47-1f29-161d-496a" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Targeteer" hidden="false" id="14ed-1c58-8e15-9340" sortIndex="5">
+                          <infoLinks>
+                            <infoLink name="Targeteer" id="f052-bd6d-7642-4f22" hidden="false" targetId="3896-3009-6981-b68b" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Rock Steady" hidden="false" id="3984-cc09-1cd4-1d54" sortIndex="6">
+                          <infoLinks>
+                            <infoLink name="Rock Steady" id="26f5-096a-caf1-96cf" hidden="false" targetId="f102-ed66-6bd9-9246" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Wounding Shot" hidden="false" id="ae81-2ca3-a519-eb61" sortIndex="7">
+                          <infoLinks>
+                            <infoLink name="Wounding Shot" id="442d-a8ec-8c55-c0e2" hidden="false" targetId="7089-5048-a8a9-7eb4" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Crippling Shot" hidden="false" id="ab62-34ea-0ca6-cfb5" sortIndex="8">
+                          <infoLinks>
+                            <infoLink name="Crippling Shot" id="28d2-c0fc-c5f4-6109" hidden="false" targetId="b841-e9c2-1c6c-9331" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Kill Shot" hidden="false" id="677a-437c-7707-b8ae" sortIndex="9">
+                          <infoLinks>
+                            <infoLink name="Kill Shot" id="1c41-fdcd-8b3d-0c76" hidden="false" targetId="8fac-c2f6-be9f-818d" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Spot the weak point" hidden="false" id="6542-4985-4bc2-166a" sortIndex="10">
+                          <infoLinks>
+                            <infoLink name="Spot the weak point" id="78c3-81bc-676a-3ed8" hidden="false" targetId="5434-64e8-0b03-ec7e" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Pistolier" hidden="false" id="eb96-0549-ef2e-3cf7" sortIndex="11">
+                          <infoLinks>
+                            <infoLink name="Pistolier" id="a7b1-184e-41a6-038e" hidden="false" targetId="d394-b02d-d2fa-4526" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Cunning Skills" id="231e-a1e8-5f27-76c1" hidden="false" sortIndex="3">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Apothecary" hidden="false" id="ddf1-21ae-123a-7287" sortIndex="4">
+                          <infoLinks>
+                            <infoLink name="Apothecary" id="0e95-41c8-3feb-6bf4" hidden="false" targetId="aa5b-f9c7-7ae3-31bb" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Bloodhound" hidden="false" id="d177-2fe0-1e1c-071c" sortIndex="3">
+                          <infoLinks>
+                            <infoLink name="Bloodhound" id="fd91-a455-53fd-1ad5" hidden="false" targetId="54cb-f660-1c7f-53c1" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Hedge Magic" hidden="false" id="ba85-2a2a-7b14-3c6a" sortIndex="5">
+                          <infoLinks>
+                            <infoLink name="Hedge Magic" id="fbf9-b67e-e7f3-418e" hidden="false" targetId="80a9-d54b-a7ac-5b24" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Fearless" hidden="false" id="0d7b-9d01-655a-db7e" sortIndex="2">
+                          <infoLinks>
+                            <infoLink name="Fearless" id="4c1b-bc1b-0581-0466" hidden="false" targetId="5be5-279f-2c7b-e0c7" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Ambusher" hidden="false" id="5f8b-e432-0831-63ab" sortIndex="6">
+                          <infoLinks>
+                            <infoLink name="Ambusher" id="6669-52a4-dfb6-36c5" hidden="false" targetId="e4ad-facf-dde9-da03" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Adept Ambusher" hidden="false" id="568d-9bda-82f9-a692" sortIndex="7">
+                          <infoLinks>
+                            <infoLink name="Adept Ambusher" id="2db6-6172-7251-04db" hidden="false" targetId="dba1-67bc-834c-fee1" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Deadly Ambusher" hidden="false" id="2e3b-1ede-39f8-cc89" sortIndex="8">
+                          <infoLinks>
+                            <infoLink name="Deadly Ambusher" id="0b22-9a68-ea66-6d3f" hidden="false" targetId="cf81-1186-7173-6887" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Opportunist" hidden="false" id="3d25-79ac-67cf-8f16" sortIndex="9">
+                          <infoLinks>
+                            <infoLink name="Opportunist" id="46af-903f-6d34-ce2b" hidden="false" targetId="4801-ece2-7b94-eb1b" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="The Lady&apos;s Favour" hidden="false" id="edcf-feb8-3980-58a7" sortIndex="10">
+                          <infoLinks>
+                            <infoLink name="The Lady&apos;s Favour" id="ca94-0372-5b54-0804" hidden="false" targetId="b262-b75e-75ae-d21e" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Critter Boss" hidden="false" id="5389-efd1-1e82-f07a" sortIndex="11">
+                          <infoLinks>
+                            <infoLink name="Critter Boss" id="f7be-6987-c0b3-ac27" hidden="false" targetId="0655-df80-54e8-a4b4" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Witch Smeller" hidden="false" id="a369-0550-14b3-18a0" sortIndex="12">
+                          <infoLinks>
+                            <infoLink name="Witch Smeller" id="7219-5d05-9483-6f2e" hidden="false" targetId="ed63-daa0-2ea0-7c4b" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lucky" hidden="false" id="2d98-5ab9-860e-44ed" sortIndex="13">
+                          <infoLinks>
+                            <infoLink name="Lucky" id="bb73-c928-24b8-3079" hidden="false" targetId="ffc4-8272-8bbc-f92c" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Resist Magic" hidden="false" id="c66a-c134-d242-53a9" sortIndex="14">
+                          <infoLinks>
+                            <infoLink name="Resist Magic" id="3fe5-ffc7-e4e6-60ea" hidden="false" targetId="4d7a-0245-ed1b-761b" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Spell Breaker" hidden="false" id="0c3c-8873-ed3f-e0f8" sortIndex="15">
+                          <infoLinks>
+                            <infoLink name="Spell Breaker" id="a885-5019-fad6-c7e9" hidden="false" targetId="d8a5-2900-6279-337c" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Spell Eater" hidden="false" id="b05e-a07c-7165-bf23" sortIndex="16">
+                          <infoLinks>
+                            <infoLink name="Spell Eater" id="1891-15c7-9096-9e1f" hidden="false" targetId="f9da-bf41-b3a8-62d4" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Battlemage" hidden="false" id="d18a-4e86-f434-d8c2" sortIndex="17">
+                          <infoLinks>
+                            <infoLink name="Battlemage" id="a83e-6b0c-0e67-0a35" hidden="false" targetId="7dd9-fe26-1652-02c7" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Healing Aura" hidden="false" id="d4fb-11d3-46c8-09a5" sortIndex="18">
+                          <infoLinks>
+                            <infoLink name="Healing Aura" id="bba1-498e-ae2a-a997" hidden="false" targetId="6a89-9387-8ce4-4439" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Far Reacher" hidden="false" id="6ea0-2989-d5b3-dab5" sortIndex="19">
+                          <infoLinks>
+                            <infoLink name="Far Reacher" id="0e5b-3f53-0dce-119f" hidden="false" targetId="65fb-e6b9-d598-38e3" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Aether Sight" hidden="false" id="021d-5730-a020-2d29" sortIndex="20">
+                          <infoLinks>
+                            <infoLink name="Aether Sight" id="c2a3-706e-fd2c-74fd" hidden="false" targetId="57c4-b137-abcc-da67" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Herbal Brewer" hidden="false" id="02d4-5c6b-7975-ce18" sortIndex="21">
+                          <infoLinks>
+                            <infoLink name="Herbal Brewer" id="9cdb-0cb9-9ac0-35af" hidden="false" targetId="9903-ecf8-caea-dd3b" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Brew Master" hidden="false" id="4d80-7a6e-2767-605a" sortIndex="22">
+                          <infoLinks>
+                            <infoLink name="Brew Master" id="fd8c-47fb-e75c-7909" hidden="false" targetId="f7fa-bddd-1c27-43b7" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Taunt" hidden="false" id="521d-c33f-00f6-4f1b" sortIndex="23">
+                          <infoLinks>
+                            <infoLink name="Taunt" id="057f-2c34-dd0b-12bf" hidden="false" targetId="b7f1-4c22-4a93-b39a" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Beguile" hidden="false" id="3df7-9399-1a80-4155" sortIndex="24">
+                          <infoLinks>
+                            <infoLink name="Beguile" id="7264-2f97-44d6-c86c" hidden="false" targetId="c2e3-4c45-4f81-a9cd" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Gifted" hidden="false" id="0f77-5567-8dc0-0eed" sortIndex="1">
+                          <infoLinks>
+                            <infoLink name="Gifted" id="6b13-71ef-a108-f833" hidden="false" targetId="7c08-0206-fa8d-132e" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Strength Skills" id="6f59-c640-8c12-445a" hidden="false" sortIndex="4">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Strong" hidden="false" id="abad-038d-50c8-d9d1" sortIndex="1">
+                          <infoLinks>
+                            <infoLink name="Strong" id="0775-670b-114f-4e9c" hidden="false" type="profile" targetId="615c-4533-9772-a971">
+                              <modifiers>
+                                <modifier type="set" value="1" field="annotation"/>
+                              </modifiers>
+                            </infoLink>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Tough" hidden="false" id="3c54-43f5-c265-725f" sortIndex="2">
+                          <infoLinks>
+                            <infoLink name="Tough" id="9ae5-8ae9-8c60-3381" hidden="false" type="profile" targetId="b1e9-4c53-152e-51f8">
+                              <modifiers>
+                                <modifier type="set" value="1" field="annotation"/>
+                              </modifiers>
+                            </infoLink>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Weak" hidden="false" id="d076-3c9d-2856-5c2d" sortIndex="3">
+                          <infoLinks>
+                            <infoLink name="Weak (X)" id="af4b-c3b0-0d18-66d2" hidden="false" targetId="a4d1-4fb7-4a5b-b7e3" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Delicate" hidden="false" id="cffa-8a41-6ce1-24b0" sortIndex="4">
+                          <infoLinks>
+                            <infoLink name="Delicate (X)" id="a514-84ab-71dd-d243" hidden="false" targetId="8d6f-c28f-25a2-9ed5" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Born Survivor" hidden="false" id="6e1b-d7b1-34c7-47e3" sortIndex="5">
+                          <infoLinks>
+                            <infoLink name="Born Survivor" id="a5a8-e188-f6ed-1d8c" hidden="false" targetId="d1e6-45f2-4b9f-91d7" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Beast of Burden" hidden="false" id="bbd5-e166-fef5-e66c" sortIndex="6">
+                          <infoLinks>
+                            <infoLink name="Beast of Burden" id="3462-3474-3bcc-26e8" hidden="false" targetId="f3b1-4c72-4c4d-a8c3" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Fearsome" hidden="false" id="b46e-f1bf-9f5d-9c19" sortIndex="7">
+                          <infoLinks>
+                            <infoLink name="Fearsome" id="61a3-b266-642a-a411" hidden="false" targetId="e8a4-4a51-4d93-9a8d" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Berserker" hidden="false" id="cc2c-19b1-cd2c-8d03" sortIndex="8">
+                          <infoLinks>
+                            <infoLink name="Berserker" id="1c49-1e5d-c461-d4e5" hidden="false" targetId="a2d3-4f76-4b9e-bc31" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Enduring" hidden="false" id="952a-e3fb-95b7-b2b3" sortIndex="9">
+                          <infoLinks>
+                            <infoLink name="Enduring" id="17f2-4496-2ab5-9f41" hidden="false" targetId="d4c6-4a8b-4f87-92e3" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Stunning Blow" hidden="false" id="bbc4-e7df-5222-3b10" sortIndex="10">
+                          <infoLinks>
+                            <infoLink name="Stunning Blow" id="4f33-65a7-459d-2c7e" hidden="false" targetId="f1a7-4c62-4c18-9f45" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Knockout Blow" hidden="false" id="0af2-60e2-55a9-a44d" sortIndex="11">
+                          <infoLinks>
+                            <infoLink name="Knockout Blow" id="aa0e-d1d7-86f3-cb2e" hidden="false" targetId="a6c2-4f8e-4b6c-9d53" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Paladin" hidden="false" id="a253-8130-be82-0230" sortIndex="12">
+                          <infoLinks>
+                            <infoLink name="Paladin" id="7c52-b01f-7560-6ada" hidden="false" targetId="b7d4-4c1f-4cb7-a78a" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Pushback" hidden="false" id="af7f-e200-0e73-9bab" sortIndex="13">
+                          <infoLinks>
+                            <infoLink name="Pushback" id="eb68-187d-ddcf-e19f" hidden="false" targetId="c8e1-4a9c-4b3a-9fd8" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Martial Code" hidden="false" id="6088-0bff-a209-75f2" sortIndex="14">
+                          <infoLinks>
+                            <infoLink name="Martial Code" id="6848-4923-4ccb-cc41" hidden="false" targetId="e3b2-4d8a-4c91-a5de" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Movement Skills" id="661c-ed52-534e-fd8f" hidden="false" sortIndex="5">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Dodge" hidden="false" id="900f-134e-3537-f0d4" sortIndex="7">
+                          <infoLinks>
+                            <infoLink name="Dodge" id="4902-f82b-265c-e0f4" hidden="false" targetId="f5c1-4d93-4a1e-a89c" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Light Feet" hidden="false" id="3348-5fd7-6426-25c8" sortIndex="8">
+                          <infoLinks>
+                            <infoLink name="Light Feet" id="d43d-7c63-c632-a894" hidden="false" targetId="b8d2-4e5a-4f7e-9d41" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Burst of Speed" hidden="false" id="c870-c7e4-3e50-e1c3" sortIndex="9">
+                          <infoLinks>
+                            <infoLink name="Burst of Speed" id="70c1-2bfc-fd82-2fec" hidden="false" targetId="a9f4-4b2b-4f8d-8c3a" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Strider" hidden="false" id="40ed-8987-8b2b-f22e" sortIndex="10">
+                          <infoLinks>
+                            <infoLink name="Strider" id="f4cd-0430-86b3-c8d1" hidden="false" targetId="c1d3-4f9b-4e0e-a1b2" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Freeze" hidden="false" id="e756-578b-e280-a628" sortIndex="1">
+                          <infoLinks>
+                            <infoLink name="Freeze" id="ca57-8a18-b068-28ce" hidden="false" targetId="e4a1-4d2b-4c87-bf92" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Climber" hidden="false" id="20a7-6a0c-4d59-c3c1" sortIndex="2">
+                          <infoLinks>
+                            <infoLink name="Climber" id="3abe-3ad1-2301-1d2a" hidden="false" targetId="ddc0-d1a5-16dc-1e41" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Leaper" hidden="false" id="562b-4b83-46b9-6693" sortIndex="3">
+                          <infoLinks>
+                            <infoLink name="Leaper" id="2cd3-0bec-3029-bb20" hidden="false" targetId="c5f8-4a21-4b2d-85f3" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Slippery" hidden="false" id="aa0b-8999-1e8f-0da3" sortIndex="4">
+                          <infoLinks>
+                            <infoLink name="Slippery" id="dd53-bdca-cbb8-d659" hidden="false" targetId="d6e9-4f3b-4f83-a5d1" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Swim" hidden="false" id="f962-6746-ada9-4669" sortIndex="1">
+                          <infoLinks>
+                            <infoLink name="Swim" id="7462-b54b-51c9-aed5" hidden="false" targetId="8606-d670-14f9-bff9" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Innate Skills" id="5839-d3f0-57b8-323c" hidden="false" sortIndex="6">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Natural Hunter" hidden="false" id="e116-c135-9be4-fe5b" sortIndex="6">
+                          <infoLinks>
+                            <infoLink name="Natural Hunter" id="4854-7629-185c-6a1d" hidden="false" targetId="5cae-3547-fc1c-3db4" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Flight" hidden="false" id="926d-4a34-ea8d-f7f4" sortIndex="4">
+                          <infoLinks>
+                            <infoLink name="Flight" id="b616-daf4-fa8a-e742" hidden="false" targetId="de1b-bb5f-29b0-ba39" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Tunneller" hidden="false" id="f232-a82e-484d-fc5f" sortIndex="5">
+                          <infoLinks>
+                            <infoLink name="Tunneller" id="005a-b1dc-fd4f-2d1a" hidden="false" targetId="f2a4-4e3d-4a8e-8f91" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Slow" hidden="false" id="fe83-47f4-7f13-4cb9" sortIndex="9">
+                          <infoLinks>
+                            <infoLink name="Slow" id="f75f-d695-1b43-9a9a" hidden="false" targetId="a7d3-4f6c-4b3f-8e2a" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Spines" hidden="false" id="bb40-3560-d2c4-c693" sortIndex="10">
+                          <infoLinks>
+                            <infoLink name="Spines" id="f9af-085d-9dd5-cc67" hidden="false" targetId="3055-f3a6-6324-b43b" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Short-Sighted" hidden="false" id="fa12-c0df-0980-9a1b" sortIndex="8">
+                          <infoLinks>
+                            <infoLink name="Short-Sighted" id="abea-5240-6bc6-baef" hidden="false" targetId="c6f1-4b3a-4d4c-a9d3" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Fighting Mount" hidden="false" id="c8d3-400f-b823-85c7" sortIndex="3">
+                          <infoLinks>
+                            <infoLink name="Fighting Mount" id="5d83-d81d-3b10-1020" hidden="false" targetId="02f4-b317-c0af-0391" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Otherwordly" hidden="false" id="7d7c-8bc0-875a-399d" sortIndex="7">
+                          <infoLinks>
+                            <infoLink name="Otherwordly" id="1b6e-d850-10c1-1d24" hidden="false" targetId="eb29-6a42-8676-1ed1" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="5e72-0366-3900-53f9" sortIndex="11">
+                          <infoLinks>
+                            <infoLink name="Unreliable" id="c7a4-1569-9f6a-f88f" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Armless" hidden="false" id="49a5-db63-daeb-eb75" sortIndex="1">
+                          <infoLinks>
+                            <infoLink name="Armless" id="df1c-d4b0-66e5-2fc5" hidden="false" targetId="ea4e-f80f-1392-23b9" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Darksense" hidden="false" id="16d3-5e75-f110-6da9" sortIndex="2">
+                          <infoLinks>
+                            <infoLink name="Darksense" id="cdfc-9298-e33d-0483" hidden="false" targetId="3c47-c406-7b16-7d68" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Uncanny" hidden="false" id="ca92-77e6-1dd3-8d0c" sortIndex="12">
+                          <infoLinks>
+                            <infoLink name="Uncanny" id="7acf-b71a-214b-d5eb" hidden="false" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Poisonous" hidden="false" id="cfc3-d865-8949-276b" sortIndex="13">
+                          <infoLinks>
+                            <infoLink name="Poisonous" id="4b75-83b9-cfdc-7c1b" hidden="false" targetId="e9b4-4f2d-4a8b-92f1" type="rule"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Upgrade" id="4766-d1a4-8e2c-0ab3" hidden="true" collapsible="true" collective="true">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="f696-7066-1891-0faa" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="48ad-6bb2-f2d6-c155">
-                      <infoLinks>
-                        <infoLink name="Unreliable" id="9c4d-42c7-becc-89bc" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
-                      </infoLinks>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Movement" hidden="false" id="d6b1-277d-9f04-99dd" collective="true" sortIndex="1">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="e8dc-4636-129f-5901" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Movement Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="8728-82c8-2f5e-c6a5">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Movement Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8db8-fe90-c61b-6ba9-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8db8-fe90-c61b-6ba9-max" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2a2-a34b-9fd3-1a12"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Nimbleness" hidden="false" id="1a53-bd66-21ca-2372" collective="true" sortIndex="5">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Nimbleness Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="3902-dcce-4065-2f8f">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Nimbleness Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d018-05dc-15c2-5405"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Block" hidden="false" id="8da7-0ea8-1e9f-5ee1" collective="true" sortIndex="3">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="973e-9c70-c1b0-79a7" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Block Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="677f-a0a0-3c13-528c">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Block Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccbb-05d8-b238-ec8a"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Ranged" hidden="false" id="921c-0250-32a3-d78c" collective="true" sortIndex="4">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Ranged Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="c306-77df-a0a6-0e47">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Ranged Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7342-ba5d-e260-8747"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Concealment" hidden="false" id="2b65-bcbc-4344-b9a8" collective="true" sortIndex="6">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="d4c0-ccdb-b645-bd70" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Concealment Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="29ba-f671-21ca-8f7f">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Concealment Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6311-8dc6-6239-9420"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Strike" hidden="false" id="8fa7-19d6-7a9d-3c32" collective="true" sortIndex="2">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Strike Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="040d-d3fc-0152-1f90">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Strike Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0593-4274-3642-4d63"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Awareness" hidden="false" id="9cb0-c306-762f-0ddf" collective="true" sortIndex="7">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Awareness Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="e57a-0788-93be-04f9">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Awareness Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3601-22bc-48e1-5def"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Fortitude" hidden="false" id="5b48-e490-e8a8-4782" collective="true" sortIndex="7">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Fortitude Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="e759-cf00-7c5c-0853">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Fortitude Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3ac-f74a-c60d-1d04"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Upgrade Presence" hidden="false" id="bbe3-752d-5c45-56e3" collective="true" sortIndex="8">
+                      <modifiers>
+                        <modifier type="replace" value="d20" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d12" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d10" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d8" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                        <modifier type="replace" value="d6" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Presence Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="57a1-5944-eb7d-85f2">
+                          <characteristics>
+                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Presence Statistic of this unit has been upgraded.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f012-ed1f-9bbc-0eab"/>
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a0c5-bee9-91ab-51bc"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="false" childName="Mist Ghast (Massive)"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d780-f6dc-dc29-1ff8" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f6a-8f76-6d87-c094"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2a8-3255-cd50-f8bf"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
