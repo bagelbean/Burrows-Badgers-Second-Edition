@@ -803,6 +803,7 @@ casting Spells.</description>
       <infoLinks>
         <infoLink hidden="false" id="1913-54d9-4ec5-62b0" name="Otherwordly" targetId="eb29-6a42-8676-1ed1" type="rule"/>
         <infoLink hidden="false" id="6ab6-41d5-c99d-aee1" name="Uncanny" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
+        <infoLink name="One-handed weapon" id="8310-7e68-651d-453d" hidden="false" type="profile" targetId="d124-de12-baa3-737a"/>
       </infoLinks>
       <profiles>
         <profile hidden="false" id="7dcf-e2f0-4b83-2ba7" name="Mist Ghast (Small/ Medium)" typeId="6a97-197c-e03d-8adc" typeName="Unit">
@@ -2140,6 +2141,7 @@ casting Spells.</description>
         </infoLink>
         <infoLink hidden="false" id="d40a-bfb1-e0e4-4bd0" name="Otherwordly" targetId="eb29-6a42-8676-1ed1" type="rule"/>
         <infoLink hidden="false" id="643b-e54c-a2d5-cd95" name="Uncanny" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
+        <infoLink name="One-handed weapon" id="8aae-a97b-1637-5db8" hidden="false" type="profile" targetId="d124-de12-baa3-737a"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Character" hidden="false" id="488d-e328-b3c5-40bc" type="selectionEntryGroup" targetId="4240-559e-5c1d-4780"/>
@@ -2374,6 +2376,7 @@ casting Spells.</description>
         </infoLink>
         <infoLink hidden="false" id="86c4-66d0-b4ea-9ab9" name="Otherwordly" targetId="eb29-6a42-8676-1ed1" type="rule"/>
         <infoLink hidden="false" id="4d15-8d0e-5425-85ce" name="Uncanny" targetId="5b6f-35fa-f074-0bc9" type="rule"/>
+        <infoLink name="One-handed weapon" id="a27f-2856-99f2-29d0" hidden="false" type="profile" targetId="d124-de12-baa3-737a"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Character" hidden="false" id="73b8-adfb-230b-c7fe" type="selectionEntryGroup" targetId="4240-559e-5c1d-4780"/>
