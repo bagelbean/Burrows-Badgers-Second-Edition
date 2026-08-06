@@ -18170,6 +18170,18 @@ Otherworldly Table:
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="683d-6982-d6c8-8367" shared="true" includeChildSelections="true" childName="Mist Ghast (Small/ Medium)"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d28-6e28-6f79-9999" shared="true" childName="0d28-6e28-6f79-9999" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
@@ -20140,7 +20152,7 @@ Paralysing Poison (1 use), or Mortal Poison (1 use).</characteristic>
     <profile name="Allegiance: Kindred" typeId="b03a-98be-dd5f-032a" typeName="Allegiance" hidden="false" id="1b2d-75b3-94e1-3262"/>
     <profile name="Allegiance: Routiers" typeId="b03a-98be-dd5f-032a" typeName="Allegiance" hidden="false" id="228e-7552-a3f2-c44a"/>
     <profile name="Allegiance: Wildlings" typeId="b03a-98be-dd5f-032a" typeName="Allegiance" hidden="false" id="926b-2176-576a-1072"/>
-    <profile name="Allegiance: Undead" typeId="b03a-98be-dd5f-032a" typeName="Allegiance" hidden="false" id="0d28-6e28-6f79-9999"/>
+    <profile name="Allegiance: Undead" typeId="b03a-98be-dd5f-032a" typeName="Allegiance" hidden="false" id="c"/>
     <profile name="Allegiance: Hillfolk" typeId="b03a-98be-dd5f-032a" typeName="Allegiance" hidden="false" id="a3fe-3e86-6b94-4cff"/>
     <profile name="Allegiance: Witch Hunter" typeId="b03a-98be-dd5f-032a" typeName="Allegiance" hidden="false" id="e4e7-3e7d-efaf-4647"/>
     <profile name="Allegiance: Arcane Conclaves" typeId="b03a-98be-dd5f-032a" typeName="Allegiance" hidden="false" id="57ae-059c-f07f-303a"/>
