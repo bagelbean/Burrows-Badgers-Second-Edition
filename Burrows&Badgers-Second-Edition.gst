@@ -4681,13 +4681,6 @@ casting Spells.</description>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8eb3-3930-a089-457a"/>
               </constraints>
-              <modifiers>
-                <modifier type="add" value="An armless creature cannot use Weapons." field="error">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="c86c-9582-1501-7393" shared="true" includeChildSelections="true" childName="Armless" includeChildForces="false" percentValue="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Armor Slots" id="8881-5efb-6745-81cb" hidden="false" collective="true" collapsible="true" sortIndex="2">
               <selectionEntries>
