@@ -2285,6 +2285,10 @@ casting Spells.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2476-3bbc-c2ae-75d3-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2476-3bbc-c2ae-75d3-max"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry hidden="false" id="a7d3-4f8e-4e72-bc82" import="true" name="Badger" type="model" collective="true">
       <profiles>
