@@ -12109,6 +12109,19 @@ casting Spells.</description>
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="false" childName="Mist Ghast (Massive)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d780-f6dc-dc29-1ff8" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Officers" id="6882-d4f7-9ff4-38be" hidden="false" sortIndex="1" collapsible="true" flatten="false">
           <selectionEntryGroups>
@@ -12826,6 +12839,19 @@ casting Spells.</description>
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="false" childName="Mist Ghast (Massive)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d780-f6dc-dc29-1ff8" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Statistic Upgrades" id="2dae-1fed-54e7-cadb" hidden="true" sortIndex="3" flatten="false">
           <selectionEntryGroups>
