@@ -18280,6 +18280,12 @@ Otherworldly Table:
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5749-7a35-f450-95cd" shared="true" childName="Noctule Bat" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
