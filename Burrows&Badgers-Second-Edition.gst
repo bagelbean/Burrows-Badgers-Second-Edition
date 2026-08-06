@@ -3703,6 +3703,17 @@ casting Spells.</description>
                 <condition type="atLeast" value="1" field="selections" scope="5721-c0cb-2787-9c0c" childId="8b25-3c74-21b1-6d41" shared="true" includeChildSelections="true" childName="Magic User" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5721-c0cb-2787-9c0c" shared="true" includeChildSelections="false" childName="Mist Ghast (Massive)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d780-f6dc-dc29-1ff8" shared="true" includeChildSelections="false" childName="Mist Ghast (Large)"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Equipment" id="ac1f-3ccf-94c7-813e" hidden="false" sortIndex="5" collapsible="true">
