@@ -16,6 +16,11 @@
         <categoryLink name="Small Beast (30mm Base)" hidden="false" id="eb10-855f-baff-026a" targetId="6803-87ba-83c4-bd4b"/>
         <categoryLink name="Den Upgrade" hidden="false" id="c59a-bbf3-a2cd-d7fa" targetId="583b-2cca-fae6-9a19"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="13" field="7090-79d8-6242-e546">
+          <comment>Setting to 13 as part of Warband Size validation</comment>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
