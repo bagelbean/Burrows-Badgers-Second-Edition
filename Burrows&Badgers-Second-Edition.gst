@@ -17485,94 +17485,6 @@ casting Spells.</description>
           </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup name="Stable Ghasts &amp; Living Band Members" id="313a-ca3d-afe4-4e92" hidden="false" collapsible="true" flatten="false" sortIndex="24">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Living Band Member" id="df84-0a95-6734-087c" hidden="false" collapsible="true" flatten="false">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Rank" id="055f-0dca-037d-2fda" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Living Band Member" hidden="false" id="ec6d-6a5e-a3c4-073d" sortIndex="1">
-                      <modifiers>
-                        <modifier type="add" value="6dc4-7e57-577f-3a06" field="category"/>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="-12" field="6752-9e0b-692e-d5b9">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ba01-54f1-cdd3-3e21" shared="true" childName="Mouse/ Dormouse" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3566-5cba-617e-0e99" shared="true" childName="Shrew" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="acff-95a7-68a2-5965" shared="true" childName="Bird (Small)" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5749-7a35-f450-95cd" shared="true" childName="Noctule Bat" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f81e-c45f-c997-b629" shared="true" childName="Great Crested Newt" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="-26" field="6752-9e0b-692e-d5b9">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a2f5-31b0-4910-604b" shared="true" childName="Shrew Knight Errant" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" value="-15" field="6752-9e0b-692e-d5b9">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3fe3-abbc-72c6-4c45" shared="true" childName="Hedgehog" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <costs>
-                        <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
-                        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
-                        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
-                      </costs>
-                      <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="3bfb-e48e-7bb5-7820">
-                          <infoLinks>
-                            <infoLink name="Unreliable" id="0607-cd7b-16bc-3b0b" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
-                          </infoLinks>
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b12f-cda3-5f61-24c9-min" includeChildSelections="false"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12f-cda3-5f61-24c9-max" includeChildSelections="false"/>
-                          </constraints>
-                        </selectionEntry>
-                      </selectionEntries>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="cbc6-8408-f3d7-59ee"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
@@ -18330,6 +18242,81 @@ Otherworldly Table:
                 <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
                 <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Living Band Member" hidden="false" id="ec6d-6a5e-a3c4-073d">
+              <modifiers>
+                <modifier type="add" value="6dc4-7e57-577f-3a06" field="category"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-12" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ba01-54f1-cdd3-3e21" shared="true" childName="Mouse/ Dormouse" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3566-5cba-617e-0e99" shared="true" childName="Shrew" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="acff-95a7-68a2-5965" shared="true" childName="Bird (Small)" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-14" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5749-7a35-f450-95cd" shared="true" childName="Noctule Bat" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-13" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f81e-c45f-c997-b629" shared="true" childName="Great Crested Newt" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-26" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a2f5-31b0-4910-604b" shared="true" childName="Shrew Knight Errant" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-15" field="6752-9e0b-692e-d5b9">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3fe3-abbc-72c6-4c45" shared="true" childName="Hedgehog" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
+                <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+                <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Unreliable" hidden="false" id="3bfb-e48e-7bb5-7820">
+                  <infoLinks>
+                    <infoLink name="Unreliable" id="0607-cd7b-16bc-3b0b" hidden="false" targetId="d8f2-4c1a-4b3d-8a9f" type="rule"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b12f-cda3-5f61-24c9-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12f-cda3-5f61-24c9-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <constraints>
