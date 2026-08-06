@@ -17511,7 +17511,7 @@ casting Spells.</description>
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Stable Ghast" hidden="false" id="829b-0d09-1c8d-c964">
+            <selectionEntry type="upgrade" import="true" name="Stable Ghast" hidden="false" id="829b-0d09-1c8d-c964" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Skill" id="262b-b94f-deae-12ba" hidden="true" collapsible="true">
                   <constraints>
@@ -18243,7 +18243,7 @@ Otherworldly Table:
                 <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Living Band Member" hidden="false" id="ec6d-6a5e-a3c4-073d">
+            <selectionEntry type="upgrade" import="true" name="Living Band Member" hidden="false" id="ec6d-6a5e-a3c4-073d" sortIndex="2">
               <modifiers>
                 <modifier type="add" value="6dc4-7e57-577f-3a06" field="category"/>
                 <modifier type="set" value="true" field="hidden">
