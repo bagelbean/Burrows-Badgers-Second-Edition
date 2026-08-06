@@ -17,7 +17,7 @@
         <categoryLink name="Den Upgrade" hidden="false" id="c59a-bbf3-a2cd-d7fa" targetId="583b-2cca-fae6-9a19"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="cumulative-add" value="3" field="7090-79d8-6242-e546">
+        <modifier type="multiply" value="1.3" field="7090-79d8-6242-e546">
           <comment>Adding 3 for just the Undead as part of Warband Size validation</comment>
         </modifier>
       </modifiers>
