@@ -629,6 +629,8 @@ casting Spells.</description>
       </profiles>
       <costs>
         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="26"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink hidden="false" id="1a7e-cff9-b40b-59a3" name="Small Beast (30mm Base)" primary="true" targetId="6803-87ba-83c4-bd4b"/>
@@ -1414,6 +1416,14 @@ casting Spells.</description>
       <entryLinks>
         <entryLink import="true" name="Character" hidden="false" id="61a3-19ef-d24e-127e" type="selectionEntryGroup" targetId="4240-559e-5c1d-4780"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="22" field="6752-9e0b-692e-d5b9">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="any" shared="true" includeChildSelections="true" childName="Allegiance: Undead" includeChildForces="true"/>
+            <condition type="atLeast" value="0" field="selections" scope="parent" childId="8b25-3c74-21b1-6d41" shared="true" childName="Magic User"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry hidden="false" id="df21-4bb0-4b9a-8a42" import="true" name="Marmot" type="model">
       <profiles>
