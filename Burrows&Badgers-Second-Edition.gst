@@ -13,7 +13,6 @@
     <categoryEntry name="Den Upgrade" id="583b-2cca-fae6-9a19" hidden="false"/>
     <categoryEntry name="Allegiance" id="1bc5-0b8a-1258-293f" hidden="false"/>
     <categoryEntry name="Stable Ghast" id="5e57-4280-58a4-23d3" hidden="false"/>
-    <categoryEntry name="Mist Ghast" id="fb97-bb56-dcee-7a58" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType defaultCostLimit="350" id="6752-9e0b-692e-d5b9" name="Penny"/>
@@ -17482,7 +17481,7 @@ Otherworldly Table:
                           <conditionGroups>
                             <conditionGroup type="and">
                               <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="643d-87c3-c98b-5ab5" shared="true" includeChildSelections="false" childName="Mist Ghast (Small/ Medium)"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
