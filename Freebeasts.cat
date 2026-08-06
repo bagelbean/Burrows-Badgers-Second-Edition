@@ -49,10 +49,6 @@
       <categoryLinks>
         <categoryLink name="Allegiance" hidden="false" id="07da-b2b7-310e-d1bc" targetId="b6a0-9ed3-91e6-1eab" primary="true"/>
       </categoryLinks>
-      <costs>
-        <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="375"/>
-        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="10"/>
-      </costs>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
