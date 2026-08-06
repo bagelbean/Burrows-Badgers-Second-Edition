@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Westy" battleScribeVersion="2.03" id="sys-8e98-0f81-30ce-b579" library="false" name="Burrows &amp; Badgers: Second Edition" revision="5" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Westy" battleScribeVersion="2.03" id="sys-8e98-0f81-30ce-b579" library="false" name="Burrows &amp; Badgers: Second Edition" revision="3" type="gameSystem">
   <categoryEntries>
     <categoryEntry hidden="false" id="6803-87ba-83c4-bd4b" name="Small Beast (30mm Base)"/>
     <categoryEntry hidden="false" id="9ed2-8233-7200-924b" name="Medium Beast (30mm Base)"/>
@@ -4705,6 +4705,7 @@ casting Spells.</description>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cb27-1721-a3f8-536d" shared="true" includeChildSelections="false" childName="Attack Grub"/>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f8d2-927f-f404-b05d" shared="true" includeChildSelections="false" childName="Damping Grub"/>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="59c5-08f3-a790-f926" shared="true" includeChildSelections="false" childName="Tracker Grub"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7c90-1641-f79f-14ac" shared="true" includeChildSelections="false" childName="Adder"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
