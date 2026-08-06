@@ -17585,75 +17585,22 @@ casting Spells.</description>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Stable Ghast" hidden="false" id="829b-0d09-1c8d-c964">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Rank" id="30d7-9b65-27de-df95" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Stable Ghast" hidden="false" id="e0a7-a12e-d225-1671" sortIndex="1">
-                      <profiles>
-                        <profile name="Stable Ghast" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="1824-f981-bded-5c4a" noindex="false">
-                          <characteristics>
-                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This unit is a Stable Ghast.</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="Otherwordly" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="1fd0-286e-dcbb-09ea">
-                          <characteristics>
-                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">When this model declares an Action and is within 12” of the Band’s Leader, then they perform their Action normally. When they declare an Action but are more than 12” away from the Band’s Leader, they must first roll their Fortitude on the following table. If they are more than 18” from the Leader, or if the Leader has been taken Out of Action, then they roll a d6 on this table instead. Mist Ghasts may add +1 to the roll for every other Mist Ghast model within 6”, up to a maximum of +3.
-
-Stable Ghasts always add +1 to the roll.
-
-Otherworldly Table:
-1   Fade Away: The model&apos;s connection to the material world is severed.  The model goes Out of Action; however, it does not cross any additional Wound boxes off.
-2   Catatonia: The model loses control of itself.  The model gains the Condition &apos;Paralysed&apos; for the rest of the Turn.
-3   Confusion: The model wanders randomly.  Roll a d8 and move the model a number of inches equal to the dice roll in the direction that the tip of the dice points.  If, at any point, they reach Base Contact with another model or Terrain               piece, they stop.  If they reach Base Contract with an enemy model, they may make one Attack Action, then their activation ends.
-4   Unsure: The model may act normally but receives the Condition &apos;Stunned&apos; for the rest of this Turn.
-5+ No Effect: The model may act normally.</characteristic>
-                          </characteristics>
-                          <modifiers>
-                            <modifier type="set" value="true" field="hidden">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8fa1-283a-2134-c1ea" shared="true" childName="Leader">
-                                  <comment>If the Stable Ghast is the Leader, they do not have &quot;Otherworldly&quot;</comment>
-                                </condition>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
-                        </profile>
-                        <profile name="Uncanny" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="89e2-6a19-0092-6a68">
-                          <characteristics>
-                            <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">Uncanny models are strange and unsettling, and cause feelings of panic and horror. Any model making an Action within 6” of an Uncanny model must first make a Fortitude Roll-off. The Difficulty to be rolled against is the total number of enemy Uncanny models within 6”. If the Roll-off is a success, the model may act normally. If it is failed, the model takes a -2 penalty to all Roll-offs for the rest of the Turn.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <modifiers>
-                        <modifier type="add" value="5e57-4280-58a4-23d3" field="category"/>
-                        <modifier type="increment" value="2" field="659a-f40f-dc29-33bf" affects="profiles.Unit" scope="root-entry"/>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="roster" childId="4f4d-602d-cfa2-e6df" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <costs>
-                        <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="15"/>
-                        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
-                        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="self" shared="true" id="833b-6cb9-7d67-c65d"/>
-                  </constraints>
-                </selectionEntryGroup>
                 <selectionEntryGroup name="Skill" id="262b-b94f-deae-12ba" hidden="true" collapsible="true">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cf8-e132-1d9e-f1d2"/>
@@ -18336,6 +18283,53 @@ Otherworldly Table:
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <modifiers>
+                <modifier type="increment" value="2" field="659a-f40f-dc29-33bf" affects="profiles.Unit" scope="root-entry"/>
+                <modifier type="add" value="5e57-4280-58a4-23d3" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="833b-6cb9-7d67-c65d"/>
+              </constraints>
+              <profiles>
+                <profile name="Otherwordly" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="1fd0-286e-dcbb-09ea">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">When this model declares an Action and is within 12” of the Band’s Leader, then they perform their Action normally. When they declare an Action but are more than 12” away from the Band’s Leader, they must first roll their Fortitude on the following table. If they are more than 18” from the Leader, or if the Leader has been taken Out of Action, then they roll a d6 on this table instead. Mist Ghasts may add +1 to the roll for every other Mist Ghast model within 6”, up to a maximum of +3.
+
+Stable Ghasts always add +1 to the roll.
+
+Otherworldly Table:
+1   Fade Away: The model&apos;s connection to the material world is severed.  The model goes Out of Action; however, it does not cross any additional Wound boxes off.
+2   Catatonia: The model loses control of itself.  The model gains the Condition &apos;Paralysed&apos; for the rest of the Turn.
+3   Confusion: The model wanders randomly.  Roll a d8 and move the model a number of inches equal to the dice roll in the direction that the tip of the dice points.  If, at any point, they reach Base Contact with another model or Terrain               piece, they stop.  If they reach Base Contract with an enemy model, they may make one Attack Action, then their activation ends.
+4   Unsure: The model may act normally but receives the Condition &apos;Stunned&apos; for the rest of this Turn.
+5+ No Effect: The model may act normally.</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8fa1-283a-2134-c1ea" shared="true" childName="Leader">
+                          <comment>If the Stable Ghast is the Leader, they do not have &quot;Otherworldly&quot;</comment>
+                        </condition>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Stable Ghast" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="1824-f981-bded-5c4a" noindex="false">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This unit is a Stable Ghast.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Uncanny" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="89e2-6a19-0092-6a68">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">Uncanny models are strange and unsettling, and cause feelings of panic and horror. Any model making an Action within 6” of an Uncanny model must first make a Fortitude Roll-off. The Difficulty to be rolled against is the total number of enemy Uncanny models within 6”. If the Roll-off is a success, the model may act normally. If it is failed, the model takes a -2 penalty to all Roll-offs for the rest of the Turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="15"/>
+                <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+                <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
