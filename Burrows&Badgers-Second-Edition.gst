@@ -18530,7 +18530,7 @@ Otherworldly Table:
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="86b9-9a7f-ef3e-c23b"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="86b9-9a7f-ef3e-c23b"/>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="e0ec-01aa-f162-6104"/>
           </constraints>
         </selectionEntryGroup>
