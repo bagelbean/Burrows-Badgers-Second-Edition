@@ -18265,6 +18265,7 @@ Otherworldly Table:
                     <modifier type="set" value="-22" field="6752-9e0b-692e-d5b9">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7c90-1641-f79f-14ac" shared="true" childName="Adder" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6dc4-7e57-577f-3a06" shared="true" childName="Living Band Member" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
