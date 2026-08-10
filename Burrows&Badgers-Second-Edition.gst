@@ -6913,39 +6913,14 @@ casting Spells.</description>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Bagpipes" hidden="true" id="dffd-de30-4a0e-e89d" sortIndex="0">
                       <costs>
-                        <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
+                        <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="20"/>
+                        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+                        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+                        <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="0"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Anti-Venom" id="0fbe-b60f-55a3-3f53" hidden="false" type="profile" targetId="ab52-03df-8e75-b714"/>
                         <infoLink name="Piper" id="75c4-b74c-4198-dabc" hidden="false" type="rule" targetId="8099-4319-5e1a-35cf"/>
                       </infoLinks>
-                      <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Cost (1d6)" hidden="false" id="7b78-6c4b-4181-9ca0">
-                          <modifiers>
-                            <modifier type="increment" value="1" field="6752-9e0b-692e-d5b9" scope="parent">
-                              <repeats>
-                                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7b78-6c4b-4181-9ca0" shared="true" roundUp="false"/>
-                              </repeats>
-                            </modifier>
-                            <modifier type="set" value="20" field="defaultAmount">
-                              <conditionGroups>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
-                                  </conditions>
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d49b-0548-5a3f-1240" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </modifier>
-                          </modifiers>
-                        </selectionEntry>
-                      </selectionEntries>
                       <modifiers>
                         <modifier type="set" value="false" field="hidden">
                           <conditionGroups>
@@ -6956,22 +6931,6 @@ casting Spells.</description>
                             </conditionGroup>
                           </conditionGroups>
                         </modifier>
-                        <modifier type="add" value="Rare starting item" field="info">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
-                              </conditions>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d49b-0548-5a3f-1240" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
                       </modifiers>
                       <categoryLinks>
                         <categoryLink name="Rare" hidden="false" id="dda6-cf3c-6c1c-2d83" targetId="6daf-83fe-ef42-17d8" primary="false"/>
@@ -6979,6 +6938,17 @@ casting Spells.</description>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8ac-b20e-1b4e-c8c2" includeChildSelections="true" includeChildForces="true"/>
                       </constraints>
+                      <profiles>
+                        <profile name="Bagpipes" typeId="dbe8-f061-170a-effa" typeName="Item" hidden="false" id="832e-743f-8329-1974" publicationId="2ab7-799f-9ff5-3e49">
+                          <characteristics>
+                            <characteristic name="Rarity" typeId="9486-096d-494d-29cd">Common</characteristic>
+                            <characteristic name="Availability" typeId="ea00-6e44-66df-77ec"/>
+                            <characteristic name="Rules" typeId="965b-1eff-1569-fb74">See &apos;Piper&apos;.</characteristic>
+                            <characteristic name="Keywords" typeId="d060-38f7-c160-776c">-</characteristic>
+                            <characteristic name="Type" typeId="f67c-4a22-9c29-7d45">Item</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Arcane Tome" hidden="true" id="daa3-76c0-73e2-d472" sortIndex="0">
                       <costs>
@@ -11051,39 +11021,14 @@ casting Spells.</description>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Bagpipes" hidden="true" id="a460-7661-c2c1-20b4" sortIndex="0">
                           <costs>
-                            <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
+                            <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="20"/>
+                            <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
+                            <cost name="Material" typeId="ce21-5b5b-f092-7301" value="0"/>
+                            <cost name="Warband Size" typeId="7090-79d8-6242-e546" value="0"/>
                           </costs>
                           <infoLinks>
-                            <infoLink name="Anti-Venom" id="b3c8-dfac-11ec-0f78" hidden="false" type="profile" targetId="ab52-03df-8e75-b714"/>
                             <infoLink name="Piper" id="c00b-c559-41e1-d91a" hidden="false" type="rule" targetId="8099-4319-5e1a-35cf"/>
                           </infoLinks>
-                          <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Cost (1d6)" hidden="false" id="a13b-d8c9-e5c5-e01b">
-                              <modifiers>
-                                <modifier type="increment" value="1" field="6752-9e0b-692e-d5b9" scope="parent">
-                                  <repeats>
-                                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="a13b-d8c9-e5c5-e01b" shared="true" roundUp="false"/>
-                                  </repeats>
-                                </modifier>
-                                <modifier type="set" value="20" field="defaultAmount">
-                                  <conditionGroups>
-                                    <conditionGroup type="and">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
-                                      </conditions>
-                                      <conditionGroups>
-                                        <conditionGroup type="or">
-                                          <conditions>
-                                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d49b-0548-5a3f-1240" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                          </conditions>
-                                        </conditionGroup>
-                                      </conditionGroups>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                            </selectionEntry>
-                          </selectionEntries>
                           <modifiers>
                             <modifier type="set" value="false" field="hidden">
                               <conditionGroups>
@@ -11094,22 +11039,6 @@ casting Spells.</description>
                                 </conditionGroup>
                               </conditionGroups>
                             </modifier>
-                            <modifier type="add" value="Rare starting item" field="info">
-                              <conditionGroups>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
-                                  </conditions>
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d49b-0548-5a3f-1240" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </modifier>
                           </modifiers>
                           <categoryLinks>
                             <categoryLink name="Rare" hidden="false" id="cfe7-2eb2-ce21-270b" targetId="6daf-83fe-ef42-17d8" primary="false"/>
@@ -11117,6 +11046,17 @@ casting Spells.</description>
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed55-fb60-5e0b-cba6" includeChildSelections="true" includeChildForces="true"/>
                           </constraints>
+                          <profiles>
+                            <profile name="Bagpipes" typeId="dbe8-f061-170a-effa" typeName="Item" hidden="false" id="ad5c-daa0-bb08-2dae" publicationId="2ab7-799f-9ff5-3e49">
+                              <characteristics>
+                                <characteristic name="Rarity" typeId="9486-096d-494d-29cd">Common</characteristic>
+                                <characteristic name="Availability" typeId="ea00-6e44-66df-77ec"/>
+                                <characteristic name="Rules" typeId="965b-1eff-1569-fb74">See &apos;Piper&apos;.</characteristic>
+                                <characteristic name="Keywords" typeId="d060-38f7-c160-776c">-</characteristic>
+                                <characteristic name="Type" typeId="f67c-4a22-9c29-7d45">Item</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Arcane Tome" hidden="true" id="3062-1535-d71b-7bcb" sortIndex="0">
                           <costs>
