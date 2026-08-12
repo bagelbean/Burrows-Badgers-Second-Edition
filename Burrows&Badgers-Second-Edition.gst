@@ -6262,7 +6262,7 @@ casting Spells.</description>
                         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
                       </costs>
                       <infoLinks>
-                        <infoLink name="Telescope" id="cf95-a8ab-a1b3-3ca9" hidden="false" type="profile" targetId="f612-0117-52ca-45ec"/>
+                        <infoLink name="Shielding Talisman" id="8007-c4dd-80bf-36a4" hidden="false" type="profile" targetId="b6fc-2712-ce8b-9915"/>
                       </infoLinks>
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Variable Cost (1d6+3)" hidden="false" id="4537-3ebc-05cd-5a6d">
@@ -10373,7 +10373,7 @@ casting Spells.</description>
                             <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
                           </costs>
                           <infoLinks>
-                            <infoLink name="Telescope" id="586c-8b8c-b446-449b" hidden="false" type="profile" targetId="f612-0117-52ca-45ec"/>
+                            <infoLink name="Shielding Talisman" id="a74a-73c2-c080-b6e7" hidden="false" type="profile" targetId="b6fc-2712-ce8b-9915"/>
                           </infoLinks>
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Variable Cost (1d6+3)" hidden="false" id="32c2-cddc-f3aa-f9d8">
