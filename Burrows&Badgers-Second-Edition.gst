@@ -5907,7 +5907,7 @@ casting Spells.</description>
                             </selectionEntry>
                             <selectionEntry type="upgrade" import="true" name="Elf-bolt" hidden="false" id="c67a-2e42-b02a-c38a">
                               <infoLinks>
-                                <infoLink name="Anti-Venom" id="76e4-2b60-aa84-c710" hidden="false" type="profile" targetId="ab52-03df-8e75-b714"/>
+                                <infoLink name="Elf-bolt" id="c994-653e-6a7e-aa5b" hidden="false" type="profile" publicationId="2ab7-799f-9ff5-3e49" targetId="cc83-28d7-76cb-99a3"/>
                               </infoLinks>
                               <costs>
                                 <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="6"/>
@@ -5923,7 +5923,7 @@ casting Spells.</description>
                             </selectionEntry>
                             <selectionEntry type="upgrade" import="true" name="Amanitas" hidden="false" id="10f6-bcda-0265-7176">
                               <infoLinks>
-                                <infoLink name="Enchanted Item" id="b457-d293-68f8-2aa2" hidden="false" type="profile" targetId="b536-09bc-6700-d36c"/>
+                                <infoLink name="Amanitas" id="5640-111e-ed31-6998" hidden="false" type="profile" publicationId="2ab7-799f-9ff5-3e49" targetId="064e-7b5a-406b-66e8"/>
                               </infoLinks>
                               <costs>
                                 <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="3"/>
@@ -6060,6 +6060,9 @@ casting Spells.</description>
                       <costs>
                         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="12"/>
                       </costs>
+                      <infoLinks>
+                        <infoLink name="Mage’s Pouch" id="8a9d-9031-fd68-7ff2" hidden="false" type="profile" targetId="5ff2-ed3e-20f0-0062"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Camouflage Cloak" hidden="false" id="69a9-73dd-ab9b-b0e8" sortIndex="0">
                       <costs>
@@ -10015,7 +10018,7 @@ casting Spells.</description>
                                 </selectionEntry>
                                 <selectionEntry type="upgrade" import="true" name="Elf-bolt" hidden="false" id="390f-ecf5-5fed-ebc0">
                                   <infoLinks>
-                                    <infoLink name="Anti-Venom" id="d246-d636-322d-f179" hidden="false" type="profile" targetId="ab52-03df-8e75-b714"/>
+                                    <infoLink name="Elf-bolt" id="9fcf-1e35-1cbe-d3c1" hidden="false" type="profile" publicationId="2ab7-799f-9ff5-3e49" targetId="cc83-28d7-76cb-99a3"/>
                                   </infoLinks>
                                   <costs>
                                     <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="6"/>
@@ -10031,7 +10034,7 @@ casting Spells.</description>
                                 </selectionEntry>
                                 <selectionEntry type="upgrade" import="true" name="Amanitas" hidden="false" id="40be-b3ff-8fd5-ea45">
                                   <infoLinks>
-                                    <infoLink name="Enchanted Item" id="f8e8-99b3-0dcc-0842" hidden="false" type="profile" targetId="b536-09bc-6700-d36c"/>
+                                    <infoLink name="Amanitas" id="535e-189b-e1b2-4722" hidden="false" type="profile" publicationId="2ab7-799f-9ff5-3e49" targetId="064e-7b5a-406b-66e8"/>
                                   </infoLinks>
                                   <costs>
                                     <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="3"/>
@@ -10168,6 +10171,9 @@ casting Spells.</description>
                           <costs>
                             <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="12"/>
                           </costs>
+                          <infoLinks>
+                            <infoLink name="Mage’s Pouch" id="e0cb-3545-cd47-8b9f" hidden="false" type="profile" targetId="5ff2-ed3e-20f0-0062"/>
+                          </infoLinks>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Camouflage Cloak" hidden="false" id="45a1-4411-19a5-be42" sortIndex="0">
                           <costs>
@@ -20302,7 +20308,7 @@ any ill effects or Conditions caused by them. They can be used on another Wounde
       <characteristics>
         <characteristic name="Rarity" typeId="9486-096d-494d-29cd">Common</characteristic>
         <characteristic name="Availability" typeId="ea00-6e44-66df-77ec">-</characteristic>
-        <characteristic name="Rules" typeId="965b-1eff-1569-fb74">A model with a Mage’s Pouch may carry up to 6 Ingredients in it. They do not have to all be the same Ingredient.</characteristic>
+        <characteristic name="Rules" typeId="965b-1eff-1569-fb74">There are a wide variety of physical components used in magic that make spells easier to cast or more effective.  Some are rarer than others and their availability is reflected by their price.  They must be carried in a Mage&apos;s Pouch.  A model with a Mage&apos;s Pouch may carry up to 6 Ingredients in it.  They do not have to all be the same Ingredient.  Each Ingredient is a single use Item, as described in the Cast Action description, and is discarded from the Band Roster after use.</characteristic>
         <characteristic name="Keywords" typeId="d060-38f7-c160-776c">-</characteristic>
         <characteristic name="Type" typeId="f67c-4a22-9c29-7d45">Item</characteristic>
       </characteristics>
