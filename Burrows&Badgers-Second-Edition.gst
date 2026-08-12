@@ -7799,7 +7799,7 @@ casting Spells.</description>
                         <infoLink name="Broadhead arrows" id="3253-b7ce-da17-c983" hidden="false" type="profile" targetId="8a82-636c-7a09-539e"/>
                       </infoLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Led slingshot" hidden="false" id="467f-fb66-45b6-8ac1">
+                    <selectionEntry type="upgrade" import="true" name="Lead slingshot" hidden="false" id="467f-fb66-45b6-8ac1">
                       <costs>
                         <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
                         <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
@@ -11921,7 +11921,7 @@ casting Spells.</description>
                             </selectionEntry>
                           </selectionEntries>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="Led slingshot" hidden="false" id="4878-0862-c2f8-ad3e">
+                        <selectionEntry type="upgrade" import="true" name="Lead slingshot" hidden="false" id="4878-0862-c2f8-ad3e">
                           <costs>
                             <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
                             <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="0"/>
