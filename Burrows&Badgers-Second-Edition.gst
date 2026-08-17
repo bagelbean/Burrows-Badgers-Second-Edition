@@ -14998,7 +14998,7 @@ casting Spells.</description>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Strenght Skills" id="e36c-597e-097d-cc0b" hidden="false" sortIndex="4">
+            <selectionEntryGroup name="Strength Skills" id="e36c-597e-097d-cc0b" hidden="false" sortIndex="4">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Strong" hidden="false" id="d8c1-7b0c-33a9-d71e" sortIndex="1">
                   <constraints>
