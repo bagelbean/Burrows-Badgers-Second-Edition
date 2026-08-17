@@ -13781,7 +13781,7 @@ casting Spells.</description>
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Upgrade Strike" hidden="false" id="86f1-d0df-c6f8-de56" collective="true" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Upgrade Strike" hidden="false" id="86f1-d0df-c6f8-de56" collective="true" sortIndex="1">
               <modifiers>
                 <modifier type="replace" value="d12" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
                 <modifier type="replace" value="d10" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
@@ -13800,7 +13800,7 @@ casting Spells.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7794-8722-9e42-f291"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Upgrade Ranged" hidden="false" id="bf9e-a90b-b49f-ca4c" collective="true" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Upgrade Ranged" hidden="false" id="bf9e-a90b-b49f-ca4c" collective="true" sortIndex="2">
               <modifiers>
                 <modifier type="replace" value="d12" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
                 <modifier type="replace" value="d10" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
@@ -13824,7 +13824,7 @@ casting Spells.</description>
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="45ed-3f90-364d-be28" includeChildSelections="true" includeChildForces="true"/>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="4872-1bf5-5050-f732"/>
           </constraints>
-          <comment>3 choices</comment>
+          <comment>3 choices (Kindred)</comment>
         </selectionEntryGroup>
         <selectionEntryGroup name="Quick and Quiet" id="d5ca-8c03-982f-67bc" hidden="true" collapsible="true" collective="true" flatten="false" sortIndex="35">
           <modifiers>
@@ -14448,7 +14448,6 @@ casting Spells.</description>
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="d31a-18fc-c0f8-ee05" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="3f8a-5bc3-894d-b885" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -14462,7 +14461,6 @@ casting Spells.</description>
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="roster" childId="d31a-18fc-c0f8-ee05" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="3f8a-5bc3-894d-b885" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -14471,7 +14469,7 @@ casting Spells.</description>
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Upgrade Strike" hidden="false" id="cc6f-c178-abae-4058" collective="true" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Upgrade Strike" hidden="false" id="cc6f-c178-abae-4058" collective="true" sortIndex="1">
               <modifiers>
                 <modifier type="replace" value="d12" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
                 <modifier type="replace" value="d10" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
@@ -14490,26 +14488,13 @@ casting Spells.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b6e-e464-f972-797e"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Upgrade Ranged" hidden="false" id="2d98-675d-ff6a-43dd" collective="true">
+            <selectionEntry type="upgrade" import="true" name="Upgrade Ranged" hidden="false" id="2d98-675d-ff6a-43dd" collective="true" sortIndex="2">
               <modifiers>
                 <modifier type="replace" value="d12" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
                 <modifier type="replace" value="d10" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
                 <modifier type="replace" value="d8" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
                 <modifier type="replace" value="d6" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
                 <modifier type="increment" value="1" field="659a-f40f-dc29-33bf" scope="root-entry" affects="profiles.Unit"/>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="equalTo" value="1" field="selections" scope="roster" childId="3f8a-5bc3-894d-b885" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Ranged Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="a155-905c-90e2-7405">
@@ -14527,7 +14512,7 @@ casting Spells.</description>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="01b6-1cc2-091c-65bc" includeChildSelections="true" includeChildForces="true"/>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="73ed-2085-42aa-9a15"/>
           </constraints>
-          <comment>2 choices</comment>
+          <comment>2 choices (Routiers)</comment>
         </selectionEntryGroup>
         <selectionEntryGroup name="Old Campaigners &amp; Raw Recruits" id="40db-4e96-b4cb-d297" hidden="true" sortIndex="20">
           <selectionEntries>
@@ -18648,6 +18633,65 @@ Otherworldly Table:
             <constraint type="min" value="0" field="selections" scope="self" shared="true" id="86b9-9a7f-ef3e-c23b"/>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="e0ec-01aa-f162-6104"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Expert Training" id="edd0-09cf-c745-57b4" hidden="true" collapsible="true" collective="true" flatten="false" sortIndex="19">
+          <modifiers>
+            <modifier type="add" value="Starting bonus (2 in force)" field="info">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cee3-9887-9ffb-1cae" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="3f8a-5bc3-894d-b885" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="roster" childId="3f8a-5bc3-894d-b885" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Upgrade Strike" hidden="false" id="876d-9c91-25d7-af4f" collective="true" sortIndex="1">
+              <modifiers>
+                <modifier type="replace" value="d12" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
+                <modifier type="replace" value="d10" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
+                <modifier type="replace" value="d8" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
+                <modifier type="replace" value="d6" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d4" position="0" scope="root-entry"/>
+                <modifier type="increment" value="1" field="659a-f40f-dc29-33bf" scope="root-entry" affects="profiles.Unit"/>
+              </modifiers>
+              <profiles>
+                <profile name="Strike Upgraded" typeId="568c-91db-9da7-e04c" typeName="Ability" hidden="false" id="3477-8374-478f-a990">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">The Strike Statistic of this unit has been upgraded.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c14-a8f7-831b-16d5"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="4772-8d26-688a-1136" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="ff96-9a02-f2e3-ab28"/>
+          </constraints>
+          <comment>2 choices (Royalists)</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
