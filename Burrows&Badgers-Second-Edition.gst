@@ -15318,7 +15318,7 @@ casting Spells.</description>
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Brain Trauma" hidden="false" id="b600-db00-86a7-4ff4" sortIndex="0">
+            <selectionEntry type="upgrade" import="true" name="Brain Trauma" hidden="false" id="b600-db00-86a7-4ff4" sortIndex="4">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Forgetfulness and a loss of focus" hidden="false" id="b2d6-c601-20e8-5d32" sortIndex="1">
                   <profiles>
@@ -15378,12 +15378,12 @@ casting Spells.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa44-33df-3314-7600"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nervous Condition" hidden="false" id="f155-75c6-9976-c393" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Nervous Condition" hidden="false" id="f155-75c6-9976-c393" sortIndex="5">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c2e-b99e-a335-8b98"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Chest Wound" id="2d9e-1814-3528-baea" hidden="false" type="profile" targetId="5dc8-2d59-2807-0f9f"/>
+                <infoLink name="Nervous Condition" id="2d9e-1814-3528-baea" hidden="false" type="profile" targetId="bf59-7ad6-abbb-74fa"/>
               </infoLinks>
               <modifiers>
                 <modifier type="replace" value="d4" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
@@ -15393,7 +15393,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Chest Wound" hidden="false" id="c9e1-3280-a130-e968" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Chest Wound" hidden="false" id="c9e1-3280-a130-e968" sortIndex="6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ba6-8c20-04c8-3253"/>
               </constraints>
@@ -15406,7 +15406,7 @@ casting Spells.</description>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blinded in One Eye" hidden="false" id="5314-ff0a-4f0b-f52d" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Blinded in One Eye" hidden="false" id="5314-ff0a-4f0b-f52d" sortIndex="7">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41da-cdcb-f47c-7f20"/>
               </constraints>
@@ -15421,7 +15421,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Traumatised" hidden="false" id="b0d8-dbea-d011-f012" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Traumatised" hidden="false" id="b0d8-dbea-d011-f012" sortIndex="8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa78-9ecf-cdf1-d871"/>
               </constraints>
@@ -15436,16 +15436,20 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Enfeebled" hidden="false" id="8db3-20a9-6f77-4f8d" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Enfeebled" hidden="false" id="8db3-20a9-6f77-4f8d" sortIndex="9">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f448-f83e-3dc4-5141"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Enfeebled" id="0f04-1a26-cf64-271c" hidden="false" type="profile" targetId="ba66-8baf-66cc-0c2f"/>
-                <infoLink name="Delicate" id="8c6a-33b2-c8df-2f13" hidden="false" type="profile" targetId="1587-89e8-db20-dd5e"/>
+                <infoLink name="Enfeebled" id="8c6a-33b2-c8df-2f13" hidden="false" type="profile" targetId="ba66-8baf-66cc-0c2f"/>
+                <infoLink name="Weak" id="b621-9a63-5fcf-818c" hidden="false" type="profile" targetId="1287-15af-a0b2-cc20">
+                  <modifiers>
+                    <modifier type="set" value="1" field="annotation"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Grotesque Appearance" hidden="false" id="576f-ceb3-3100-0135" sortIndex="6">
+            <selectionEntry type="upgrade" import="true" name="Grotesque Appearance" hidden="false" id="576f-ceb3-3100-0135" sortIndex="11">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee8f-c8cb-6bd0-3213"/>
               </constraints>
@@ -15460,7 +15464,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Serious Arm Wound" hidden="false" id="4232-691d-139d-3683" sortIndex="8">
+            <selectionEntry type="upgrade" import="true" name="Serious Arm Wound" hidden="false" id="4232-691d-139d-3683" sortIndex="13">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c56a-be47-e236-bc18"/>
               </constraints>
@@ -15468,7 +15472,7 @@ casting Spells.</description>
                 <infoLink name="Serious Arm Wound" id="329b-d6ad-1d73-23d5" hidden="false" type="profile" targetId="747f-c2d9-56cf-34da"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shoulder Injury" hidden="false" id="55eb-20ce-55bf-9ede" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Shoulder Injury" hidden="false" id="55eb-20ce-55bf-9ede" sortIndex="10">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9915-e6ed-3405-0c97"/>
               </constraints>
@@ -15483,7 +15487,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sinus Damage" hidden="false" id="1fc5-6e1f-2817-f54c" sortIndex="7">
+            <selectionEntry type="upgrade" import="true" name="Sinus Damage" hidden="false" id="1fc5-6e1f-2817-f54c" sortIndex="12">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7fa-0fc5-d165-6121"/>
               </constraints>
@@ -15498,13 +15502,21 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Lower Leg Trauma" hidden="false" id="1437-59d1-de80-4c55" sortIndex="9">
+            <selectionEntry type="upgrade" import="true" name="Lower Leg Trauma" hidden="false" id="1437-59d1-de80-4c55" sortIndex="14">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f87-658a-c6c9-b7ed"/>
               </constraints>
               <infoLinks>
                 <infoLink name="Lower Leg Trauma" id="180d-9d7b-536e-50c6" hidden="false" type="profile" targetId="ce91-f4c0-cb2a-aeeb"/>
                 <infoLink name="Slow" id="8507-9c30-c7d5-4771" hidden="false" type="rule" targetId="a7d3-4f6c-4b3f-8e2a"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Head Wound" hidden="false" id="179a-3a9c-59cc-0b4a" sortIndex="15">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4976-0b16-92ba-f26d"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Head Wound" id="c731-a972-1f90-52af" hidden="false" type="profile" targetId="6f74-5911-3206-eb42"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -15525,7 +15537,7 @@ casting Spells.</description>
             </modifier>
           </modifiers>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Brain Trauma" hidden="false" id="abae-7599-8cae-33f0" sortIndex="0">
+            <selectionEntry type="upgrade" import="true" name="Brain Trauma" hidden="false" id="abae-7599-8cae-33f0" sortIndex="4">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Forgetfulness and a loss of focus" hidden="false" id="0b3b-1adf-7323-0c98" sortIndex="1">
                   <profiles>
@@ -15585,12 +15597,12 @@ casting Spells.</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a85f-c5a4-477f-bf60"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Nervous Condition" hidden="false" id="7610-8c0a-64f8-700a" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Nervous Condition" hidden="false" id="7610-8c0a-64f8-700a" sortIndex="5">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1693-d4de-0e29-e81b"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Chest Wound" id="9c00-c9c1-18bd-a16a" hidden="false" type="profile" targetId="5dc8-2d59-2807-0f9f"/>
+                <infoLink name="Nervous Condition" id="9c00-c9c1-18bd-a16a" hidden="false" type="profile" targetId="bf59-7ad6-abbb-74fa"/>
               </infoLinks>
               <modifiers>
                 <modifier type="replace" value="d4" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
@@ -15600,7 +15612,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="04d3-8db0-e5d0-b1a5" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Chest Wound" hidden="false" id="3ee0-9594-5611-3d50" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Chest Wound" hidden="false" id="3ee0-9594-5611-3d50" sortIndex="6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e0d-824a-a0d8-dfba"/>
               </constraints>
@@ -15616,7 +15628,7 @@ casting Spells.</description>
                 <modifier type="decrement" value="1" field="659a-f40f-dc29-33bf" scope="root-entry" affects="profiles.Unit"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blinded in One Eye" hidden="false" id="7082-4395-f93f-5058" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Blinded in One Eye" hidden="false" id="7082-4395-f93f-5058" sortIndex="7">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8943-c6ae-842e-295b"/>
               </constraints>
@@ -15632,7 +15644,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="81ac-f564-ffc1-e3fa" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Traumatised" hidden="false" id="da33-6cab-9352-5e15" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Traumatised" hidden="false" id="da33-6cab-9352-5e15" sortIndex="8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d3d-a4d1-3a83-3e59"/>
               </constraints>
@@ -15648,19 +15660,23 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="c395-16b3-3435-da18" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Enfeebled" hidden="false" id="9c10-3334-7623-464e" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Enfeebled" hidden="false" id="9c10-3334-7623-464e" sortIndex="9">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97ff-5df9-7524-97b3"/>
               </constraints>
               <infoLinks>
                 <infoLink name="Enfeebled" id="1c30-889e-09a4-2ae6" hidden="false" type="profile" targetId="ba66-8baf-66cc-0c2f"/>
-                <infoLink name="Delicate" id="d6c2-96cf-1b81-9dad" hidden="false" type="profile" targetId="1587-89e8-db20-dd5e"/>
+                <infoLink name="Weak" id="b682-bca9-a9cb-4b92" hidden="false" type="profile" targetId="1287-15af-a0b2-cc20">
+                  <modifiers>
+                    <modifier type="set" value="1" field="annotation"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <modifiers>
                 <modifier type="decrement" value="1" field="659a-f40f-dc29-33bf" scope="root-entry" affects="profiles.Unit"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Grotesque Appearance" hidden="false" id="dbd8-e91c-94bd-7d1d" sortIndex="6">
+            <selectionEntry type="upgrade" import="true" name="Grotesque Appearance" hidden="false" id="dbd8-e91c-94bd-7d1d" sortIndex="11">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f41d-8f2d-e65f-1177"/>
               </constraints>
@@ -15676,7 +15692,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="855b-25d5-4575-cabb" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shoulder Injury" hidden="false" id="b6e1-ec68-c68d-6159" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Shoulder Injury" hidden="false" id="b6e1-ec68-c68d-6159" sortIndex="10">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77fb-77a3-4acc-2b83"/>
               </constraints>
@@ -15692,7 +15708,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Serious Arm Wound" hidden="false" id="4930-0156-fe66-70da" sortIndex="8">
+            <selectionEntry type="upgrade" import="true" name="Serious Arm Wound" hidden="false" id="4930-0156-fe66-70da" sortIndex="13">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f05-270d-ea8e-3fe1"/>
               </constraints>
@@ -15703,23 +15719,7 @@ casting Spells.</description>
                 <modifier type="decrement" value="1" field="659a-f40f-dc29-33bf" scope="root-entry" affects="profiles.Unit"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shoulder Injury" hidden="false" id="bbc0-3b95-deec-a755" sortIndex="5">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9612-87bd-b46f-be63"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Shoulder Injury" id="c009-9a15-1c2e-011a" hidden="false" type="profile" targetId="c8f5-dea5-6e5a-6a9e"/>
-              </infoLinks>
-              <modifiers>
-                <modifier type="decrement" value="1" field="659a-f40f-dc29-33bf" scope="root-entry" affects="profiles.Unit"/>
-                <modifier type="replace" value="d4" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d6" position="0" scope="root-entry"/>
-                <modifier type="replace" value="d6" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d8" position="0" scope="root-entry"/>
-                <modifier type="replace" value="d8" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d10" position="0" scope="root-entry"/>
-                <modifier type="replace" value="d10" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d12" position="0" scope="root-entry"/>
-                <modifier type="replace" value="d12" field="3c84-430f-dc21-e27b" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sinus Damage" hidden="false" id="a252-12ca-4db2-b1cb" sortIndex="7">
+            <selectionEntry type="upgrade" import="true" name="Sinus Damage" hidden="false" id="a252-12ca-4db2-b1cb" sortIndex="12">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed76-54e4-d823-0d1e"/>
               </constraints>
@@ -15735,7 +15735,7 @@ casting Spells.</description>
                 <modifier type="replace" value="d12" field="e482-eed4-6daa-ca70" affects="profiles.Unit" arg="d20" position="0" scope="root-entry"/>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Lower Leg Trauma" hidden="false" id="08c6-65f9-bec0-1534" sortIndex="9">
+            <selectionEntry type="upgrade" import="true" name="Lower Leg Trauma" hidden="false" id="08c6-65f9-bec0-1534" sortIndex="14">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8431-71ae-ca58-156f"/>
               </constraints>
@@ -15744,7 +15744,7 @@ casting Spells.</description>
                 <infoLink name="Slow" id="e3dd-c2df-739f-3800" hidden="false" type="rule" targetId="a7d3-4f6c-4b3f-8e2a"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Head Wound" hidden="false" id="3bf3-85bd-6866-48d1" sortIndex="10">
+            <selectionEntry type="upgrade" import="true" name="Head Wound" hidden="false" id="3bf3-85bd-6866-48d1" sortIndex="15">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a2d-6afc-6542-2b35"/>
               </constraints>
@@ -15752,7 +15752,7 @@ casting Spells.</description>
                 <infoLink name="Head Wound" id="f549-a5fe-3ff3-7859" hidden="false" type="profile" targetId="6f74-5911-3206-eb42"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Recurring Injury" hidden="false" id="23b0-16b7-4efb-ecdc" sortIndex="10">
+            <selectionEntry type="upgrade" import="true" name="Recurring Injury" hidden="false" id="23b0-16b7-4efb-ecdc" sortIndex="16">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cda-9260-be5f-7e5c"/>
               </constraints>
@@ -15760,7 +15760,7 @@ casting Spells.</description>
                 <infoLink name="Recurring Injury" id="4cce-9ad4-df38-1c2c" hidden="false" type="profile" targetId="ec06-52e3-f473-0e1b"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Niggling Wound" hidden="false" id="83b9-db56-1e5b-8159" sortIndex="11">
+            <selectionEntry type="upgrade" import="true" name="Niggling Wound" hidden="false" id="83b9-db56-1e5b-8159" sortIndex="17">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd87-d06e-aff2-f756"/>
               </constraints>
@@ -19757,8 +19757,7 @@ The dice stay until you have used them all, or you Cast this spell again.</chara
     </profile>
     <profile hidden="false" id="1587-89e8-db20-dd5e" name="Delicate" noindex="true" typeId="568c-91db-9da7-e04c" typeName="Ability">
       <characteristics>
-        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This model has a weak constitution and is vulnerable to damage; they must add the
-Skill level to any Wounds they suffer.</characteristic>
+        <characteristic name="Effect" typeId="597a-e8da-21a9-99c5">This model has a weak constitution and is vulnerable to damage; they must add the Skill level to any Wounds they suffer.</characteristic>
       </characteristics>
       <alias>Delicate</alias>
     </profile>
@@ -20991,7 +20990,6 @@ The model may only choose to Rest in Step 4 of this Post-Battle Phase. Add 15 Pe
       <characteristics>
         <characteristic name="Effect" typeId="71cc-c85d-9474-2bed">The model has taken damage to their nervous system and suffers a loss of motor control. Their Nimbleness Stat is reduced by one dice level (e.g. d8 becomes d6). This reduces the model’s Level by 1. 
 
-
 The model may only choose to Rest in Step 4 of this Post-Battle Phase.  Add 20 Pennies to your Band’s Pension.</characteristic>
       </characteristics>
     </profile>
@@ -21012,7 +21010,7 @@ This reduces the model’s Level by 1. The model may only choose to Rest in Step
     </profile>
     <profile name="Enfeebled" typeId="c564-0458-abff-ca8d" typeName="Injury" hidden="false" id="ba66-8baf-66cc-0c2f">
       <characteristics>
-        <characteristic name="Effect" typeId="71cc-c85d-9474-2bed">The wounds the model has suffered leave them feeble and puny; they gain the Delicate (1) Skill. 
+        <characteristic name="Effect" typeId="71cc-c85d-9474-2bed">The wounds the model has suffered leave them feeble and puny; they gain the Weak(1) Skill. 
 
 This reduces the model’s Level by 1. The model may only choose to Rest in Step 4 of this Post-Battle Phase. Add 20 Pennies to your Band’s Pension.</characteristic>
       </characteristics>
@@ -21054,7 +21052,6 @@ This reduces the model’s Level by 1. The model may only choose to Rest in Ste
       <characteristics>
         <characteristic name="Effect" typeId="71cc-c85d-9474-2bed">A serious blow to the head has left the model confused and unsure of what is going on around them. Whenever they roll a 1, they have the Condition ‘Stunned’ for the rest of the Turn. 
 
-
 Add 5 Pennies to your Band’s Pension.</characteristic>
       </characteristics>
     </profile>
@@ -21069,7 +21066,6 @@ Add 5 Pennies to your Band’s Pension.</characteristic>
     <profile name="Niggling Wound" typeId="c564-0458-abff-ca8d" typeName="Injury" hidden="false" id="29d9-c57b-2b25-6fb1">
       <characteristics>
         <characteristic name="Effect" typeId="71cc-c85d-9474-2bed">The model suffers a recurring injury; at the start of every game, roll a d6 – on a roll of 1, the model must miss the game, which temporarily reduces your Band Rating. 
-
 
 Add 5 Pennies to your Band’s Pension.</characteristic>
       </characteristics>
