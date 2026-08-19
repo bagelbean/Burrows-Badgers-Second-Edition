@@ -519,4 +519,22 @@ You may pray for a blessing before each Battle; roll a d6.
     <entryLink import="true" name="Study" hidden="false" id="26f4-b8d0-1b0c-484b" targetId="797b-037f-3d75-7a5a" type="selectionEntry" defaultAmount="0"/>
     <entryLink import="true" name="Archery Range" hidden="false" id="86da-ce73-0d94-3ecd" targetId="00cb-eca5-c9a6-d8bb" type="selectionEntry" defaultAmount="0"/>
   </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Alchemy Laboratory" hidden="false" id="78a3-3ce7-e88e-844b">
+      <infoLinks>
+        <infoLink name="Study" id="e25b-5c68-3756-d012" hidden="false" type="profile" targetId="cb01-b841-0e41-2302"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Den Upgrade" hidden="false" id="52e5-decd-a0aa-347a" targetId="583b-2cca-fae6-9a19" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Penny" typeId="6752-9e0b-692e-d5b9" value="0"/>
+        <cost name="Labor" typeId="a8b9-14eb-c576-28d4" value="12"/>
+        <cost name="Material" typeId="ce21-5b5b-f092-7301" value="4"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58b9-2610-f64a-326f"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
